@@ -1,13 +1,13 @@
 <?php
 
     session_start();
-    include "db_connection.php";
+    include "connect.php";
 
     $product_id = $_GET['id'];
     $product_amount = $_GET['amount'];
 
     $sql = 'SELECT * FROM products WHERE product_id IN (' . $product_id . ')';
-    $data = $conn->query($sql);
+    $data = $pdo->query($sql);
     
 
     foreach ($data as $row){

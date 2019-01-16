@@ -14,7 +14,7 @@ require 'lib/password.php';
 /**
  * Include our MySQL connection.
  */
-require 'connect_local.php';
+require 'connect.php';
 // include 'navbar.php';
 // include 'footer.php';
 

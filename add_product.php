@@ -31,6 +31,6 @@
         echo $sql . "<br>" . $e->getMessage();
         header('location: add_Product_form.php?error' . $e->getMessage());
     }
-    $conn = null;
+    $pdo = null;
     
 ?>
