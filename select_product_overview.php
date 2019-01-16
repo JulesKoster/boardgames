@@ -7,7 +7,7 @@
         foreach ($data as $row) {
             $divCounter++; 
             $product_desc = $row['product_desc'];
-            // $dataObject[$divCounter] = $row;
+            $dataObject[$divCounter] = $row;
             $htmlOutput[$divCounter]  = '';
             $htmlOutput[$divCounter]  = '<a href="single_product.php?product_id=' . $divCounter . '">';
             $htmlOutput[$divCounter] .= '<div class="card" style="width: 18rem; height: 30em;">';
@@ -17,7 +17,7 @@
             $htmlOutput[$divCounter] .= '<div class="product_desc"><p class="card-text">' . $product_desc . '</p><p class="textFader">&nbsp;</p></div>';
             $htmlOutput[$divCounter] .= '<div class="row cardDesc">';
             $htmlOutput[$divCounter] .= '<div class="col-6">';
-            $htmlOutput[$divCounter] .= '<a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>';
+            $htmlOutput[$divCounter] .= '<a href="#" class="btn btn-primary">Toevoegen</a>';
             $htmlOutput[$divCounter] .= '</div>';
             $htmlOutput[$divCounter] .= '<div class="col-6">';
             $htmlOutput[$divCounter] .= '<div class ="text-center align-middle" id="oval">';

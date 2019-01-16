@@ -2,25 +2,6 @@
     background-color: #dac6ac;
 }
 
-.board {
-    border: solid red 1px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    text-decoration: none;
-    color: black;
-}
-
-a:visited {
-    text-decoration: none;
-    color: black;
-}
-
 .ribbon {
     position: absolute;
     left: -5px; top: -5px;
@@ -29,7 +10,6 @@ a:visited {
     width: 75px; height: 75px;
     text-align: right;
   }
-
   .ribbon span {
     font-size: 15px;
     letter-spacing: 1px;
@@ -47,7 +27,6 @@ a:visited {
     position: absolute;
     top: 19px; left: -21px;
   }
-
   .ribbon span::before {
     content: "";
     position: absolute; left: 0px; top: 100%;
@@ -57,7 +36,6 @@ a:visited {
     border-bottom: 3px solid transparent;
     border-top: 3px solid #8c7547;
   }
-
   .ribbon span::after {
     content: "";
     position: absolute; right: 0px; top: 100%;
@@ -73,32 +51,8 @@ a:visited {
     margin-top: 20%;
 }
 
-.cardDesc {
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
-    height: 3em;
-}
-
-.product_desc {
-    max-height: 125px;
-    position: relative;
+.card-text p {
     overflow: hidden;
-}
-
-.textFader {
-    user-select: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center; 
-    margin: 0; padding: 30px 0; 
-    background-image: linear-gradient(to bottom, transparent, #dac6ac)
-}
-
-.dotTransparency {
-    opacity: 0.55;
 }
 
 #oval {

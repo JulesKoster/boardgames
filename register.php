@@ -67,8 +67,6 @@ if(isset($_POST['register'])){
  
     //Execute the statement and insert the new account.
     $result = $stmt->execute();
-
-    header('Refresh: 1 ; url=register_form.php');
     
     //If the signup process is successful.
     if($result){
@@ -80,3 +78,65 @@ if(isset($_POST['register'])){
 }
  
 ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!-- <div class="form-wrapper">
+            <div class="contact-form">
+            <h1>Register</h1>
+            <form action="register.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username"><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+            <button type="submit" class="register" name="register" value="Register">Sign Up</button>
+            </form>
+            <?php if($showMessage){ echo $message;
+            }
+            ?>
+            </div>
+        
+            <div class="image-box-right">
+            <img src="img/womanlaptop.jpg" alt="register">
+            </div>    
+        </div>           -->
+
+        <div class="form-group">
+            <form action="register.php" method="post">
+                <label for=""></label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="helpId" placeholder="Enter your E-mail">
+                <div class="form-group">
+                <label for=""></label>
+                <input type="password" id="wachtwoord" name="gebruiker_wachtwoord" pattern=".{8,}" title="minimaal 8 tekens" required> <!-- pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" -->
+                <button type="submit" class="register" name="register" value="Register">Sign Up</button>
+                </div>
+            </form>  
+        </div>
+        <?php if($showMessage){ echo $message;
+            }
+            ?>  
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
