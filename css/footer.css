@@ -1,0 +1,20 @@
+.footerIcon {
+    color: black;
+    font-size: 40px;
+}
+
+#fbFont:hover {
+    color:#2f487c;
+}
+
+#twFont:hover {
+    color: #0084b4;
+}
+
+#ghFont:hover {
+    color: #b4b4b4;
+}
+
+a:visited {
+    text-decoration: none;
+}
