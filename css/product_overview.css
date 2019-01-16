@@ -6,10 +6,6 @@
     border: solid red 1px;
 }
 
-.borderBottom {
-    border-bottom: solid grey 3px;
-}
-
 a {
     text-decoration: none;
     color: black;
