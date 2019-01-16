@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <?php 
-            include 'navHeader.php';
-            include "db_connection.php";
+        <?php
+            session_start();
+            include 'nav_header.php';
+            include 'connect.php';
             $product_id = $_GET['product_id'];
             $sql = "SELECT * FROM products WHERE product_id = $product_id";
-            $data = $conn->query($sql);
+            $data = $pdo->query($sql);
             foreach ($data as $row){
         ?>
         <title><?php echo $row['product_name']?></title>
@@ -19,7 +20,7 @@
     <body>
         <div class='container-fluid text-center mt-5'>
             <?php                
-                    echo '<div class="row mt-5"><div class="col-lg-12"><h1>' . $row['product_name'] . '</h1></div>';
+                    echo '<div class="row mt-5"><div class="col-lg-12"><h1><div class = "d-none" id="product">' . $row['product_id'] . "</div>" . $row['product_name'] . '</h1></div>';
             ?>
             </div>
             <div class='row'>
@@ -29,12 +30,14 @@
                 </div>
                 <div class='col-6 text-left ml-5'>
                     <br>
+                    <div style='display: none' id='product'>1</div>
                     <h3>Omschrijving:</h3>
                     <p><?php echo $row["product_desc"] ?></p>
                         <br><br>
                     <h3>Prijs: € <?php echo number_format($row['product_price'],2,",",".") ?></h3>
                     <br>
-                    <button type="button" class="btn btn-primary btn-lg">In winkelwagen</button>
+                    <button type="button" class="btn btn-primary btn-lg" onclick=addToCart()>In winkelwagen</button>
+                    </form>
                 </div>
             </div>
 
@@ -46,6 +49,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
-        <script src="main.js"></script>
+        <script src="js/cart.js"></script>
     </body>
 </html>
