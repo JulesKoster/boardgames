@@ -7,7 +7,7 @@ html p{
 /* === Headermenu === */
 .headerMenu{
     background-color: #dac6ac !important}
-}
+
 .headerMenu a{
     text-decoration: none;
 }
@@ -43,6 +43,7 @@ html p{
 }
 @media (max-width: 63.99em){
 .menuService {
+    background: #0a0610;
     display: block;
     margin: 0;
     padding: 2rem 1.5rem;
@@ -103,7 +104,7 @@ html p{
 .navbar-dark .navbar-nav .nav-link{
     color: white;
     font-variant: small-caps;
-    /* font-size: 1.5em; */
+    font-size: 1.5em;
 }
 button.navbar-toggler{
     outline:none;

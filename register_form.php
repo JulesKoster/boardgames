@@ -11,15 +11,30 @@ include 'nav_header.php';
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Custom CSS -->
-        <link rel="stylesheet" type="text/css" href="css/register_form.css">
+        <link rel="stylesheet" type="text/css" href="css/stylejules.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
       </head>
     <body>
-   
+    <!--Register Form -->
+        <!-- <div class="form-group">
+            <form action="register.php" method="post">
+                <label for="email"></label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailInput" placeholder="Enter your E-mail" required autofocus>
+                <div class="form-group">
+                <label for="password"></label>
+                <input type="password" id="password" aria-describedby="passwordInput" name="password" pattern=".{8,}" title="minimaal 8 tekens" required>
+                <label for="password"></label>
+                <input type="password" id="confirmPassword" aria-describedby="passwordInput" name="password" required>
+                <button type="submit" class="register" name="register" value="Register">Sign Up</button>
+                </div>
+               
+            </form>  
+        </div> -->
         <!-- Register Form -->
-    <div class="container registerform">
+    <div class="container borderform">
         <div class="row justify-content-center">
+         <!-- <div class="col-xl-1"></div> -->
 
             <div class="col-xl-6">
                 <form action="register.php" method="post">

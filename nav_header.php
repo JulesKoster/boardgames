@@ -91,19 +91,28 @@
                 <a class="nav-link" href="#">dobbelspel</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">denkspel</a>
+                <a class="nav-link" href="#">actiespel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">breinbrekers</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">reisversie</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">wargaming</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">kickstarter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">vloerspel</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">spelkamer</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">klassieker</a>
+                <a class="nav-link" href="#">klassiekers</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"></a>
