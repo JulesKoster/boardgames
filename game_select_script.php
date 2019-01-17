@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
+    <title>Document</title>
+</head>
+<body>
+
 <?php
 
 $age = $_POST['age'];
@@ -17,5 +30,26 @@ $data = $pdo->query($sql);
 
 foreach($data as $row){
 
-    echo $row['product_id'] . ' ' . $row['product_name'] . ' ' . $row['product_classic'] . '<br>';
+    echo '<a href="single_product.php?product_id=' . $row['product_id'] . '">
+    <div class="card" style="width: 18rem; height: 30em;">
+    <img class="card-img-top img-thumbnail" style="height: 15em;" src="img/products/' . $row['product_img'] . '" alt="Card image cap">
+    <div class="card-body">
+    <h5 class="card-title">' . $row['product_name'] . '</h5>
+    <div class="product_desc"><p class="card-text">' . $row['product_desc'] . '</p><p class="textFader">&nbsp;</p></div>
+    <div class="row cardDesc">
+    <div class="col-6">
+    <a href="#" class="btn btn-primary">Toevoegen</a>
+    </div>
+    <div class="col-6">
+    <div class ="text-center align-middle" id="oval">
+    <span class="font-weight-bold">€ ' . number_format($row['product_price'],2,",",".") . ' </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></a>';
 }
+?>
+
+</body>
+</html>
