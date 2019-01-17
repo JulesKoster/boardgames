@@ -65,7 +65,9 @@
                       <i class='fas fa-shopping-cart'></i></a>
                     </li>
                     <li class="list-inline-item">
-                    <span class="count">0</span>
+                    <span class="count">0
+                    <!-- <span class="count"><php echo count($_SESSION['cart']); ?> -->
+                    </span>
                     </li>
                   </ul>
             </div>

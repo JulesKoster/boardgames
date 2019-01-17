@@ -19,7 +19,8 @@ define('MYSQL_PASSWORD', '');
 define('MYSQL_HOST', 'localhost');
  
 //The name of our database.
-define('MYSQL_DATABASE', 'board_db1');
+define('MYSQL_DATABASE', 'boardgame');
+
  
 /**
  * PDO options / configuration details.

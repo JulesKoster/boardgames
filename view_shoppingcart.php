@@ -16,8 +16,9 @@
             include 'nav_header.php';
             include "connect.php";
             $productID = implode(',', $_SESSION['cart']);
-            // $productID = '1,2';
-            // echo ($productID . '<br>');
+            if ( $productID == NULL ) {
+                $productID = 0;
+            }
             $sql = 'SELECT * FROM products WHERE product_id IN (' . $productID . ')';
             // echo $sql;
             $data = $pdo->query($sql);
@@ -27,6 +28,9 @@
             // $product_order_total_price = sum($_SESSION['cart']);
             $product_order_total_price = 0;
             $divCounter = 0;
+            if ($productID == 0) {
+                echo "<h2 class='mt-5'>Er zijn geen producten in uw winkelwagen.</h2>";
+            }
             foreach ($data as $row){
                 $amount = 1;
                 // var_dump ($shoppingCartArray[0]);
@@ -51,37 +55,24 @@
                     <h3 id="' . $row['product_id'] . '">€ ' . number_format($row['product_price'],2,",",".") . '</h3>
                     </div>
                     <div class="col-xl-2 text-right">
-                    <p id="removeCart' . $row['product_id'] . '" onclick="removeFromCart(' . $row['product_id'] . ')">Verwijderen?</p>
+                    <a href="remove_shoppingcart.php?id=' . $row['product_id'] . '">Verwijderen?</a>
+                    
                     </div>
                     </div>
                     </div>
                     </div>';
                     $divCounter++;
+                    $product_order_total_price = $product_order_total_price + $row['product_price'];
+            }
+            if ($productID != 0 ) {
+                echo '<div class="text-right"><h2>Totaal: € <span id="divTotalPrice">' . $product_order_total_price . '</span></h2></div>';
             }
             echo '</div>';
-            echo '<div class="text-center"><h1>Totaal: € <span id="divTotalPrice">' . $product_order_total_price . '</span></h1></div>';
-            var_dump($_SESSION['cart']);
-            // echo (array_search($productID, $_SESSION['cart']));
             include 'footer.php';
         ?>
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
     </body>
 </html>
 
-<!-- document.getElementByID('product_id') -->
-
-
-<!-- <div class="d-flex col-xl-10 board">
-                    <img src="img/products/' . $row['product_img'] . '" width="200px" height="200px">
-                    <div class="d-flex justify-content-between board">
-                    <h3 class="col-xl-4">' . $row['product_name'] . '</h3>
-                    <h3 class="col-xl-4">€ ' . $row['product_price'] . '</h3>
-                    <h3 class="col-xl-4"> Aantal: </h3>
-                    </div>
-
-onload="putPriceinJSArray(' . $divCounter . ', ' . $row['product_price'] . ')"
-
-
-
-
-                </div> -->
+<!-- dit moet uiteindelijk regel vervangen waar a href verwijderen staat 
+<p id="removeCart' . $row['product_id'] . '" onclick="removeFromCart(' . $row['product_id'] . ')">Verwijderen?</p> -->

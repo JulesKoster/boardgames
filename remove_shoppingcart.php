@@ -1,9 +1,10 @@
 <?php
+session_start();
     $productId = $_GET['id'];
-    // $shoppingCartArray = $_SESSION['cart'];
+    $shoppingCartArray = $_SESSION['cart'];
     if (in_array($productId, $_SESSION['cart'])) {
-        $key = array_search($productId, $_SESSION['cart']);
-        unset($_SESSION['cart'][$key]);
-        // $_SESSION['cart'] = $shoppingCartArray;
+        $newArray = array_diff($shoppingCartArray, array($productId));
+        $_SESSION['cart'] = $newArray;
     }
+    header('Location: view_shoppingcart.php'); 
 ?>
