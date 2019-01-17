@@ -43,6 +43,9 @@
                         <a href="#">Inloggen</a>
                     </li>
                     <li class="list-inline-item">
+                        <a href="#">Registreren</a>
+                    </li>
+                    <li class="list-inline-item">
                         <a href="#">Spelwijzer</a>
                     </li>
                     <li class="list-inline-item">
@@ -94,13 +97,13 @@
                 <a class="nav-link" href="#">denkspel</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#">spelkamer</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#">reisversie</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">kickstarter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">spelkamer</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">klassiekers</a>

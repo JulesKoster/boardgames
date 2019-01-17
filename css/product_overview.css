@@ -1,5 +1,28 @@
 .card {
-    background-color: #dac6ac;
+    background-color: #dac6ac !important;
+}
+
+.board {
+    border: solid red 1px;
+}
+
+.borderBottom {
+    border-bottom: solid grey 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 .board {
