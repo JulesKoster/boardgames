@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <?php
     $product_name = $_GET['product_name'];
-    include 'connect.php';
+    include 'connect_local.php';
     // $sql = 'SELECT COUNT(product_id) FROM products';
     // $sql = 'SELECT COUNT(product_id) FROM products WHERE product_name LIKE "' . $product_name .  '%"';
     $sql = 'SELECT product_id FROM products WHERE product_name LIKE "' . $product_name .  '%"';

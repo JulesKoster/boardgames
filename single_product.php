@@ -6,7 +6,7 @@
         <?php
             session_start();
             include 'nav_header.php';
-            include 'connect.php';
+            include 'connect_local.php';
             $product_id = $_GET['product_id'];
             $sql = "SELECT * FROM products WHERE product_id = $product_id";
             $data = $pdo->query($sql);

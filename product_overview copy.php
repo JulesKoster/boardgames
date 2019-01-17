@@ -48,7 +48,7 @@
                                     <p class="card-text">Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p>
                                     <div class='row'>
                                         <div class='col-lg-6'>
-                                            <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
+                                            <a href="#" class="btn btn-primary">Toevoegen</a>
                                         </div>
                                         <div class='col-lg-6'>
                                             <div class ='text-center align-middle' id='oval'>

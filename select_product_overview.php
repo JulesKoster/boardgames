@@ -1,7 +1,7 @@
 <?php 
-    include "db_connection.php";
+    include "connect_local.php";
         $sql = "SELECT * FROM products";
-        $data = $conn->query($sql);
+        $data = $pdo->query($sql);
         $divCounter = 0;
 
         foreach ($data as $row) {

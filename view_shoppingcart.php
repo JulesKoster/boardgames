@@ -14,7 +14,7 @@
         <?php
             session_start();
             include 'nav_header.php';
-            include "connect.php";
+            include "connect_local.php";
             $productID = implode(',', $_SESSION['cart']);
             // $productID = '1,2';
             // echo ($productID . '<br>');
@@ -28,9 +28,10 @@
             $divCounter = 0;
             foreach ($data as $row){
                 // var_dump ($shoppingCartArray[0]);
+                $productArray = array($row['product_id'], $row['product_price'], $amount);
                 echo '<div class="row borderBottom mt-5 mb-5">
                     <div class="col-xl-3">
-                    <img src="img/products/' . $row['product_img'] . '" width="200px" height="200px" onload="putPriceinJSArray(' . $divCounter . ', ' . $row['product_price'] . ')"></div>
+                    <img src="img/products/' . $row['product_img'] . '" width="200px" height="200px"></div>
                     <div class="col-xl-9">
                     <div class="row d-flex justify-content-between mt-5">
                     <div class="col-xl-4">
@@ -38,7 +39,7 @@
                     </div>
                     <div class="col-xl-4">
                     <h5> Aantal:
-                    <select class="custom-select" onchange="calculateTotalPrice(' . $row['product_id'] . ', ' . $divCounter . ')">
+                    <select class="custom-select">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
