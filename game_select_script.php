@@ -1,11 +1,11 @@
 <?php
 
-$age = $_GET['age'];
-$players = $_GET['players'];
-$time = $_GET['time'];
-$category = $_GET['category']; 
-$classic = $_GET['classic'];
-$travel = $_GET['travel'];
+$age = $_POST['age'];
+$players = $_POST['players'];
+$time = $_POST['time'];
+$category = $_POST['category']; 
+$classic = $_POST['classic'];
+$travel = $_POST['travel'];
 
 include "connect.php";
 
