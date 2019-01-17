@@ -34,7 +34,7 @@ include 'nav_header.php';
                         <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-envelope"></i></span>   
                         </div> 
-                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailInput" placeholder="Voer hier uw e-mail adres in" title="Voer dit veld in" required autofocus>            
+                        <input type="text" class="form-control" id="userEmail" name="userEmail" aria-describedby="emailInput" placeholder="Voer hier uw e-mail adres in" title="Voer dit veld in" required autofocus>            
                     </div>
                 </div>
                     <div class="form-group">
