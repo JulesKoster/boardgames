@@ -13,28 +13,32 @@
 </head>
 <body>
     <?php include "nav_header.php"?>
-    <div class="container-fluid mt-5">
-        <div class="row"> <!-- contains cardWrapper & bigImageWrapper -->
-            <div class="col-lg-8 -flex flex-column cardWrapper">
-                <div class="row justify-content-center my-3 img-1+2" >
-                    <div class="col-lg-5 d-flex justify-content-center cardholder">
+    <div class='container-fluid text-center mt-5'>
+        <div class='row'>
+            <div class='col-lg-1'>
+            </div>
+            <div class='col-lg-5'>
+                <div class="row mt-5 mb-5" style='padding-left: 10em;'>
+                    <div class="col-lg-6 d-flex justify-content-center">
                         <div><?php echo $htmlOutput[1];?></div>
                     </div>
-                    <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="col-lg-6 d-flex justify-content-center">
                         <div><?php echo $htmlOutput[2];?></div>
                     </div>
                 </div>
-                <div class="row justify-content-center my-3 img-3+4">
-                    <div class="col-lg-5 d-flex justify-content-center">
+                <div class="row mt-5 mb-5" style='padding-left: 10em;'>
+                    <div class="col-lg-6 d-flex justify-content-center">
                     <div><?php echo $htmlOutput[3];?></div>
                     </div>                        
-                    <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="col-lg-6 d-flex justify-content-center">
                     <div><?php echo $htmlOutput[4];?></div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 bigImageWrapper">
-                <div class="row bigSquare">
+            <div class='col-lg-4'>
+                <div class='row'>
+                    <div class='col-lg-12'>
+                        <div class='bigSquare'>
                             <a href='single_product.php?product_id=2'>
                             <div class="card" style="width: 30rem; min-height: 37em;">
                                 <div class="ribbon"><span>Sale</span></div>
@@ -42,27 +46,28 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Monopoly</h5>
                                     <p class="card-text">Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p>
-
-                                    <div class="row">
-                                        <div class="col-lg-6">
-
-                                            <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
+                                    <div class='row'>
+                                        <div class='col-lg-6'>
+                                            <a href="#" class="btn btn-primary">Toevoegen</a>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div class ='text-center align-middle' id="oval">
+                                        <div class='col-lg-6'>
+                                            <div class ='text-center align-middle' id='oval'>
                                                 <span class='font-weight-bold'>€ 39,99</span>
                                             </div>
                                         </div>
                                     </div> <!-- row -->
                                 </div> <!-- card-body -->
-                              </a>
+                                </a>
                             </div> <!-- card -->
                         </div> <!-- bigSquare-->
-                  </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row my-5">
-            <div class="col-lg-12 6cardWrapper">
-                <div class="row justify-content-around my-3">
+        <div class='row mt-5 mb-5'>
+            <div class='col-lg-1'></div>
+            <div class='col-lg-10'>
+                <div class='row ml-auto'>
                     <div class='col-lg-4 d-flex justify-content-center'>
                         <div><?php echo $htmlOutput[5];?></div>
                     </div>
@@ -72,9 +77,13 @@
                     <div class='col-lg-4 d-flex justify-content-center'>
                         <div><?php echo $htmlOutput[7];?></div>
                     </div>
-               
+                </div>
+            </div>
         </div>
-        <div class="row justify-content-around my-3">
+        <div class='row mt-5 mb-5'>
+            <div class='col-lg-1'></div>
+            <div class='col-lg-10'>
+                <div class='row ml-auto'>
                     <div class='col-lg-4 d-flex justify-content-center'>
                         <div><?php echo $htmlOutput[8];?></div>
                     </div>

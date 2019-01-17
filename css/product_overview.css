@@ -25,6 +25,29 @@ a:visited {
     color: black;
 }
 
+.board {
+    border: solid red 1px;
+}
+
+.borderBottom {
+    border-bottom: solid grey 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .ribbon {
     position: absolute;
     left: -5px; top: -5px;
