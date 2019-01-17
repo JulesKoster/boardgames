@@ -58,7 +58,7 @@
                     <span class="price">0,00</span>
                 </li> 
                   <li class="list-inline-item">
-                    <a href="#">
+                    <a href="view_shoppingcart.php">
                       <i class='fas fa-shopping-cart'></i></a>
                     </li>
                     <li class="list-inline-item">
@@ -75,7 +75,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="product_overview.php">
                    <i class='fas fa-home' ></i></a>
               </li>
               <li class="nav-item">

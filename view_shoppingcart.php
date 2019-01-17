@@ -14,7 +14,7 @@
         <?php
             session_start();
             include 'nav_header.php';
-            include "connect_local.php";
+            include "connect.php";
             $productID = implode(',', $_SESSION['cart']);
             // $productID = '1,2';
             // echo ($productID . '<br>');
@@ -24,9 +24,11 @@
         ?>
             <div class='container'>
         <?php
+            // $product_order_total_price = sum($_SESSION['cart']);
             $product_order_total_price = 0;
             $divCounter = 0;
             foreach ($data as $row){
+                $amount = 1;
                 // var_dump ($shoppingCartArray[0]);
                 $productArray = array($row['product_id'], $row['product_price'], $amount);
                 echo '<div class="row borderBottom mt-5 mb-5">
@@ -37,9 +39,9 @@
                     <div class="col-xl-4">
                     <h3>' . $row['product_name'] . '</h3>
                     </div>
-                    <div class="col-xl-4">
+                    <div class="col-xl-2">
                     <h5> Aantal:
-                    <select class="custom-select">
+                    <select class="custom-select" onchange="calculateTotalPrice(' . $row['product_id'] . ', ' . $divCounter . ')">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -48,6 +50,9 @@
                   <div class="col-xl-4 text-right">
                     <h3 id="' . $row['product_id'] . '">€ ' . number_format($row['product_price'],2,",",".") . '</h3>
                     </div>
+                    <div class="col-xl-2 text-right">
+                    <p id="removeCart' . $row['product_id'] . '" onclick="removeFromCart(' . $row['product_id'] . ')">Verwijderen?</p>
+                    </div>
                     </div>
                     </div>
                     </div>';
@@ -55,6 +60,8 @@
             }
             echo '</div>';
             echo '<div class="text-center"><h1>Totaal: € <span id="divTotalPrice">' . $product_order_total_price . '</span></h1></div>';
+            var_dump($_SESSION['cart']);
+            // echo (array_search($productID, $_SESSION['cart']));
             include 'footer.php';
         ?>
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
@@ -71,4 +78,10 @@
                     <h3 class="col-xl-4">€ ' . $row['product_price'] . '</h3>
                     <h3 class="col-xl-4"> Aantal: </h3>
                     </div>
+
+onload="putPriceinJSArray(' . $divCounter . ', ' . $row['product_price'] . ')"
+
+
+
+
                 </div> -->

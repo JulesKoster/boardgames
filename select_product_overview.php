@@ -1,5 +1,5 @@
 <?php 
-    include "connect_local.php";
+    include "connect.php";
         $sql = "SELECT * FROM products";
         $data = $pdo->query($sql);
         $divCounter = 0;
