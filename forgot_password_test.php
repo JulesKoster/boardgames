@@ -43,7 +43,7 @@
                                     <div class="form-group">
                                     <input type="password" class="form-control input-lg" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" pattern=".{8,}" title="Minimaal 8 tekens" required>
                                     </div>
-                                    <input class="btn btn-lg btn-dark btn-block" value="Verander Wachtwoord" type="submit">
+                                    <input class="btn btn-lg btn-dark btn-block" id="changePassword" name="changePassword" value="Verander Wachtwoord" type="submit">
                                 </form>
                             </div>
                         </div>
