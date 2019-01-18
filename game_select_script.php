@@ -12,6 +12,14 @@
 <body>
 
 <?php
+include "nav_header.php";?>
+
+    <div class="container-fluid mt-5">
+        <div class="row my-5">
+            <div class="col-lg-12 6cardWrapper">
+                <div class="row justify-content-around my-3">
+<?php   
+
 
 $age = $_POST['age'];
 $players = $_POST['players'];

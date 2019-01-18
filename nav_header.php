@@ -67,7 +67,9 @@
                       <i class='fas fa-shopping-cart'></i></a>
                     </li>
                     <li class="list-inline-item">
-                    <span class="count"><?php echo count($_SESSION['cart']); ?>
+
+                    <span class="count"><?php if(isset($_session['cart'])){echo count($_SESSION['cart']);}else{echo'0';}; ?>
+
                     </span>
                     </li>
                   </ul>
@@ -88,31 +90,32 @@
                 <a class="nav-link" href="#"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">bordspel</a>
+                <a class="nav-link" href="product_overview.php?category=bordspel">bordspel</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">kaartspel</a>
+                <a class="nav-link" href="product_overview.php?category=kaartspel">kaartspel</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">dobbelspel</a>
+                <a class="nav-link" href="product_overview.php?category=dobbelspel">dobbelspel</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">denkspel</a>
+                <a class="nav-link" href="product_overview.php?category=denkspel">denkspel</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">spelkamer</a>
+                <a class="nav-link" href="product_overview.php?category=spelkamer">spelkamer</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">reisversie</a>
+                <a class="nav-link" href="product_overview.php?travelversion=1">reisversie</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">kickstarter</a>
+                <a class="nav-link" href="product_overview.php?kickstarter=1">kickstarter</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">klassiekers</a>
+                <a class="nav-link" href="product_overview.php?classic=1">klassiekers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">overige</a>
+
+                <a class="nav-link" href="product_overview.php?category=overige">overige</a>
               </li>
             </ul>
           </div>
