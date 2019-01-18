@@ -2,8 +2,7 @@
   
     <head>
         <link rel="stylesheet" href="css/access_denied.css">
-    </head>
-    <body>
+    <?php include "nav_header.php" ?>
         <div class="wrapper">
         
             <h1>403 Forbidden</h1>
