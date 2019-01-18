@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php session_start() ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -65,7 +66,8 @@
                       <i class='fas fa-shopping-cart'></i></a>
                     </li>
                     <li class="list-inline-item">
-                    <span class="count">0</span>
+                    <span class="count"><?php echo count($_SESSION['cart']); ?>
+                    </span>
                     </li>
                   </ul>
             </div>
