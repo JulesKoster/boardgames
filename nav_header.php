@@ -15,8 +15,9 @@
 </head>
 
 <body>
-    <div class="container-fluid wrapperNavHeader">
-          <div class="row headerMenu px-5 py-2 align-items-center">
+    <div class="container-fluid wrapperNavHeader ">
+     
+          <div class="row headerMenu  align-items-center ">
             <div class="logo flex-fill">
                   <ul class="list-inline"> 
                     <li class="list-inline-item pawnIcon ">
@@ -41,13 +42,13 @@
                         <a href="#">Klantenservice</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Inloggen</a>
+                        <a href="login_form.php">Inloggen</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Registreren</a>
+                        <a href="register_form.php">Registreren</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Spelwijzer</a>
+                        <a href="game_select.php">Spelwijzer</a>
                     </li>
                     <li class="list-inline-item">
                         <a href="#" class="wishlist">Verlanglijst</a>
@@ -112,15 +113,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">overige</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
               </li>
             </ul>
           </div>
