@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    <?php include "nav_header.php"?>
     <div class="row justify-content-center align-content-center">
 
         <div class="col-xl-6">
@@ -25,7 +26,7 @@
 
                     <div class="card" id='2' style='display:none'>
                         <div class="card-body">
-                            <label for="players">met hoeveel spelers wilt u spelen</label>
+                            <label for="players">Met hoeveel spelers wilt je spelen</label>
                                 <div class="radio">
                                     <input type="radio" value="1" name="players"> 1
                                 </div>
@@ -41,13 +42,13 @@
                                 <div class="radio">
                                     <input  type="radio" value="9" name="players"> 8+
                                 </div>
-                                <div class="btn btn-dark" onclick="javascript:next('2', '3')">next</div>
+                                <div class="btn btn-dark" onclick="javascript:next('2', '3')">Volgende</div>
                         </div>
                     </div>
 
                     <div class="card" id='3' style='display:none'>
                         <div class="card-body">
-                            <label for="time">hoeveel tijd heeft u voor het spellen van een spel</label>
+                            <label for="time">Hoeveel tijd heeft je voor het spellen van een spel</label>
                                 <div class="radio">
                                     <input  type="radio" value="15" name="time"> 15 minuten
                                 </div>
@@ -71,53 +72,53 @@
                                 <div class="radio">
                                     <input  type="radio" value="120" name="time"> 2 uur of langer
                                 </div>
-                            <div class="btn btn-dark" onclick="javascript:next('3', '4')">next</div>
+                            <div class="btn btn-dark" onclick="javascript:next('3', '4')">Volgende</div>
                         </div>
                     </div>
 
                     <div class="card" id='4' style='display:none'>
                         <div class="card-body">
-                            <label for="category">van welke soort spelen hou je?</label>
+                            <label for="category">Van welke soort spelen hou je?</label>
                                 <select class="form-control" name="category">
-                                    <option value="bordspel">bordspellen</option>
-                                    <option value="kaartspel">kaartspellen</option>
-                                    <option value="dobbelspel">dobbelspellen</option>
-                                    <option value="denkspel">denkspellen</option>
+                                    <option value="bordspel"> Bordspellen</option>
+                                    <option value="kaartspel"> Kaartspellen</option>
+                                    <option value="dobbelspel"> Dobbelspellen</option>
+                                    <option value="denkspel">Denkspellen</option>
                                 </select>
-                            <div class="btn btn-dark" onclick="javascript:next('4', '5')">next</div>
+                            <div class="btn btn-dark" onclick="javascript:next('4', '5')">Volgende</div>
                         </div>
                     </div>
 
 
                     <div class="card" id='5' style='display:none'>
                         <div class="card-body">
-                            <label for="classic">bent u een fan van de classieke gezeldschapspellen, zoals ganzebord</label>
+                            <label for="classic">Bent je een fan van de classieke gezeldschapspellen, zoals ganzebord</label>
                                 <div class="radio">
-                                    <input  type="radio" value="1" name="classic"> ja
+                                    <input  type="radio" value="1" name="classic"> Ja
                                 </div>
 
                                 <div class="radio">
-                                    <input  type="radio" value="0" name="classic">nee
+                                    <input  type="radio" value="0" name="classic"> Nee
                                 </div>
 
                                 <div class="radio">
-                                    <input  type="radio" value="0 OR 1" name="classic"> maakt mij niet zoveel uit
+                                    <input  type="radio" value="0 OR 1" name="classic"> Maakt mij niet uit
                                 </div>
-                            <div class="btn btn-dark" onclick="javascript:next('5', '6')">next</div>
+                            <div class="btn btn-dark" onclick="javascript:next('5', '6')">Volgende</div>
                         </div>
                     </div>
 
                     <div class="card" id='6' style='display:none'>
                         <div class="card-body">
-                            <label for="travel">bent u van plan om dit speel te spelen terwijl u op reis bent</label>
+                            <label for="travel">Bent u van plan om dit speel te spelen terwijl u op reis bent</label>
                                 <div class="radio">
-                                    <input  type="radio" value="1" name="travel"> ja
+                                    <input  type="radio" value="1" name="travel"> Ja
                                 </div>
                                 <div class="radio">
-                                    <input  type="radio" value="0" name="travel"> nee
+                                    <input  type="radio" value="0" name="travel"> Nee
                                 </div>
 
-                            <button type="submit" class="btn btn-dark">Toevoegen</button>
+                            <button type="submit" class="btn btn-dark">Finish</button>
 
                         </div>
                     </div>
