@@ -15,8 +15,9 @@
 </head>
 
 <body>
-    <div class="container-fluid wrapperNavHeader">
-          <div class="row headerMenu px-5 py-2 align-items-center">
+    <div class="container-fluid wrapperNavHeader ">
+     
+          <div class="row headerMenu  align-items-center ">
             <div class="logo flex-fill">
                   <ul class="list-inline"> 
                     <li class="list-inline-item pawnIcon ">
@@ -66,7 +67,7 @@
                       <i class='fas fa-shopping-cart'></i></a>
                     </li>
                     <li class="list-inline-item">
-                    <span class="count"><?php echo count($_SESSION['cart']); ?>
+                    <span class="count"><?php if(isset($_session['cart'])){echo count($_SESSION['cart']);}else{echo'0';}; ?>
                     </span>
                     </li>
                   </ul>
