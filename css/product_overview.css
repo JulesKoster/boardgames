@@ -95,6 +95,19 @@ a:visited {
     border-top: 3px solid #8c7547;
   }
 
+  .cardImage {
+      display: relative;
+      top: 0;
+      left: 100px;
+  }
+
+  .kickstarter {
+    position: absolute;
+    top: 160px;
+    right: 10px;
+    z-index: 100000;
+  }
+
 .bigSquare {
     margin-left: 5%;
     margin-top: 20%;
