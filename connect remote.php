@@ -20,7 +20,6 @@ define('MYSQL_HOST', 'localhost');
  
 //The name of our database.
 define('MYSQL_DATABASE', 'board_db1');
-
  
 /**
  * PDO options / configuration details.

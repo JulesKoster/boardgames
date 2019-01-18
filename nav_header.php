@@ -67,7 +67,9 @@
                       <i class='fas fa-shopping-cart'></i></a>
                     </li>
                     <li class="list-inline-item">
+
                     <span class="count"><?php if(isset($_session['cart'])){echo count($_SESSION['cart']);}else{echo'0';}; ?>
+
                     </span>
                     </li>
                   </ul>
@@ -112,6 +114,7 @@
                 <a class="nav-link" href="product_overview.php?classic=1">klassiekers</a>
               </li>
               <li class="nav-item">
+
                 <a class="nav-link" href="product_overview.php?category=overige">overige</a>
               </li>
             </ul>

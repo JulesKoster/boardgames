@@ -15,8 +15,6 @@ require 'lib/password.php';
  * Include our MySQL connection.
  */
 require 'connect.php';
-// include 'navbar.php';
-// include 'footer.php';
 
 //If the POST var "login" exists (our submit button), then we can
 //assume that the user has submitted the login form.
