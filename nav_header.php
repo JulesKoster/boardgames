@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php session_start() ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,8 +15,9 @@
 </head>
 
 <body>
-    <div class="container-fluid wrapperNavHeader">
-          <div class="row headerMenu px-5 py-2 align-items-center">
+    <div class="container-fluid wrapperNavHeader ">
+     
+          <div class="row headerMenu  align-items-center ">
             <div class="logo flex-fill">
                   <ul class="list-inline"> 
                     <li class="list-inline-item pawnIcon ">
@@ -40,13 +42,13 @@
                         <a href="#">Klantenservice</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Inloggen</a>
+                        <a href="login_form.php">Inloggen</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Registreren</a>
+                        <a href="register_form.php">Registreren</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Spelwijzer</a>
+                        <a href="game_select.php">Spelwijzer</a>
                     </li>
                     <li class="list-inline-item">
                         <a href="#" class="wishlist">Verlanglijst</a>
@@ -65,7 +67,8 @@
                       <i class='fas fa-shopping-cart'></i></a>
                     </li>
                     <li class="list-inline-item">
-                    <span class="count">0</span>
+                    <span class="count"><?php echo count($_SESSION['cart']); ?>
+                    </span>
                     </li>
                   </ul>
             </div>
@@ -110,15 +113,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">overige</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"></a>
               </li>
             </ul>
           </div>
