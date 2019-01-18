@@ -12,7 +12,6 @@
     </head>
     <body>
         <?php
-            session_start();
             include 'nav_header.php';
             include "connect.php";
             $productID = implode(',', $_SESSION['cart']);
@@ -35,13 +34,13 @@
                 $amount = 1;
                 // var_dump ($shoppingCartArray[0]);
                 $productArray = array($row['product_id'], $row['product_price'], $amount);
-                echo '<div class="row borderBottom mt-5 mb-5">
+                echo '<div class="row borderBottom mt-2 mb-2">
                     <div class="col-xl-3">
-                    <img src="img/products/' . $row['product_img'] . '" width="200px" height="200px"></div>
+                    <a href="single_product.php?product_id=' . $row['product_id'] . '"><img src="img/products/' . $row['product_img'] . '" width="200px" height="200px"></a></div>
                     <div class="col-xl-9">
-                    <div class="row d-flex justify-content-between mt-5">
+                    <div class="row d-flex justify-content-between mt-2">
                     <div class="col-xl-4">
-                    <h3>' . $row['product_name'] . '</h3>
+                    <a href="single_product.php?product_id=' . $row['product_id'] . '"><h3>' . $row['product_name'] . '</h3></a>
                     </div>
                     <div class="col-xl-2">
                     <h5> Aantal:

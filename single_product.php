@@ -4,7 +4,6 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <?php
-            session_start();
             include 'nav_header.php';
             include 'connect.php';
             $product_id = $_GET['product_id'];
