@@ -68,7 +68,7 @@
                     </li>
                     <li class="list-inline-item">
 
-                    <span class="count"><?php if(isset($_session['cart'])){echo count($_SESSION['cart']);}else{echo'0';}; ?>
+                    <span class="count"><?php if(!isset($_session['cart'])){echo'0';}else{echo count($_SESSION['cart']);}; ?>
 
                     </span>
                     </li>
