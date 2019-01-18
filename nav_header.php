@@ -15,9 +15,11 @@
 </head>
 
 <body>
-    <div class="container-fluid wrapperNavHeader ">
+    <!-- <div class="container-fluid wrapperNavHeader ">
      
-          <div class="row headerMenu  align-items-center ">
+          <div class="row headerMenu  align-items-center "> -->
+          <div class="container-fluid headerMenu ">
+          <div class="row align-items-center px-5">
             <div class="logo flex-fill">
                   <ul class="list-inline"> 
                     <li class="list-inline-item pawnIcon ">
@@ -31,8 +33,8 @@
 
             <div class="searchBox flex-fill">
               <form action ="search_single_product.php" class="form-inline my-2 my-lg-0" #id="search">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="product_name">
-                  <button class="btn btn-light my-sm-0" type="submit">Search</button>
+                  <input class="form-control mr-sm-2" type="search" placeholder="Waar ben je naar op zoek?" aria-label="Search" name="product_name">
+                  <button class="btn btn-light my-sm-0" type="submit">Zoek</button>
                 </form>
             </div>
 
@@ -75,6 +77,8 @@
                   </ul>
             </div>
           </div><!--headerMenu-->
+          </div> <!--wrapperNavHeader-->   
+
 
           <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"                       aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,7 +124,7 @@
             </ul>
           </div>
         </nav> 
-    </div> <!--wrapperNavHeader-->   
+    <!-- </div> wrapperNavHeader-->   
             
 </body>
 </html>

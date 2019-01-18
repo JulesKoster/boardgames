@@ -1,0 +1,109 @@
+html p{
+    margin:0em;
+}
+.wrapperNavHeader{
+    padding: 0em;
+}
+/* === Headermenu === */
+.headerMenu{
+    background-color: #dac6ac !important}
+
+.headerMenu a{
+    text-decoration: none;
+}
+.headerMenu ul{
+    margin-top: 1em;
+}
+ /* === */
+.pawnIcon{
+    font-size: 2em;
+    color: #efa747;
+    margin: 0.07em;
+    border: 0.1em solid #10000C;
+    border-radius:0.1em;
+}
+/* ==== */
+.shopName{
+    margin: 0em;
+    font-size: 2em;
+    color: #10000C !important;
+}
+.shopName > p{
+    margin-bottom:0em;
+}
+/* === */
+.menuService a{
+    color: #10000C !important;
+    text-decoration: none !important;
+}
+.menuService li{
+    color: #10000C !important;
+    list-style: none;
+    padding: 0em;
+}
+@media (max-width: 48em){
+.menuService {
+    display: block;
+    margin: 0;
+    padding: 2rem 1.5rem;
+    z-index: 3;
+}
+}
+/* .menuService li + li::before {
+    white-space: pre;
+    content: " | ";
+    color: #efa747;
+} */
+.wishlist .count {
+    background: #0a0610;
+    border: .1rem solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 700;
+    height: 1.5rem;
+    line-height: 1.2rem;
+    text-align: center;
+    transform: translateY(-.2rem);
+    width: 1.5rem;
+}
+/* === */
+
+.shoppingCart{
+    /* border: 0.05em solid #10000C; */
+    color: #10000C;
+    text-decoration: none;
+}
+.shoppingCart a{
+    color: #100001 !important;
+    text-decoration: none !important;
+}
+.shoppingCart > a .count.contains {
+    background: #efa747;
+}
+.fa-shopping-cart{
+    font-size: 2.5em;
+}
+.shoppingCart .count {
+    /* background: #10000C; */
+    border: .1rem solid #fff;
+    border-radius: 50%;
+    color: #100001;
+    height: 1.5rem;
+    line-height: 1.2rem;
+    text-align: center;
+}
+
+/* === Navbar === */
+.navbar{
+    background-color: #515B51;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.5em;
+}
+button.navbar-toggler{
+    outline:none;
+}
