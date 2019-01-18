@@ -80,8 +80,7 @@ include 'nav_header.php';
     </div>
     </div>
     <!-- Register Form -->
-   
-    
+       
     <!-- Modal Terms and Conditions -->
     <div class="modal fade" id="modelId1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
