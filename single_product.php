@@ -4,7 +4,6 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <?php
-            include 'nav_header.php';
             include 'connect.php';
             $product_id = $_GET['product_id'];
             $sql = "SELECT * FROM products WHERE product_id = $product_id";
@@ -15,8 +14,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
-    </head>
-    <body>
+        <?php include "nav_header.php" ?>
         <div class='container-fluid text-center mt-5'>
             <?php                
                     echo '<div class="row mt-5"><div class="col-lg-12"><h1><div class = "d-none" id="product">' . $row['product_id'] . "</div>" . $row['product_name'] . '</h1></div>';

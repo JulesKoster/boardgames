@@ -10,8 +10,7 @@
     <?php
         include 'select_product_overview.php'
     ?> 
-</head>
-<body>
+
     <?php include "nav_header.php"?>
     <div class="container-fluid mt-5">
         <div class="row"> <!-- contains cardWrapper & bigImageWrapper -->

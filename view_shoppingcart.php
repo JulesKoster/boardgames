@@ -9,8 +9,6 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
         <script>shoppingCartArray = [];</script>
     <script src="js/calculation.js"></script>
-    </head>
-    <body>
         <?php
             include 'nav_header.php';
             include "connect.php";

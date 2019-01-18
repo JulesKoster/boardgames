@@ -1,15 +1,10 @@
-<?php
-include 'nav_header.php';
-?>
-
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Login</title>
         <link rel="stylesheet" type="text/css" href="css/stylejules.css">
-    </head>
-    <body>
+        <?php include "nav_header.php" ?>
         <!-- <div class="form-wrapper">
             <div class="contact-form">
             <h1>Login</h1>
