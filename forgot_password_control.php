@@ -9,6 +9,7 @@ $showmessage= false;
 
 if(isset($_POST['newPassword'])){
  $email = !empty($_POST['userEmail']) ? trim($_POST['userEmail']) : null;
+ $pass = !empty($_POST['password']) ? trim($_POST['password']) : null;
 
  $passwordAttempt = !empty($_POST['password']) ? trim($_POST['password']) : null;
 

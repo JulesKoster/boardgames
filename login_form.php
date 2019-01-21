@@ -100,7 +100,7 @@
                                     <div class="form-group">
                                     <input type="password" class="form-control input-lg" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>
                                     </div>
-                                    <input class="btn btn-lg btn-dark btn-block"  id="newPassword" name="changePassword" value="Verander Wachtwoord" type="submit">
+                                    <input class="btn btn-lg btn-dark btn-block"  id="newPassword" name="newPassword" value="Verander Wachtwoord" type="submit">
                                 </form>
                             </div>
                         </div>
