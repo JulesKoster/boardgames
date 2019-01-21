@@ -41,7 +41,7 @@
             $htmlOutput[$divCounter] .= '</div>';
             $htmlOutput[$divCounter] .= '<div class="col-6 priceBox">';
             // $htmlOutput[$divCounter] .= '<div class ="price">';
-            $htmlOutput[$divCounter] .= '<span class="font-weight-bold">€ ' . number_format($row['product_price'],2,",",".") . '</span>';
+            $htmlOutput[$divCounter] .= '<span class="font-weight-bold">&euro; ' . number_format($row['product_price'],2,",",".") . '</span>';
             // $htmlOutput[$divCounter] .= '</div>';
             $htmlOutput[$divCounter] .= '</div>';
             $htmlOutput[$divCounter] .= '</div>';

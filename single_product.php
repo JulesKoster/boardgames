@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <?php
+            header("Content-Type: text/html; charset=ISO-8859-1");
             include 'connect.php';
             $product_id = $_GET['product_id'];
             $sql = "SELECT * FROM products WHERE product_id = $product_id";
@@ -31,7 +32,7 @@
                     <h3>Omschrijving:</h3>
                     <p><?php echo $row["product_desc"] ?></p>
                         <br><br>
-                    <h3>Prijs: € <?php echo number_format($row['product_price'],2,",",".") ?></h3>
+                    <h3>Prijs: &euro; <?php echo number_format($row['product_price'],2,",",".") ?></h3>
                     <br>
                     <button type="button" class="btn btn-primary btn-lg" onclick=addToCart()>In winkelwagen</button>
                     </form>
