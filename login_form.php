@@ -80,7 +80,6 @@
   <div class="modal-dialog">
   <div class="modal-content">
       <div class="modal-header">
-          <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
           <h1 class="text-center">Wachtwoord herstellen</h1>
       </div>
       <div class="modal-body">
@@ -95,10 +94,10 @@
                                         <input class="form-control input-lg" placeholder="E-mailadres" name="userEmail" type="text">
                                     </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control input-lg" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" required>
+                                            <input type="password" class="form-control input-lg" id="password" name="userPassword" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" required>
                                         </div>  
                                     <div class="form-group">
-                                    <input type="password" class="form-control input-lg" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>
+                                    <input type="password" class="form-control input-lg" id="confirmPassword" name="userConfirmPassword" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>
                                     </div>
                                     <input class="btn btn-lg btn-dark btn-block"  id="newPassword" name="newPassword" value="Verander Wachtwoord" type="submit">
                                 </form>
