@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Login</title>
+        <title>Inloggen</title>
         <link rel="stylesheet" type="text/css" href="css/stylejules.css">
         <?php include "nav_header.php" ?>
         <!-- <div class="form-wrapper">
@@ -77,7 +77,7 @@
   <div class="modal-dialog">
   <div class="modal-content">
       <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
           <h1 class="text-center">Wachtwoord herstellen</h1>
       </div>
       <div class="modal-body">
@@ -85,7 +85,6 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="text-center">
-                          
                           <p>Wachtwoord vergeten? Stel hier een nieuw wachtwoord in.</p>
                             <div class="panel-body">
                                 <form action="forgot_password_control.php" method="post">
