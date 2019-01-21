@@ -48,7 +48,7 @@
                             <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span> 
                         </div>  
-                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" pattern=".{8,}" title="Minimaal 8 tekens" required>
+                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" required>
                     </div>
                 <div class="form-group">
                     <label for="Inputpassword2"></label>
@@ -56,7 +56,7 @@
                             <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span>   
                         </div>
-                        <input type="password" class="form-control" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" pattern=".{8,}" title="Minimaal 8 tekens" required>          
+                        <input type="password" class="form-control" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>          
                 </div>
                     <div class="col">
                         <div class="form-check">

@@ -59,11 +59,11 @@
                             <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span> 
                             </div>  
-                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" pattern=".{8,}" title="Minimaal 8 tekens" required>
+                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" required>
                         </div>
                         <a href="#" class="btn btn-link btn-fill" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
                     </div>
-                        <button type="submit" name="login" value="Login" class="btn btn-dark">Login</button>
+                        <button type="submit" name="login" value="Login" class="btn btn-dark">Inloggen</button><span>Nog geen account?</span><a href="register_form.php" class="btn btn-link btn fill"> Maak hier een account aan</a>
                 </form>
             </div>                     
             </div>
@@ -92,10 +92,10 @@
                                         <input class="form-control input-lg" placeholder="E-mailadres" name="email" type="text">
                                     </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control input-lg" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" pattern=".{8,}" title="Minimaal 8 tekens" required>
+                                            <input type="password" class="form-control input-lg" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" required>
                                         </div>  
                                     <div class="form-group">
-                                    <input type="password" class="form-control input-lg" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" pattern=".{8,}" title="Minimaal 8 tekens" required>
+                                    <input type="password" class="form-control input-lg" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>
                                     </div>
                                     <input class="btn btn-lg btn-dark btn-block"  id="changePassword" name="changePassword" value="Verander Wachtwoord" type="submit">
                                 </form>
