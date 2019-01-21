@@ -21,9 +21,9 @@
         <div class=" row justify-content-center mt-3">
             <div class="col-xl-6 border rounded">
                 <p class="m-2">Met deze knop kunt u nieuwe producten toevoegen</p>
-                <a class='btn btn-dark m-2' href='add_product.php'> Producten toevoegen </a>
+                <a class='btn btn-dark m-2' href='add_product_form.php'> Producten toevoegen </a>
                 <p class="m-2">Met deze knop kunt u producten verwijderen</p>
-                <a class='btn btn-dark m-2' href='#'> Producten verwijderen </a>
+                <a class='btn btn-dark m-2' href='delete_product_form.php'> Producten verwijderen </a>
                 <p class="m-2">Met deze knop kunt u producten in de uit verkoop zetten met een nieuwe prijs</p>
                 <a class='btn btn-dark m-2' href='#'> sales aanpassen </a>
                 <p class="m-2">Met deze knop kunt u de rollen van de gebruikers aanpassen</p>

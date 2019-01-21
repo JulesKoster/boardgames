@@ -15,7 +15,7 @@
      $kickstarter = $_GET['kickstarter'];
      $sql = "SELECT * FROM products WHERE product_kickstarter = '$kickstarter'";
     }else{
-         $sql = "SELECT * FROM products";
+        $sql = "SELECT * FROM products";
     }
        
         $data = $pdo->query($sql);

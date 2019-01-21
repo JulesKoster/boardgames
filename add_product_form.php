@@ -9,7 +9,7 @@
     <div class="container registerform">
         <div class="row justify-content-center mt-3">
 
-            <div class="col-xl-6">
+            <div class="col-xl-6 border rounded">
                 <form action="add_product.php" method="post">
 
                     <label for="product_name">Product Naam</label>
