@@ -1,17 +1,15 @@
-<?php
-    session_start();
-    if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){
-        
-?>
-
 <html>
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<?php include "nav_header.php" ?>
+<?php include "nav_header.php" ?><?php
+   
+    if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){
+        
+?>
     <div class="container registerform">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-3">
 
-            <div class="col-xl-6">
+            <div class="col-xl-6 border rounded">
                 <form action="add_product.php" method="post">
 
                     <label for="product_name">Product Naam</label>
