@@ -66,7 +66,7 @@ if(isset($_POST['login'])){
         } else{
             //$validPassword was FALSE. Passwords do not match.
             // die('Incorrect username / password combination!, Please try Again');
-            header ('Refresh: 1 ; url=loginform.php'); 
+            header ('Refresh: 1 ; url=login_form.php'); 
         }
     }
     
