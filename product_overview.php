@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
     <?php
-        include 'select_product_overview.php'
+        include 'select_product_overview.php';
+        header("Content-Type: text/html; charset=ISO-8859-1");
     ?> 
 
     <?php include "nav_header.php"?>
@@ -46,7 +47,7 @@
                                     <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
                                 </div>
                                     <div class="col-6 priceBox">
-                                        <p class='font-weight-bold'>€ 39,99</p>
+                                        <p class='font-weight-bold'>&euro; 39,99</p>
                                     </div>
                                 </div>
                             </div> <!-- col-lg-6 -->
