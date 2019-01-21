@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Login</title>
+        <title>Inloggen</title>
         <link rel="stylesheet" type="text/css" href="css/stylejules.css">
         <?php include "nav_header.php" ?>
         <!-- <div class="form-wrapper">
@@ -59,11 +59,14 @@
                             <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span> 
                             </div>  
-                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" pattern=".{8,}" title="Minimaal 8 tekens" required>
+                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" required>
                         </div>
                         <a href="#" class="btn btn-link btn-fill" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
                     </div>
-                        <button type="submit" name="login" value="Login" class="btn btn-dark">Login</button>
+                        <button type="submit" name="login" value="Login" class="btn btn-dark">Inloggen</button>
+                        <p>Nog geen account?</p>
+                        <h5><a href="register_form.php" class="badge badge-danger badge-fill">Maak hier een account aan</a></h5>
+                    
                 </form>
             </div>                     
             </div>
@@ -77,7 +80,6 @@
   <div class="modal-dialog">
   <div class="modal-content">
       <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
           <h1 class="text-center">Wachtwoord herstellen</h1>
       </div>
       <div class="modal-body">
@@ -85,20 +87,19 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="text-center">
-                          
                           <p>Wachtwoord vergeten? Stel hier een nieuw wachtwoord in.</p>
                             <div class="panel-body">
                                 <form action="forgot_password_control.php" method="post">
                                     <div class="form-group">
-                                        <input class="form-control input-lg" placeholder="E-mailadres" name="email" type="text">
+                                        <input class="form-control input-lg" placeholder="E-mailadres" name="userEmail" type="text">
                                     </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control input-lg" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" pattern=".{8,}" title="Minimaal 8 tekens" required>
+                                            <input type="password" class="form-control input-lg" id="password" name="userPassword" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" required>
                                         </div>  
                                     <div class="form-group">
-                                    <input type="password" class="form-control input-lg" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" pattern=".{8,}" title="Minimaal 8 tekens" required>
+                                    <input type="password" class="form-control input-lg" id="confirmPassword" name="userConfirmPassword" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>
                                     </div>
-                                    <input class="btn btn-lg btn-dark btn-block"  id="changePassword" name="changePassword" value="Verander Wachtwoord" type="submit">
+                                    <input class="btn btn-lg btn-dark btn-block"  id="newPassword" name="newPassword" value="Verander Wachtwoord" type="submit">
                                 </form>
                             </div>
                         </div>
