@@ -63,7 +63,10 @@
                         </div>
                         <a href="#" class="btn btn-link btn-fill" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
                     </div>
-                        <button type="submit" name="login" value="Login" class="btn btn-dark">Inloggen</button><span>Nog geen account?</span><a href="register_form.php" class="btn btn-link btn fill"> Maak hier een account aan</a>
+                        <button type="submit" name="login" value="Login" class="btn btn-dark">Inloggen</button>
+                        <p>Nog geen account?</p>
+                        <h5><a href="register_form.php" class="badge badge-danger badge-fill">Maak hier een account aan</a></h5>
+                    
                 </form>
             </div>                     
             </div>
@@ -89,7 +92,7 @@
                             <div class="panel-body">
                                 <form action="forgot_password_control.php" method="post">
                                     <div class="form-group">
-                                        <input class="form-control input-lg" placeholder="E-mailadres" name="email" type="text">
+                                        <input class="form-control input-lg" placeholder="E-mailadres" name="userEmail" type="text">
                                     </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control input-lg" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" required>
@@ -97,7 +100,7 @@
                                     <div class="form-group">
                                     <input type="password" class="form-control input-lg" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>
                                     </div>
-                                    <input class="btn btn-lg btn-dark btn-block"  id="changePassword" name="changePassword" value="Verander Wachtwoord" type="submit">
+                                    <input class="btn btn-lg btn-dark btn-block"  id="newPassword" name="changePassword" value="Verander Wachtwoord" type="submit">
                                 </form>
                             </div>
                         </div>
