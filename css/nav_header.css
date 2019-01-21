@@ -5,9 +5,6 @@ html p{
     padding: 0em;
 }
 /* === Headermenu === */
-.headerMenu{
-    background-color: #dac6ac !important}
-
 .headerMenu a{
     text-decoration: none;
 }
@@ -19,8 +16,6 @@ html p{
     font-size: 2em;
     color: #efa747;
     margin: 0.07em;
-    border: 0.1em solid #10000C;
-    border-radius:0.1em;
 }
 /* ==== */
 .shopName{
@@ -97,7 +92,7 @@ html p{
 
 /* === Navbar === */
 .navbar{
-    background-color: #515B51;
+    background-color: black;
 }
 .navbar-dark .navbar-nav .nav-link{
     color: white;

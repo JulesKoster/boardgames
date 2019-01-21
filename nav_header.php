@@ -23,15 +23,15 @@
                       <i class='fas fa-chess-pawn'></i>
                     </li>
                     <li class="list-inline-item shopName ">
-                      <p>BOARDGAMES</p>
+                      <p>GAME ON</p>
                     </li> 
                   </ul>
             </div><!-- logo -->
 
             <div class="searchBox flex-fill">
               <form action ="search_single_product.php" class="form-inline my-2 my-lg-0" #id="search">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Waar ben je naar op zoek?" aria-label="Search" name="product_name">
-                  <button class="btn btn-light my-sm-0" type="submit">Zoek</button>
+                  <input class="form-control mr-sm-2" type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
+                  <button class="btn btn-light my-sm-0" type="submit"><i class="fas fa-search fa-2x"></i></button>
                 </form>
             </div>
 
@@ -66,10 +66,8 @@
                       <i class='fas fa-shopping-cart'></i></a>
                     </li>
                     <li class="list-inline-item">
-
-                    <span class="count"><?php if(!isset($_session['cart'])){echo'0';}else{echo count($_SESSION['cart']);}; ?>
-
-                    </span>
+                      <span class="count"><?php if(!isset($_session['cart'])){echo'0';}else{echo count($_SESSION['cart']);}; ?>
+                      </span>
                     </li>
                   </ul>
             </div>
