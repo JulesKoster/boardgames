@@ -52,7 +52,7 @@
                                 <h4>&euro; ' . number_format($row['product_price'] * $ARRAY[$i]["p_amount"],2,",",".") . '</h4>
                             </div>
                             <div class="col-xl-2">
-                            <h5><a href="remove_shoppingcart.php?id=' . $row['product_id'] . '">Verwijderen?</a></h5>
+                            <h5><a href="remove_shoppingcart.php?item=' . $i . '">Verwijderen?</a></h5>
                             </div>
                         </div>';
                 }
@@ -90,6 +90,10 @@ function addToShopCart($P_ID, $P_AMOUNT, $ARRAY){   //Netter als je functie maak
     echo "<br>";
 }
 
-
-    // createShopCart($product_id, $product_amount);
+function removeByIndex($INDEX, $ARRAY) {
+    unset($ARRAY[$INDEX]);
+    $ARRAY = array_values($ARRAY);
+    return $ARRAY;
+    // printShopCart($ARRAY);
+}
 ?>
