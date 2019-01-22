@@ -119,7 +119,7 @@ if(isset($_POST['register'])){
                             <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span> 
                         </div>  
-                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" required>
+                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier je wachtwoord in" required>
                     </div>
                 <div class="form-group">
                     <label for="Inputpassword2"></label>
