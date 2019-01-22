@@ -20,8 +20,8 @@
 #ghFont:hover {
     color: #b4b4b4;
 }
-a{
-    color:white;
+/* a{
+    color:white; */
 }
 a:visited {
     text-decoration: none;
