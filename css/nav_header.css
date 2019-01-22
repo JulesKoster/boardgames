@@ -64,7 +64,9 @@ html p{
     width: 1.5rem;
 }
 /* === */
-
+.personalPawn{
+    color: #efa747;
+}
 .shoppingCart{
     /* border: 0.05em solid #10000C; */
     color: #10000C;
@@ -78,7 +80,7 @@ html p{
     background: #efa747;
 }
 .fa-shopping-cart{
-    font-size: 2.5em;
+    font-size: 2em;
 }
 .shoppingCart .count {
     /* background: #10000C; */
@@ -92,7 +94,7 @@ html p{
 
 /* === Navbar === */
 .navbar{
-    background-color: black;
+    background-color: #1c1c1c;
 }
 .navbar-dark .navbar-nav .nav-link{
     color: white;

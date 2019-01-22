@@ -23,15 +23,15 @@
                       <i class='fas fa-chess-pawn'></i>
                     </li>
                     <li class="list-inline-item shopName ">
-                      <p>GAME ON</p>
+                      <p>Game ON</p>
                     </li> 
                   </ul>
             </div><!-- logo -->
 
             <div class="searchBox flex-fill">
               <form action ="search_single_product.php" class="form-inline my-2 my-lg-0" #id="search">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
-                  <button class="btn btn-light my-sm-0" type="submit"><i class="fas fa-search fa-2x"></i></button>
+                  <input class="form-control mr-sm-2 type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
+                  <button class="btn btn-light my-sm-0" type="submit"><i class="fas fa-search xl-3"></i></button>
                 </form>
             </div>
 
@@ -55,6 +55,13 @@
                     </li>
                   </ul>   
             </div>
+
+            <div class="personalPawn flex-fill">
+            <!-- <a href="user.home.php"> -->
+              <i class='fas fa-chess-pawn fa-3x'></i>
+            <!-- </a> -->
+            </div>
+
 
             <div class="shoppingCart flex-fill" id="shoppingCart">
               <ul class="list-inline">  
@@ -80,10 +87,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav mr-auto ml-lg-5 mt-2 mt-lg-0">
               <li class="nav-item">
                 <a class="nav-link" href="product_overview.php">
-                   <i class='fas fa-home' ></i></a>
+                   <i class="fas fa-home" ></i></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"></a>
