@@ -1,5 +1,5 @@
 <?php
-session_start();
+    session_start();
     $productId = $_GET['id'];
     $shoppingCartArray = $_SESSION['cart'];
     if (in_array($productId, $_SESSION['cart'])) {

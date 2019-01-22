@@ -17,8 +17,7 @@ function addToCart() {
             console.log("Deze pagina bestaat niet!");
         }
     };
-    
-    xmlhttp.open("GET", "add_shoppingcart.php?id=" + productid, true);
+    xmlhttp.open("GET", "add_shoppingcart.php?id=" + productid + "&amount=1", true);   
     xmlhttp.send();
 
 }

@@ -1,33 +1,78 @@
-<html>
-    <body>
-        <?php
-            $array = array('Scrabble', 'Trivial Persuit');
-            $multiArray = array(
-                array("4", 3),
-                array("9", 1),
-                array("1", 2)
-            );
-        // var_dump($multiArray);
-        // echo $multiArray[2][1];
-        // $i = 0;
-        $ii = 0;
-        //     foreach ($multiArray as $value){
-        //         echo ($multiArray[$i][0] . "<br>");
-        //         $i++;
-        //     }
-        
 
-        // dit is voor het controleren of er in de gehele multiArray Monopoly in staat (zorgt ervoor dat er geen dubbele artikelen in winkelwagen komt)
-            foreach ($multiArray as $value){
-                $arrayChecker = (in_array('Monopoly', $multiArray[$ii]));
-                $ii++;
-            }
-            if ($arrayChecker = 1) {
-                echo 'Monopoly staat in de $multiArray';
-            }
-            
-            // echo in_array('Scrabble', $array);
 
-        ?>
-    </body>
-</html>
+
+<?php
+
+//////////////////////////////Create 2d array;
+$shopCart = array
+  (
+  array("p_id"=>"1","p_amount"=>"3"),
+  array("p_id"=>"2","p_amount"=>"3"),
+  array("p_id"=>"4","p_amount"=>"2"),
+  array("p_id"=>"8","p_amount"=>"1"),
+  );
+
+//var_dump($shopCart);
+
+//////////////////////////////Read 2d array;
+
+// echo count($shopCart);
+function printShopCart($ARRAY){ 
+    for ($i=0; $i < count($ARRAY); $i++) { 
+    echo "Product index: " . $i;
+    echo " | Product id: " . $ARRAY[$i]["p_id"];
+    echo " | Product amount: " . $ARRAY[$i]["p_amount"];
+    echo "<br>";
+    }
+    echo "<br>";
+}
+
+//check if it already exists
+
+function searchForId($ID, $ARRAY) {
+    foreach ($ARRAY as $key => $val) {        
+        if ($val['p_id'] == $ID) {           
+            return $key;
+        }
+    }
+    return null;
+ }
+
+//check if not null. if null push to array. if !null ++ amount.
+
+function addToShopCart($P_ID, $P_AMOUNT, $ARRAY){   //Netter als je functie maakt voor niet alleen SHOPCART
+    if(searchForId($P_ID, $ARRAY) == null){
+        echo "ID NOT IN ARRAY PUSH NEW ID TO ARRAY + AMOUNT <br>";
+        $HALLO = array("p_id" => $P_ID,"p_amount" => $P_AMOUNT);               
+        array_push($ARRAY, $HALLO); 
+        echo "ADDED ID: " . $P_ID . "ADDED AMOUNT: " . $P_AMOUNT . "<br>"; 
+        return $ARRAY;       
+    }else{
+        echo "ID IS IN ARRAY, SET AMOUNT  <br>";
+        $index = searchForId($P_ID, $ARRAY);
+        $ARRAY[$index]["p_amount"] = $P_AMOUNT;
+        echo "ID: " . $P_ID . "SET AMOUNT: " . $P_AMOUNT . " @ INDEX" . $index . "<br>"; 
+        return $ARRAY;
+    }
+    echo "<br>";
+}
+
+
+
+printShopCart($shopCart);
+$shopCart = addToShopCart(2222, 22123123, $shopCart);
+$shopCart = addToShopCart(4, 3000, $shopCart);
+printShopCart($shopCart);
+removeByIndex(5, $shopCart);
+// printShopCart($shopCart);
+
+
+//////////////////////////////Remove 2d array;
+//Remove without checking
+function removeByIndex($INDEX, $ARRAY) {
+    unset($ARRAY[$INDEX]);
+    $ARRAY = array_values($ARRAY);
+    printShopCart($ARRAY);
+}
+
+?>
