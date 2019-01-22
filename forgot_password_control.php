@@ -31,9 +31,11 @@ if($user === false){
 }
 else {
 
+  
+
 $passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
  
- $sql = "UPDATE users SET user_password WHERE user_email =:user_email)";
+ $sql = "UPDATE users SET user_password = :user_password WHERE user_email = :user_email";
  $stmt = $pdo->prepare($sql);
 
  $stmt->bindValue(':user_email',$email);
@@ -44,6 +46,7 @@ $passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
  if ($result){
      $passwordMessage = 'Uw wachtwoord is succesvol gewijzigd!';
      $showMessage = true;
+     header('Refresh: 1 ; url=login_form.php');
     }
 
 }

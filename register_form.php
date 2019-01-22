@@ -1,7 +1,7 @@
 <!doctype html>
     <html lang="en">
       <head>
-        <title>Registreren/title>
+        <title>Registreren</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -62,7 +62,7 @@
                         <div class="form-check">
                             <label class="form-check-label">
                             <input type="checkbox" class="form-check-input">
-                            Ik heb de <a href="#" data-toggle="modal" data-target="#modelId1">algemene voorwaarden</a> gelezen en geaccepteerd
+                            Ik heb de <a href="#" data-toggle="modal" data-target="#modelId1">algemene voorwaarden</a> gelezen en geaccepteerd.
                             </label>
                         </div>
                     </div>
