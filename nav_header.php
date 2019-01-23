@@ -38,48 +38,47 @@
             <div class="menuService flex-fill d-none d-sm-block">
                  <ul class="list-inline">  
                     <li class="list-inline-item">
-                        <a href="#">Klantenservice</a>
+                        <a href="#">klantenservice</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="login_form.php">Inloggen</a>
+                        <a href="login_form.php">inloggen</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="register_form.php">Registreren</a>
+                        <a href="register_form.php">registreren</a>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="game_select.php">Spelwijzer</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="wishlist">Verlanglijst</a>
-                        <span class="count">0</span>
-                    </li>
+                    <!-- <li class="list-inline-item">
+                      <a href="#" class="wishlist">verlanglijst</a>
+                      <span class="count">0</span>
+                    </li> -->
+                            <li class="list-inline-item">
+                                <a href="game_select.php">spelwijzer</a>
+                                <img src="img/questionCloud.png" width="70px" height="70px"/>
+                            </li>
                   </ul>   
             </div>
 
-            <div class="personalPawn flex-fill">
-            <!-- <a href="user.home.php"> -->
-              <i class='fas fa-chess-pawn fa-3x'></i>
-            <!-- </a> -->
+            <div class="spelwijzer flex-fill">
             </div>
 
+
+            <div class="personalPage flex-fill">
+            <a href="user.home.php">
+            <img src="img/personalPage.png" width="80px" height="80px"/>
+            </a>
+            </div>
 
             <div class="shoppingCart flex-fill" id="shoppingCart">
-              <ul class="list-inline">  
-                <li class="list-inline-item price">
-                    <span class="price">0,00</span>
-                </li> 
-                  <li class="list-inline-item">
-                    <a href="view_shoppingcart.php">
-                      <i class='fas fa-shopping-cart'></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                      <span class="count"><?php if(!isset($_session['cart'])){echo'0';}else{echo count($_SESSION['cart']);}; ?>
-                      </span>
-                    </li>
-                  </ul>
+              <button type="button" class="btn btn-primary btn-lg">
+                <span class="price">0,00</span>
+                  <a href="view_shoppingcart.php">
+                    <i class='fas fa-shopping-cart'></i></a>
+                  <span class="badge badge-light count">
+                  <?php if(!isset($_session['cart'])){echo'0';}else{echo count($_SESSION['cart']);}; ?>
+                  </span>
+              </button>
             </div>
           </div><!--headerMenu-->
-          </div> <!--wrapperNavHeader-->   
+        </div> <!--wrapperNavHeader-->   
 
 
           <nav class="navbar navbar-expand-lg navbar-dark container-fluid">

@@ -30,6 +30,8 @@ html p{
 .menuService a{
     color: #10000C !important;
     text-decoration: none !important;
+    font-size: 1.4em;
+    font-variant: small-caps;
 }
 .menuService li{
     color: #10000C !important;
@@ -64,32 +66,25 @@ html p{
     width: 1.5rem;
 }
 /* === */
-.personalPawn{
-    color: #efa747;
-}
-.shoppingCart{
-    /* border: 0.05em solid #10000C; */
-    color: #10000C;
+.spelwijzer a, a:hover, a:visited{
     text-decoration: none;
+    color: black;
 }
-.shoppingCart a{
-    color: #100001 !important;
-    text-decoration: none !important;
+
+.personalPage a, a:hover, a:visited{
+    text-decoration: none;
+    color: black;
 }
-.shoppingCart > a .count.contains {
-    background: #efa747;
+.shoppingCart .btn-primary{
+    color:#1c1c1c!important;
+    background-color: white !important;
+    border: 2px solid #1c1c1c !important;
+}
+.badge{
+    background-color: #d4d4d4 !important;
 }
 .fa-shopping-cart{
     font-size: 2em;
-}
-.shoppingCart .count {
-    /* background: #10000C; */
-    border: .1rem solid #fff;
-    border-radius: 50%;
-    color: #100001;
-    height: 1.5rem;
-    line-height: 1.2rem;
-    text-align: center;
 }
 
 /* === Navbar === */
@@ -99,7 +94,7 @@ html p{
 .navbar-dark .navbar-nav .nav-link{
     color: white;
     font-variant: small-caps;
-    font-size: 1.5em;
+    font-size: 1.9em;
 }
 button.navbar-toggler{
     outline:none;

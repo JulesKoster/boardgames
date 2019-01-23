@@ -1,6 +1,26 @@
 html {
     margin:0em;
 }
+body{
+    /* font-family: 'Roboto', sans-serif !important; */
+    font-family: 'Oxygen', sans-serif !important;
+    /* font-family: 'Ubuntu', sans-serif !important; */
+}
+/* === blocks === */
+.div50 {
+    height: 50%;
+    border: solid red 1px;
+    overflow: hidden;
+}
+.bg-color1{
+    background-color:#ffffff;
+    
+}
+.bg-color2{
+    background-color: #d4d4d4;
+    background-clip: padding-box;
+}
+
 /* === cards === */
 .card{
     /* border:0.05em solid #2b2523 !important; */
@@ -37,7 +57,7 @@ html {
     border-radius: 0.3em;
     text-align: center;
 }
-.btn-primary{
+.buttonBox .btn-primary{
     color:black!important;
     background-color:white !important;
     border: 2px solid white !important;
@@ -75,7 +95,7 @@ html {
     width: 100px;
     display: block;
     background: #000;
-    background: linear-gradient(#Ec7711 0%, #8c7547 100%);
+    background: linear-gradient(#Ec7711 0%, #d4d4d4 100%);
     box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
     position: absolute;
     top: 19px; left: -21px;
@@ -106,11 +126,18 @@ html {
     right: 10px;
     z-index: 100000;
 }
-/* .board {
+.board {
     border: solid red 1px;
 }
+/* === Single Product === */
+.singleProduct .btn-primary{
+    color:#1c1c1c!important;
+    background-color:white !important;
+    border: 2px solid #1c1c1c !important;
+}
 
-.borderBottom {
+
+/*.borderBottom {
     border-bottom: solid grey 3px;
 }
 
