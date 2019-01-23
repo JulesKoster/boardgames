@@ -33,6 +33,18 @@
                     printShopCart($_SESSION['cart']);
                 }
             ?>
+            <div class='row text-right'>
+                    <div class='col-xl-12'>
+                        <h3>Totaal: &euro; 
+                        <?php
+                            if (empty($_SESSION['totalPrice'])) {
+                                $_SESSION['totalPrice'] = 0;
+                            }
+                            echo $_SESSION['totalPrice'];
+                        ?>
+                        </h3>
+                    </div>
+            </div>
         </div>
         <?php
 

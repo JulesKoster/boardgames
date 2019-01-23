@@ -22,6 +22,7 @@
 
     function printShopCart($ARRAY){ 
         include 'connect.php';
+        $totalPrice = 0;
         for ($i=0; $i < count($ARRAY); $i++) { 
             // echo "Product index: " . $i;
             // echo " | Product id: " . $ARRAY[$i]["p_id"];
@@ -30,26 +31,38 @@
             $sql = 'SELECT * FROM products WHERE product_id = ' . $ARRAY[$i]["p_id"];
             $data = $pdo->query($sql);
             foreach ($data as $row){
+                $itemTotal = $row['product_price'] * $ARRAY[$i]["p_amount"];
+                $totalPrice = $totalPrice + $itemTotal;
+                $_SESSION['totalPrice'] = $totalPrice;
                 echo '  <div class="row mt-3 borderBottom">
                             <div class="col-xl-3">
                                 <img src="img/products/' . $row['product_img'] . '" height="200px" width="200px">
                             </div>
                             <div class="col-xl-3">
-                                <h3>' . $row['product_name'] . '</h3>                                
+                                <h3><a href="single_product.php?product_id=' . $ARRAY[$i]["p_id"] . '">' . $row['product_name'] . '</a></h3>                                
                             </div>
                             <div class="col-xl-2 text-right">
-                                <h4>Aantal: ' . $ARRAY[$i]["p_amount"] . '</h4>
-' . 
-                            //     <h5> Aantal:
-                            //     <select class="custom-select" >
-                            //     <option value="1">1</option>
-                            //     <option value="2">2</option>
-                            //     <option value="3">3</option>
-                            //   </select></h5>
-                              '
+                                <h4> Aantal: </h4>
+                                <select class="custom-select" id="productAmount' . $ARRAY[$i]["p_id"] . '" name="amount" onchange="changeAmount(' . $row["product_id"] . ')">';
+                                if ($ARRAY[$i]["p_amount"] == 1) {
+                                echo '<option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>';
+                                }
+                                else if ($ARRAY[$i]["p_amount"] == 2) {
+                                    echo '<option value="1">1</option>
+                                    <option value="2" selected>2</option>
+                                    <option value="3">3</option>';
+                                    }
+                                else if ($ARRAY[$i]["p_amount"] == 3) {
+                                    echo '<option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3" selected>3</option>';
+                                    }
+                                echo '</select>
                             </div>
                             <div class="col-xl-2 text-right">
-                                <h4>&euro; ' . number_format($row['product_price'] * $ARRAY[$i]["p_amount"],2,",",".") . '</h4>
+                                <h4>&euro; ' . number_format($itemTotal,2,",",".") . '</h4>
                             </div>
                             <div class="col-xl-2">
                             <h5><a href="remove_shoppingcart.php?item=' . $i . '">Verwijderen?</a></h5>

@@ -62,10 +62,6 @@ function calculator(divCounter, product_id) {
 }
 ;
 
-
-
-
-
 function removeFromCart(product_id) {
     console.log (product_id + ' zal verwijderd worden');
  
@@ -85,4 +81,12 @@ function removeFromCart(product_id) {
      xmlhttp.open("GET", "remove_shoppingcart.php?id=" + product_id, true);
      xmlhttp.send();
  
+ }
+
+ function changeAmount(product_id) {
+     console.log ('functie changeAmount wordt geopend');
+     elementID = ("productAmount" + product_id);
+     var productamount = document.getElementById(elementID).value;
+     console.log ("product_id is: " + product_id + " and amount is: " + productamount);
+     window.open("change_amount.php?id=" + product_id + "&amount=" + productamount, "_self");
  }
