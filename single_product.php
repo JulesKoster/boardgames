@@ -15,27 +15,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
+        <link href="https://fonts.googleapis.com/css?family=Oxygen|Roboto|Ubuntu" rel="stylesheet">
         <?php include "nav_header.php" ?>
         <div class='container-fluid text-center mt-5'>
             <?php                
-                    echo '<div class="row mt-5"><div class="col-lg-12"><h1><div class = "d-none" id="product">' . $row['product_id'] . "</div>" . $row['product_name'] . '</h1></div>';
+                    echo '<div class="row mt-5"><div class="col-lg-12"><div class = "d-none" id="product">' . $row['product_id'] . '</div></div>';
             ?>
             </div>
-            <div class='row'>
-                <div class='col-lg-1'></div>
-                <div class='col-lg-3'>
+            <div class='row mb-5'>
+                <!-- <div class='col-lg-1'></div> -->
+                <div class='col-lg-4'>
                     <img src='<?php echo 'img/products/' . $row["product_img"] ?>' height='300px'>
                 </div>
-                <div class='col-6 text-left ml-5'>
-                    <br>
+                <div class='col-lg-7 text-left singleProduct'>
+                    <h1><?php echo $row["product_name"]?></h1><br>
                     <div style='display: none' id='product'>1</div>
-                    <h3>Omschrijving:</h3>
+                    <!-- <h3>Omschrijving:</h3> -->
                     <p><?php echo $row["product_desc"] ?></p>
                         <br><br>
                     <h3>Prijs: &euro; <?php echo number_format($row['product_price'],2,",",".") ?></h3>
                     <br>
-                    <button type="button" class="btn btn-primary btn-lg" onclick=addToCart()>In winkelwagen</button>
-                    </form>
+                    <button type="button" class="btn btn-primary btn-lg " onclick=addToCart()>in winkelwagen</button>
+                    
                 </div>
             </div>
 

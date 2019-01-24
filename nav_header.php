@@ -19,55 +19,62 @@
           <div class="row align-items-center px-5">
             <div class="logo flex-fill">
                   <ul class="list-inline"> 
-                    <li class="list-inline-item pawnIcon ">
-                      <i class='fas fa-chess-pawn'></i>
-                    </li>
                     <li class="list-inline-item shopName ">
-                      <p>GAME ON</p>
+                      <p>Game ON</p>
                     </li> 
+                    <li class="list-inline-item pawnIcon">
+                      <i class='fas fa-chess-pawn fa-rotate-180 fa-2x'></i>
+                    </li>
                   </ul>
             </div><!-- logo -->
 
             <div class="searchBox flex-fill">
               <form action ="search_single_product.php" class="form-inline my-2 my-lg-0" #id="search">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
-                  <button class="btn btn-light my-sm-0" type="submit"><i class="fas fa-search fa-2x"></i></button>
+                  <input class="form-control col-lg-10 type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
+                  <button class="btn btn-light" type="submit"><i class="fas fa-search xl-3"></i></button>
                 </form>
             </div>
 
             <div class="menuService flex-fill d-none d-sm-block">
                  <ul class="list-inline">  
                     <li class="list-inline-item">
-                        <a href="#">Klantenservice</a>
+                        <a href="#">klantenservice</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="login_form.php">Inloggen</a>
+                        <a href="login_form.php">inloggen</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="register_form.php">Registreren</a>
+                        <a href="register_form.php">registreren</a>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="game_select.php">Spelwijzer</a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" class="wishlist">Verlanglijst</a>
-                        <span class="count">0</span>
-                    </li>
+                    <!-- <li class="list-inline-item">
+                      <a href="#" class="wishlist">verlanglijst</a>
+                      <span class="count">0</span>
+                    </li> -->
+                            <li class="list-inline-item">
+                                <a href="game_select.php">spelwijzer
+                                <img src="img/questionCloud.png" width="70px" height="70px"/></a>
+                            </li>
                   </ul>   
             </div>
 
-            <div class="shoppingCart flex-fill" id="shoppingCart">
-              <ul class="list-inline">  
-                <li class="list-inline-item price">
-                    <span class="price">&euro; <?php echo $_SESSION['totalPrice'];?></span>
-                </li> 
-                  <li class="list-inline-item">
-                    <a href="view_shoppingcart.php">
-                      <i class='fas fa-shopping-cart'></i></a>
-                    </li>
-                    <li class="list-inline-item">
+            <div class="spelwijzer flex-fill">
+            </div>
 
-                    <span class="count"><?php 
+
+            <div class="personalPage flex-fill">
+            <a href="user.home.php">
+            <img src="img/personalPage.png" width="80px" height="80px"/>
+            </a>
+            </div>
+
+            <div class="shoppingCart flex-fill" id="shoppingCart">
+
+              <button type="button" class="btn btn-primary btn-lg">
+                <span class="price">0,00</span>
+                  <a href="view_shoppingcart.php">
+                    <i class='fas fa-shopping-cart'></i></a>
+                  <span class="badge badge-light count">
+                  <?php 
                     if (empty($_SESSION['cart'])){
                       echo'0';
                       }
@@ -75,13 +82,11 @@
                         echo count($_SESSION['cart']);
                       }; 
                       ?>
-
-                    </span>
-                    </li>
-                  </ul>
+                  </span>
+                  </button>
             </div>
           </div><!--headerMenu-->
-          </div> <!--wrapperNavHeader-->   
+        </div> <!--wrapperNavHeader-->   
 
 
           <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
@@ -89,10 +94,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav mr-auto ml-lg-5 mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="product_overview.php">
-                   <i class='fas fa-home' ></i></a>
+                <a class="nav-link" href="index.php">
+                   <i class="fas fa-home" ></i></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"></a>

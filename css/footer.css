@@ -12,7 +12,9 @@
 #fbFont:hover {
     color:#2f487c;
 }
-
+h4{
+    margin-bottom: 1em;
+}
 #twFont:hover {
     color: #0084b4;
 }
@@ -20,11 +22,17 @@
 #ghFont:hover {
     color: #b4b4b4;
 }
-/* a{
-    color:white; */
+
+footer a{
+    color:white;
 }
-a:visited {
+footer a:visited {
     text-decoration: none;
+    }
+.btn-secondary{
+    color:black !important;
+    background-color: white !important;
+    
 }
 footer {
     background-color: #1c1c1c !important;
