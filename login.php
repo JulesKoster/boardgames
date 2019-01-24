@@ -1,10 +1,10 @@
 <?php
 //login.php
 
-/**
- * Start the session.
- */
-session_start();
+// /**
+//  * Start the session.
+//  */
+// session_start();
 
 /**
  * Include ircmaxell's password_compat library.
@@ -15,6 +15,10 @@ require 'lib/password.php';
  * Include our MySQL connection.
  */
 require 'connect.php';
+
+$showMessage;
+$showLoginError=false;
+
 
 //If the POST var "login" exists (our submit button), then we can
 //assume that the user has submitted the login form.
@@ -44,6 +48,8 @@ if(isset($_POST['login'])){
     if($user === false){
         //Could not find a user with that user email!
         //PS: You might want to handle this error in a more user-friendly manner!
+        $showMessage = 'Onjuiste email/wachtwoord combinatie!'
+        $showLoginError = true;
         die('Incorrect username / password combination!');
         
     } else{

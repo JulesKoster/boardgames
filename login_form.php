@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <title>Inloggen</title>
         <link rel="stylesheet" type="text/css" href="css/stylejules.css">
-        <?php include "nav_header.php" ?>
+        <?php 
+        include 'nav_header.php';  
+        include 'login.php';              
+        ?>
         <!-- <div class="form-wrapper">
             <div class="contact-form">
             <h1>Login</h1>
@@ -117,11 +120,8 @@
 </div>
 <!-- Modal Password Reset -->
 
-
-
-
 <?php
-include 'footer.php'
+include 'footer.php';
 ?>
 </body>
 </html>
