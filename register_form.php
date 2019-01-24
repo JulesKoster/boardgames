@@ -1,7 +1,7 @@
 <!doctype html>
     <html lang="en">
       <head>
-        <title>Registreren/title>
+        <title>Registreren</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,29 +9,19 @@
         <link rel="stylesheet" type="text/css" href="css/stylejules.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <?php include "nav_header.php" ?>
-    <!--Register Form -->
-        <!-- <div class="form-group">
-            <form action="register.php" method="post">
-                <label for="email"></label>
-                <input type="email" class="form-control" name="email" id="email" aria-describedby="emailInput" placeholder="Enter your E-mail" required autofocus>
-                <div class="form-group">
-                <label for="password"></label>
-                <input type="password" id="password" aria-describedby="passwordInput" name="password" pattern=".{8,}" title="minimaal 8 tekens" required>
-                <label for="password"></label>
-                <input type="password" id="confirmPassword" aria-describedby="passwordInput" name="password" required>
-                <button type="submit" class="register" name="register" value="Register">Sign Up</button>
-                </div>
-               
-            </form>  
-        </div> -->
+        <?php 
+            include 'nav_header.php';
+            include 'register.php';
+        ?>
+   
+
         <!-- Register Form -->
-    <div class="container borderform">
+    <div class="container borderform mt-5">
         <div class="row justify-content-center">
          <!-- <div class="col-xl-1"></div> -->
 
             <div class="col-xl-6">
-                <form action="register.php" method="post">
+                <form action="register_form.php" method="post">
                 <div class="form-group mb-0">
                     <label for="InputEmail1"></label>
                     <div class="input-group">
@@ -48,7 +38,7 @@
                             <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span> 
                         </div>  
-                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" required>
+                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier je wachtwoord in" required>
                     </div>
                 <div class="form-group">
                     <label for="Inputpassword2"></label>
@@ -62,11 +52,19 @@
                         <div class="form-check">
                             <label class="form-check-label">
                             <input type="checkbox" class="form-check-input">
-                            Ik heb de <a href="#" data-toggle="modal" data-target="#modelId1">algemene voorwaarden</a> gelezen en geaccepteerd
+                            Ik heb de <a href="#" data-toggle="modal" data-target="#modelId1">algemene voorwaarden</a> gelezen en geaccepteerd.
                             </label>
-                        </div>
+                        </div> 
                     </div>
-                        <button type="submit" name="register" value="Register" class="btn btn-dark">Registreer</button>
+                        <button type="submit" name="register" value="Register" class="btn btn-dark">Registreer</button> 
+                   <?php 
+                        if($showMessage) {
+                        echo $message;
+                    }   
+                        if ($showErrorMessage) {
+                        echo $errorMessage;
+                    }
+                    ?>   
                 </form>
                 </div>   
             </div>
