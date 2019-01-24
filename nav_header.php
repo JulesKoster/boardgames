@@ -38,7 +38,7 @@
             <div class="menuService flex-fill d-none d-sm-block">
                  <ul class="list-inline">  
                     <li class="list-inline-item">
-                        <a href="#">klantenservice</a>
+                        <a href="customer_service.php">klantenservice</a>
                     </li>
                     <li class="list-inline-item">
                         <a href="login_form.php">inloggen</a>
