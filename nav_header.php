@@ -19,19 +19,19 @@
           <div class="row align-items-center px-5">
             <div class="logo flex-fill">
                   <ul class="list-inline"> 
-                    <li class="list-inline-item pawnIcon ">
-                      <i class='fas fa-chess-pawn'></i>
-                    </li>
                     <li class="list-inline-item shopName ">
                       <p>Game ON</p>
                     </li> 
+                    <li class="list-inline-item pawnIcon">
+                      <i class='fas fa-chess-pawn fa-rotate-180 fa-2x'></i>
+                    </li>
                   </ul>
             </div><!-- logo -->
 
             <div class="searchBox flex-fill">
               <form action ="search_single_product.php" class="form-inline my-2 my-lg-0" #id="search">
-                  <input class="form-control mr-sm-2 type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
-                  <button class="btn btn-light my-sm-0" type="submit"><i class="fas fa-search xl-3"></i></button>
+                  <input class="form-control col-lg-10 type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
+                  <button class="btn btn-light" type="submit"><i class="fas fa-search xl-3"></i></button>
                 </form>
             </div>
 
@@ -51,8 +51,8 @@
                       <span class="count">0</span>
                     </li> -->
                             <li class="list-inline-item">
-                                <a href="game_select.php">spelwijzer</a>
-                                <img src="img/questionCloud.png" width="70px" height="70px"/>
+                                <a href="game_select.php">spelwijzer
+                                <img src="img/questionCloud.png" width="70px" height="70px"/></a>
                             </li>
                   </ul>   
             </div>
@@ -88,7 +88,7 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto ml-lg-5 mt-2 mt-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="product_overview.php">
+                <a class="nav-link" href="index.php">
                    <i class="fas fa-home" ></i></a>
               </li>
               <li class="nav-item">

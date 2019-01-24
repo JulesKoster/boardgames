@@ -63,7 +63,7 @@ html p{
     line-height: 1.2rem;
     text-align: center;
     transform: translateY(-.2rem);
-    width: 1.5rem;
+    /* width: 1.5rem; */
 }
 /* === */
 .spelwijzer a, a:hover, a:visited{
@@ -78,10 +78,10 @@ html p{
 .shoppingCart .btn-primary{
     color:#1c1c1c!important;
     background-color: white !important;
-    border: 2px solid #1c1c1c !important;
+    border: 1px solid #1c1c1c !important;
 }
 .badge{
-    background-color: #d4d4d4 !important;
+    border: 1px solid #1c1c1c !important;
 }
 .fa-shopping-cart{
     font-size: 2em;

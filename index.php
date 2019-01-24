@@ -19,9 +19,6 @@
       <img class="d-block w-100" src="img/slider/monopolyBord.jpg" alt="Bordspel">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="img/slider/disney_gamers.jpg" alt="Disneyfiguren spelen spel">
-    </div>
-    <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/hasbro.jpg alt="Stapel spelletjes">
     </div>
     <div class="carousel-item">
@@ -29,9 +26,6 @@
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/stapel.jpg alt="Stapel spelletjes">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src=img/slider/spellenbeurs.jpg alt="Spelletjes beurs">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/reisspellen.jpg alt="Reis spelletjes">
@@ -50,9 +44,6 @@
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/fake_gamers.jpg alt="Fake gamers">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src=img/slider/stapels_spellen.jpg alt="Stapel spelletjes">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/spaceboard.jpg alt="Bordspel">
