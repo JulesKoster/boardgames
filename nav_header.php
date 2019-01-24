@@ -59,15 +59,24 @@
             <div class="shoppingCart flex-fill" id="shoppingCart">
               <ul class="list-inline">  
                 <li class="list-inline-item price">
-                    <span class="price">0,00</span>
+                    <span class="price">&euro; <?php echo $_SESSION['totalPrice'];?></span>
                 </li> 
                   <li class="list-inline-item">
                     <a href="view_shoppingcart.php">
                       <i class='fas fa-shopping-cart'></i></a>
                     </li>
                     <li class="list-inline-item">
-                      <span class="count"><?php if(!isset($_session['cart'])){echo'0';}else{echo count($_SESSION['cart']);}; ?>
-                      </span>
+
+                    <span class="count"><?php 
+                    if (empty($_SESSION['cart'])){
+                      echo'0';
+                      }
+                      else{
+                        echo count($_SESSION['cart']);
+                      }; 
+                      ?>
+
+                    </span>
                     </li>
                   </ul>
             </div>
