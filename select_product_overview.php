@@ -15,7 +15,7 @@
      $kickstarter = $_GET['kickstarter'];
      $sql = "SELECT * FROM products WHERE product_kickstarter = '$kickstarter'";
     }else{
-         $sql = "SELECT * FROM products";
+        $sql = "SELECT * FROM products";
     }
        
         $data = $pdo->query($sql);
@@ -27,25 +27,25 @@
             $dataObject[$divCounter] = $row;
             $htmlOutput[$divCounter]  = '';
             $htmlOutput[$divCounter]  = '<a href="single_product.php?product_id=' . $row['product_id'] . '">';
-            $htmlOutput[$divCounter] .= '<div class="card" style="width: 18rem; height: 30em;">';
-            $htmlOutput[$divCounter] .= '<img class="card-img-top img-thumbnail cardImage" style="height: 15em;" src="img/products/' . $row['product_img'] . '" alt="Card image cap">';
+            $htmlOutput[$divCounter] .= '<div class="card my-5 p-1" style="width: 22em; height: 35em;">';
+            $htmlOutput[$divCounter] .= '<img class="card-img-top img-thumbnail mt-1" style="height: 15em;" src="img/products/' . $row['product_img'] . '" alt="Card image cap"></a>';
             if ($row['product_kickstarter'] == 1) {
                 $htmlOutput[$divCounter] .= '<div class="kickstarter"><img src="img/kickstarter-funded.png" width="70px" height="70px"></div>';
             }
             $htmlOutput[$divCounter] .= '<div class="card-body">';
             $htmlOutput[$divCounter] .= '<h5 class="card-title">' . $row['product_name'] . '</h5>';
-            $htmlOutput[$divCounter] .= '<div class="product_desc"><p class="card-text">' . $product_desc . '</p><p class="textFader">&nbsp;</p></div>';
-            $htmlOutput[$divCounter] .= '<div class="row cardDesc">';
-            $htmlOutput[$divCounter] .= '<div class="col-6">';
-            $htmlOutput[$divCounter] .= '<a href="#" class="btn btn-primary">Toevoegen</a>';
+            $htmlOutput[$divCounter] .= '<div class="productDesc"><p class="card-text">' . $product_desc . '</p><p class="textFader">&nbsp;</p></div>';
+            $htmlOutput[$divCounter] .= '<div class="row cardDesc py-2">';
+            $htmlOutput[$divCounter] .= '<div class="col-6 buttonBox">';
+            $htmlOutput[$divCounter] .= '<a href="#" class="btn btn-primary">toevoegen</a>';
             $htmlOutput[$divCounter] .= '</div>';
-            $htmlOutput[$divCounter] .= '<div class="col-6">';
-            $htmlOutput[$divCounter] .= '<div class ="text-center align-middle" id="oval">';
-            $htmlOutput[$divCounter] .= '<span class="font-weight-bold">€ ' . number_format($row['product_price'],2,",",".") . '</span>';
+            $htmlOutput[$divCounter] .= '<div class="col-6 priceBox">';
+            // $htmlOutput[$divCounter] .= '<div class ="price">';
+            $htmlOutput[$divCounter] .= '<span class="font-weight-bold">&euro; ' . number_format($row['product_price'],2,",",".") . '</span>';
+            // $htmlOutput[$divCounter] .= '</div>';
             $htmlOutput[$divCounter] .= '</div>';
             $htmlOutput[$divCounter] .= '</div>';
             $htmlOutput[$divCounter] .= '</div>';
             $htmlOutput[$divCounter] .= '</div>';
-            $htmlOutput[$divCounter] .= '</div></a>';
         }
 ?>

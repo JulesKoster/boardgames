@@ -35,7 +35,7 @@
                             <div class="panel-body">
                                 <form action="forgot_password_control.php" method="post">
                                     <div class="form-group">
-                                        <input class="form-control input-lg" placeholder="E-mailadres" name="email" type="text">
+                                        <input class="form-control input-lg" placeholder="E-mailadres" name="userEmail" type="text">
                                     </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control input-lg" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" pattern=".{8,}" title="Minimaal 8 tekens" required>

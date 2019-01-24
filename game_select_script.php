@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
     <title>Document</title>
 
-
 <?php
 include "nav_header.php";?>
 

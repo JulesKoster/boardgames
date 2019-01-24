@@ -8,78 +8,76 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
     <?php
-        include 'select_product_overview.php'
+        include 'select_product_overview.php';
+        header("Content-Type: text/html; charset=ISO-8859-1");
     ?> 
 
     <?php include "nav_header.php"?>
     <div class="container-fluid mt-5">
         <div class="row"> <!-- contains cardWrapper & bigImageWrapper -->
-            <div class="col-md-8 flex-column cardWrapper">
-                <div class="row justify-content-center my-3 img-1+2" >
-                    <div class="col-md-5 d-flex justify-content-center cardholder">
+            <div class="col-lg-8 flex-column cardWrapper">
+                <div class="row justify-content-center img-1+2" >
+                    <div class="col-lg-5 col-md-6 d-flex justify-content-center">
                         <div><?php echo $htmlOutput[1];?></div>
                     </div>
-                    <div class="col-md-5 d-flex justify-content-center">
+                    <div class="col-lg-5 col-md-6 d-flex justify-content-center">
                         <div><?php echo $htmlOutput[2];?></div>
                     </div>
                 </div>
-                <div class="row justify-content-center my-3 img-3+4">
-                    <div class="col-md-5 d-flex justify-content-center">
-                    <div><?php echo $htmlOutput[3];?></div>
+                <div class="row justify-content-center img-3+4">
+                    <div class="col-lg-5 col-md-6 d-flex justify-content-center">
+                        <div><?php echo $htmlOutput[3];?></div>
                     </div>                        
-                    <div class="col-md-5 d-flex justify-content-center">
-                    <div><?php echo $htmlOutput[4];?></div>
+                    <div class="col-lg-5 col-md-6 d-flex justify-content-center">
+                        <div><?php echo $htmlOutput[4];?></div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 d-flex justify-content-center align-items-center bigImageWrapper">
-                            <a href='single_product.php?product_id=2'>
-                            <div class="card" style="width: 30rem; min-height: 37em;">
-                                <div class="ribbon"><span>Sale</span></div>
-                                <img class="card-img-top img-thumbnail" style='min-height: 15em;' src="img/products/monopoly.jpg" alt="Card image cap"> 
-                                <div class="card-body">
-                                    <h5 class="card-title">Monopoly</h5>
-                                    <p class="card-text">Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p>
-
-                                    <div class="row">
-
-                                        <div class="col-lg-6">
-                                        <div class="d-none" id="product">2</div>
-
-                                            <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class ='text-center align-middle' id="oval">
-                                                <span class='font-weight-bold'>€ 39,99</span>
-                                            </div>
-                                        </div>
-                                </div> <!-- card-body -->
-                              </a>
-                            </div> <!-- card -->
-                        </div> <!-- bigSquare-->
-        </div>
-        <div class="row my-5">
+            <div class="col-lg-4 d-flex justify-content-center align-items-center bigImageWrapper">
+                <a href='single_product.php?product_id=2'>
+                <div class="card p-1" style="width: 30rem; min-height: 37em;">
+                    <div class="ribbon"><span>Sale</span></div>
+                    <img class="card-img-top img-thumbnail" style='min-height: 15em;' src="img/products/monopoly.jpg" alt="Card image cap">  </a> 
+                    <div class="card-body">
+                        <h5 class="card-title">Monopoly</h5>
+                        <p class="card-text">Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p>
+                        <div class="row cardDesc py-2">
+                            <div class="col-6 buttonBox">
+                                <div class="d-none" id="product">2</div>
+                                    <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
+                                </div>
+                                    <div class="col-6 priceBox">
+                                        <p class='font-weight-bold'>&euro; 39,99</p>
+                                    </div>
+                                </div>
+                            </div> <!-- col-lg-6 -->
+                        </div> <!-- row sales card-->
+                    </div> <!-- card-body -->
+              
+            </div> <!-- bigImageWrapper -->
+        </div> <!-- row cardWrapper & bigImageWrapper -->
+        <div class="row"> <!-- cardWrapper6 -->
             <div class="col-lg-12 col-md-12  cardWrapper6">
-                <div class="row justify-content-around my-3">
-                    <div class='col-lg-4 col-md-4 d-flex justify-content-center'>
+                <div class="row justify-content-around">
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center'>
                         <div><?php echo $htmlOutput[5];?></div>
                     </div>
-                    <div class='col-lg-4 col-md-4 d-flex justify-content-center'>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center'>
                         <div><?php echo $htmlOutput[6];?></div>
                     </div>
-                    <div class='col-lg-4col-md-4 d-flex justify-content-center'>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center'>
                         <div><?php echo $htmlOutput[7];?></div>
                     </div>
                
         </div>
-        <div class="row justify-content-around my-3">
-                    <div class='col-lg-4 col-md-4 d-flex justify-content-center'>
+        <div class="row justify-content-around">
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center'>
                         <div><?php echo $htmlOutput[8];?></div>
                     </div>
-                    <div class='col-lg-4 col-md-4 d-flex justify-content-center'>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center'>
                         <div><?php echo $htmlOutput[9];?></div>
                     </div>
-                    <div class='col-lg-4 col-md-4 d-flex justify-content-center'>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center'>
                         <div><?php echo $htmlOutput[10];?></div>
                     </div>
                 </div>
