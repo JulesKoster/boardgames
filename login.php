@@ -16,8 +16,10 @@ require 'lib/password.php';
  */
 require 'connect.php';
 
-$showMessage;
-$showLoginError=false;
+$errorMessage;
+$showLoginError = false;
+$passwordMessage;
+$showPasswordMessage = false;
 
 
 //If the POST var "login" exists (our submit button), then we can
@@ -48,11 +50,11 @@ if(isset($_POST['login'])){
     if($user === false){
         //Could not find a user with that user email!
         //PS: You might want to handle this error in a more user-friendly manner!
-        $showMessage = 'Onjuiste email/wachtwoord combinatie!'
-        $showLoginError = true;
-        die('Incorrect username / password combination!');
-        
-    } else{
+        $errorMessage = 'Onjuiste email/wachtwoord combinatie!';
+        $showLoginError = true;   
+        // header ('Refresh: 1 ; url=login_form.php');
+                
+    }else {
         //User account found. Check to see if the given password matches the
         //password hash that we stored in our users table.
 
@@ -74,10 +76,13 @@ if(isset($_POST['login'])){
         } else{
             //$validPassword was FALSE. Passwords do not match.
             // die('Incorrect username / password combination!, Please try Again');
+            $passwordMessage = 'Onjuiste email/wachtwoord combinatie!';
+            $showPasswordMessage = true; 
             header ('Refresh: 1 ; url=login_form.php'); 
         }
     }
-    
+  
 }
+// die('Incorrect username / password combination!'); To implement: kill connection 24/1-2019
  
 ?>

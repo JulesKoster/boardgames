@@ -72,8 +72,7 @@ if(isset($_POST['register'])){
     
         //Execute the statement and insert the new account.
         $result = $stmt->execute();
-        
-        echo $result;
+                
         //If the signup process is successful.
         if($result){
             //What you do here is up to you!

@@ -67,6 +67,14 @@
                         <a href="#" class="btn btn-link btn-fill" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
                     </div>
                         <button type="submit" name="login" value="Login" class="btn btn-dark">Inloggen</button>
+                        <?php
+                        if ($showLoginError) {
+                            echo ($errorMessage);
+                        }
+                        if ($showPasswordMessage) {
+                            echo ($passwordMessage);
+                        }
+                        ?>
                         <p>Nog geen account?</p>
                         <h5><a href="register_form.php" class="badge badge-danger badge-fill">Maak hier een account aan</a></h5>
                     
