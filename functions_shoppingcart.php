@@ -10,23 +10,16 @@
         }
         // bestaat het wel:
         else {
+            echo " bestaat ";
             $_SESSION['cart'] = addToShopCart($PRODUCT_ID, $PRODUCT_AMOUNT, $_SESSION['cart']);
         }
     }
 
-    // nieuwe regel toevoegen aan array $_SESSION['cart'] zonder controle
-    // function pushToShopCart($PRODUCT_ID, $PRODUCT_AMOUNT){
-    //     $newEntry = array("p_id"=>$PRODUCT_ID,"p_amount"=>$PRODUCT_AMOUNT);
-    //     array_push($_SESSION['cart'], $newEntry);
-    // }
 
     function printShopCart($ARRAY){ 
         include 'connect.php';
         $totalPrice = 0;
         for ($i=0; $i < count($ARRAY); $i++) { 
-            // echo "Product index: " . $i;
-            // echo " | Product id: " . $ARRAY[$i]["p_id"];
-            // echo " | Product amount: " . $ARRAY[$i]["p_amount"];
             echo "<br>";
             $sql = 'SELECT * FROM products WHERE product_id = ' . $ARRAY[$i]["p_id"];
             $data = $pdo->query($sql);
@@ -47,17 +40,37 @@
                                 if ($ARRAY[$i]["p_amount"] == 1) {
                                 echo '<option value="1" selected>1</option>
                                 <option value="2">2</option>
-                                <option value="3">3</option>';
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>';
                                 }
                                 else if ($ARRAY[$i]["p_amount"] == 2) {
                                     echo '<option value="1">1</option>
                                     <option value="2" selected>2</option>
-                                    <option value="3">3</option>';
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>';
                                     }
                                 else if ($ARRAY[$i]["p_amount"] == 3) {
                                     echo '<option value="1">1</option>
                                     <option value="2">2</option>
-                                    <option value="3" selected>3</option>';
+                                    <option value="3" selected>3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>';
+                                    }
+                                else if ($ARRAY[$i]["p_amount"] == 4) {
+                                    echo '<option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4" selected>4</option>
+                                    <option value="5">5</option>';
+                                    }
+                                else if ($ARRAY[$i]["p_amount"] == 5) {
+                                    echo '<option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5" selected>5</option>';
                                     }
                                 echo '</select>
                             </div>
@@ -73,21 +86,25 @@
         echo "<br>";
         }
 
-
-
     function searchForId($ID, $ARRAY) {
-        foreach ($ARRAY as $key => $val) {        
-            if ($val['p_id'] == $ID) {           
-                return $key;
+        $foundID = "NOTFOUND";
+        for($i = 0; $i < count($ARRAY); $i++){
+            if($ARRAY[$i]['p_id'] == $ID){    
+                echo " match ";           
+                $foundID = $i;
+                break;
             }
         }
-        return null;
+        return $foundID;
     }
+
+
 
 //check if not null. if null push to array. if !null ++ amount.
 
 function addToShopCart($P_ID, $P_AMOUNT, $ARRAY){   //Netter als je functie maakt voor niet alleen SHOPCART
-    if(searchForId($P_ID, $ARRAY) == null){
+    $hallo = searchForId($P_ID, $ARRAY);
+    if($hallo === "NOTFOUND"){
         echo "ID bestaat niet, push nieuwe ID en amount naar shopping cart<br>";
         $newEntry = array("p_id" => $P_ID,"p_amount" => $P_AMOUNT);               
         array_push($ARRAY, $newEntry); 

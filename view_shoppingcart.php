@@ -40,7 +40,7 @@
                             if (empty($_SESSION['totalPrice'])) {
                                 $_SESSION['totalPrice'] = 0;
                             }
-                            echo $_SESSION['totalPrice'];
+                            echo number_format($_SESSION['totalPrice'],2,",",".");
                         ?>
                         </h3>
                     </div>

@@ -59,7 +59,7 @@
             <div class="shoppingCart flex-fill" id="shoppingCart">
               <ul class="list-inline">  
                 <li class="list-inline-item price">
-                    <span class="price">0,00</span>
+                    <span class="price">&euro; <?php echo $_SESSION['totalPrice'];?></span>
                 </li> 
                   <li class="list-inline-item">
                     <a href="view_shoppingcart.php">
