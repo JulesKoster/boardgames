@@ -4,7 +4,10 @@
         <meta charset="UTF-8">
         <title>Inloggen</title>
         <link rel="stylesheet" type="text/css" href="css/stylejules.css">
-        <?php include "nav_header.php" ?>
+        <?php 
+        include 'nav_header.php';  
+        include 'login.php';              
+        ?>
         <!-- <div class="form-wrapper">
             <div class="contact-form">
             <h1>Login</h1>
@@ -40,7 +43,7 @@
             </form> -->
 
     <!-- Login Form -->    
-    <div class="container borderform">
+    <div class="container borderform mt-5">
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <form action="login.php" method="post">
@@ -50,7 +53,7 @@
                         <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-envelope"></i></span>   
                         </div> 
-                        <input type="text" class="form-control" id="userEmail" name="userEmail" aria-describedby="emailInput" placeholder="Voer hier uw e-mail adres in" title="Voer dit veld in" required autofocus>            
+                        <input type="text" class="form-control" id="userEmail" name="userEmail" aria-describedby="emailInput" placeholder="Voer hier je e-mail adres in" title="Voer dit veld in" required autofocus>            
                     </div>
                 </div>
                     <div class="form-group">
@@ -59,11 +62,19 @@
                             <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span> 
                             </div>  
-                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" required>
+                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer je wachtwoord in in" required>
                         </div>
                         <a href="#" class="btn btn-link btn-fill" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
                     </div>
                         <button type="submit" name="login" value="Login" class="btn btn-dark">Inloggen</button>
+                        <?php
+                        if ($showLoginError) {
+                            echo ($errorMessage);
+                        }
+                        if ($showPasswordMessage) {
+                            echo ($passwordMessage);
+                        }
+                        ?>
                         <p>Nog geen account?</p>
                         <h5><a href="register_form.php" class="badge badge-danger badge-fill">Maak hier een account aan</a></h5>
                     
@@ -117,11 +128,8 @@
 </div>
 <!-- Modal Password Reset -->
 
-
-
-
 <?php
-include 'footer.php'
+include 'footer.php';
 ?>
 </body>
 </html>

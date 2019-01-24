@@ -10,10 +10,10 @@
  */
  
 //Our MySQL user account.
-define('MYSQL_USER', 'root');
+define('MYSQL_USER', 'board_user');
  
 //Our MySQL password.
-define('MYSQL_PASSWORD', '');
+define('MYSQL_PASSWORD', 'bgames123');
  
 //The server that MySQL is located on.
 define('MYSQL_HOST', 'localhost');

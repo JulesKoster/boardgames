@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Admin Page</title>
     <?php 
-    include "nav_header.php" 
+    include "nav_header.php"; 
     
-    if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){
+    // if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){
         
-?>
+?> 
     <div class="container ">
         <div class=" row justify-content-center mt-3">
             <?php echo'<h1 class="text-align-center">welkom ' . $_SESSION['user_email'] . '</h1>'; ?>
@@ -36,8 +36,8 @@
 </body>
 </html>
 <?php
-    }else {
-        header('location: access_denied.php');
-    }
+    // }else {
+    //     header('location: access_denied.php');
+    // }
 
 ?>

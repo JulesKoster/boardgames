@@ -68,14 +68,22 @@
             </div>
 
             <div class="shoppingCart flex-fill" id="shoppingCart">
+
               <button type="button" class="btn btn-primary btn-lg">
                 <span class="price">0,00</span>
                   <a href="view_shoppingcart.php">
                     <i class='fas fa-shopping-cart'></i></a>
                   <span class="badge badge-light count">
-                  <?php if(!isset($_session['cart'])){echo'0';}else{echo count($_SESSION['cart']);}; ?>
+                  <?php 
+                    if (empty($_SESSION['cart'])){
+                      echo'0';
+                      }
+                      else{
+                        echo count($_SESSION['cart']);
+                      }; 
+                      ?>
                   </span>
-              </button>
+                  </button>
             </div>
           </div><!--headerMenu-->
         </div> <!--wrapperNavHeader-->   
