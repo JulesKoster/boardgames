@@ -18,13 +18,13 @@
           <div class="container-fluid headerMenu ">
           <div class="row align-items-center px-5">
             <div class="logo flex-fill">
-                  <ul class="list-inline"> 
+              <ul class="list-inline"> 
+                <li class="list-inline-item pawnIcon"> <!--fa-rotate-180-->
+                  <i class='fas fa-chess-pawn '></i>
+                </li>
                     <li class="list-inline-item shopName ">
                       <p>Game ON</p>
                     </li> 
-                    <li class="list-inline-item pawnIcon">
-                      <i class='fas fa-chess-pawn fa-rotate-180 fa-2x'></i>
-                    </li>
                   </ul>
             </div><!-- logo -->
 
