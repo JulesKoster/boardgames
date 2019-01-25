@@ -12,13 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
+</head>
+    <section id="topSection"></section>
     <?php
         include 'select_product_overview.php';
         include "nav_header.php";
         // header("Content-Type: text/html; charset=ISO-8859-1");
     ?>
     <div class="container-fluid">
-    <div class="row"> <!-- cardWrapper6 -->
+        <div class="row"> <!-- cardWrapper6 -->
             <div class="col-lg-12 col-md-12  cardWrapper6">
                 <div class="row justify-content-around">
                     <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
@@ -130,6 +132,21 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
 
     <script src="js/cart.js"></script>
+    <!-- <script>
+        $(function() {
+            var $btn = $('#btnTop');
+            var $home = $('#topSection');
+            var startpoint = $home.scrollTop() + $home.height();
+            
+            $(window).on('scroll', function() {
+                if($(window).scrollTop() > startpoint) {
+                $btn.show();
+                } else {
+                $btn.hide();
+                }
+            });
+        });
+    </script> -->
 </body>
 </html>
 

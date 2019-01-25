@@ -32,6 +32,7 @@
                 include 'functions_shoppingcart.php';
                 if (empty($_SESSION['cart'])){
                     echo 'Uw winkelmandje is leeg.';
+                    $_SESSION['totalPrice'] = 0;
                 }
                 else {
                     printShopCart($_SESSION['cart']);
