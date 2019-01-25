@@ -1,10 +1,10 @@
 <?php
 //login.php
 
-// /**
-//  * Start the session.
-//  */
-// session_start();
+/**
+ * Start the session.
+ */
+session_start();
 
 /**
  * Include ircmaxell's password_compat library.
@@ -69,9 +69,10 @@ if(isset($_POST['login'])){
             $_SESSION['logged_in'] = time();
             $_SESSION['user_email'] = $user['user_email'];
             $_SESSION['role'] = $user['role'];
+           
             //Redirect to our protected page, which we called home.php
-            header('Refresh: 1 ; url=user.home.php');
-            exit;
+            header('Location: user.home.php');
+           // exit;
             
         } else{
             //$validPassword was FALSE. Passwords do not match.
