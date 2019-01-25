@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <?php
         include 'select_product_overview.php';
-        header("Content-Type: text/html; charset=ISO-8859-1");
+        // header("Content-Type: text/html; charset=ISO-8859-1");
     ?> 
     <?php include "nav_header.php"?>
 
@@ -26,36 +26,36 @@
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/hasbro.jpg alt="Stapel spelletjes">
     </div>
-    <div class="carousel-item">
+    <!-- <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/spelstapel.jpg alt="Stapel spelletjes">
-    </div>
-    <div class="carousel-item">
+    </div> -->
+    <!-- <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/stapel.jpg alt="Stapel spelletjes">
-    </div>
+    </div> -->
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/reisspellen.jpg alt="Reis spelletjes">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/pionnen.jpg alt="Bordspel">
     </div>
-    <div class="carousel-item">
+    <!-- <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/bastion.jpg alt="Bordspel">
-    </div>
-    <div class="carousel-item">
+    </div> -->
+    <!-- <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/biljart.jpg alt="Spelkamer">
-    </div>
+    </div> -->
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/schaak_hand.jpg alt="Schaakspel">
     </div>
-    <div class="carousel-item">
+    <!-- <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/fake_gamers.jpg alt="Fake gamers">
-    </div>
-    <div class="carousel-item">
+    </div> -->
+    <!-- <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/spaceboard.jpg alt="Bordspel">
-    </div>
-    <div class="carousel-item">
+    </div> -->
+    <!-- <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/blood_rage.jpg alt="Bordspel">
-    </div>
+    </div> -->
     <!-- <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/d20_dobbelstenen.jpg alt="Dobbelstenen">
     </div> -->

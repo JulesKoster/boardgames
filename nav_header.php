@@ -42,7 +42,7 @@
             <div class="menuService flex-fill d-none d-sm-block">
                  <ul class="list-inline">  
                     <li class="list-inline-item">
-                        <a href="#">klantenservice</a>
+                        <a href="customer_service.php">klantenservice</a>
                     </li>
                     <li class="list-inline-item">
                         <a href="login_form.php">inloggen</a>
@@ -74,7 +74,7 @@
             <div class="shoppingCart flex-fill" id="shoppingCart">
 
               <button type="button" class="btn btn-primary btn-lg">
-                <span class="price">0,00</span>
+                <span class="price">&euro; <?php echo number_format($_SESSION['totalPrice'],2,",",".")?></span>
                   <a href="view_shoppingcart.php">
                     <i class='fas fa-shopping-cart'></i></a>
                   <span class="badge badge-light count">

@@ -17,7 +17,6 @@
         <script src="js/cart.js"></script>
         <?php
             include 'nav_header.php';
-            include "connect.php";
         ?>
         <body>
         <div class='container'>
@@ -33,6 +32,7 @@
                 include 'functions_shoppingcart.php';
                 if (empty($_SESSION['cart'])){
                     echo 'Uw winkelmandje is leeg.';
+                    $_SESSION['totalPrice'] = 0;
                 }
                 else {
                     printShopCart($_SESSION['cart']);

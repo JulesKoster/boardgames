@@ -11,7 +11,7 @@
  
 //Our MySQL user account.
 
-define('MYSQL_USER', 'root');
+define('MYSQL_USER', 'root'); 
  
 //Our MySQL password.
 define('MYSQL_PASSWORD', '');
