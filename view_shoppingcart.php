@@ -17,7 +17,6 @@
         <script src="js/cart.js"></script>
         <?php
             include 'nav_header.php';
-            include "connect.php";
         ?>
         <body>
         <div class='container'>

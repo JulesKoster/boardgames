@@ -21,7 +21,7 @@
    
 
         <!-- Register Form -->
-    <div class="container borderform mt-5">
+    <div class="container borderform my-5">
         <div class="row justify-content-center">
          <!-- <div class="col-xl-1"></div> -->
 
@@ -71,6 +71,7 @@
                     }
                     ?>   
                 </form>
+                <br><br>
                 </div>   
             </div>
         </div>

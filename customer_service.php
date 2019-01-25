@@ -62,7 +62,7 @@
         <img src="img/klantenservice.jpg" class="img-fluid" alt="Klantenservice"> 
         </div>
         <div class="col">
-        3 of 3
+        <!-- 3 of 3 -->
         </div>
     </div>    
 </div>

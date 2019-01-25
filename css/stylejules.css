@@ -1,3 +1,7 @@
 .borderform {
 border: solid 2px #10000c;
 }
+
+.eula {
+    text-decoration: none;
+}

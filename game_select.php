@@ -18,10 +18,11 @@
         if(!isset($_SESSION)) {
             session_start(); 
         }
+        include 'nav_header.php';
     ?>
 
     
-    <div class="row justify-content-center align-content-center">
+    <div class="row justify-content-center align-content-center my-5">
 
         <div class="col-xl-6">
         
@@ -135,6 +136,11 @@
                     </div>
 
             </form>
+    </div>
+    </div>
+        <?php
+            include 'footer.php';
+        ?>
 
         </div>
 
