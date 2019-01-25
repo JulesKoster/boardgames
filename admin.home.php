@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Admin Page</title>
-    <?php 
+    <?php
+    if(!isset($_SESSION)) {
+        session_start(); 
+    }
     include "nav_header.php"; 
     
     // if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){

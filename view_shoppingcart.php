@@ -1,3 +1,8 @@
+<?php
+  if(!isset($_SESSION)) {
+    session_start(); 
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,7 +17,7 @@
         <script src="js/cart.js"></script>
         <?php
             include 'nav_header.php';
-            // include "connect.php";
+            include "connect.php";
         ?>
         <body>
         <div class='container'>

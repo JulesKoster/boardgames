@@ -1,11 +1,16 @@
+<?php
+  if(!isset($_SESSION)) {
+    session_start(); 
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <?php
-            header("Content-Type: text/html; charset=ISO-8859-1");
             include 'connect.php';
+            header("Content-Type: text/html; charset=ISO-8859-1");
             $product_id = $_GET['product_id'];
             $sql = "SELECT * FROM products WHERE product_id = $product_id";
             $data = $pdo->query($sql);
@@ -16,7 +21,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
         <link href="https://fonts.googleapis.com/css?family=Oxygen|Roboto|Ubuntu" rel="stylesheet">
-        <?php include "nav_header.php" ?>
+        <?php 
+            include "nav_header.php";
+        ?>
         <div class='container-fluid text-center mt-5'>
             <?php                
                     echo '<div class="row mt-5"><div class="col-lg-12"><div class = "d-none" id="product">' . $row['product_id'] . '</div></div>';

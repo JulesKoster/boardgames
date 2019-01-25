@@ -1,3 +1,8 @@
+<?php
+  if(!isset($_SESSION)) {
+    session_start(); 
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,10 +14,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
     <?php
         include 'select_product_overview.php';
+        include "nav_header.php";
         header("Content-Type: text/html; charset=ISO-8859-1");
-    ?> 
-
-    <?php include "nav_header.php"?>
+    ?>
     <div class="container-fluid">
     <div class="row"> <!-- cardWrapper6 -->
             <div class="col-lg-12 col-md-12  cardWrapper6">
