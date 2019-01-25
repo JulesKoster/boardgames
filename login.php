@@ -4,7 +4,10 @@
 // /**
 //  * Start the session.
 //  */
-// session_start();
+$checkSession = session_status();
+if ($checkSession == 1) {
+    session_start();
+};
 
 /**
  * Include ircmaxell's password_compat library.

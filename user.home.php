@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Persoonlijke Pagina</title>
     <?php
+    if (empty($_SESSION['user_id'])) {
+        header("Refresh: 0; url=login_form.php");
+    }
 
     if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){
         header('location: admin.home.php');
-    }else{
+    }
+    else{
         require 'connect.php';
         $profile = $_SESSION['user_id'];
         $sql = "SELECT * FROM users WHERE user_id = '$profile'";
@@ -31,7 +35,8 @@
             .(empty($row["user_housenumber"])?"":'huisnummer: ' . $row['user_housenumber']) . (empty($row["user_number_suffix"])?"":' ' . $row['user_number_suffix'] . '<br>')
             .(empty($row["user_zipcode"])?"":'Postcode: ' . $row['user_zipcode'] . '<br>')
             .(empty($row["user_phone"])?"":'telefoonnummer: ' . $row['user_phone'] . '<br>').'
-            <a class="btn btn-dark m-2" href="#">Wijzig persoonlijke gegevens</a>
+            <a class="btn btn-dark m-2" href="user.change.php">Wijzig persoonlijke gegevens</a>
+            </div>
             </div>
             </div>';
             
