@@ -1,10 +1,15 @@
 <?php
 //login.php
 
-/**
- * Start the session.
- */
-session_start();
+
+// /**
+//  * Start the session.
+//  */
+$checkSession = session_status();
+if ($checkSession == 1) {
+    session_start();
+};
+
 
 /**
  * Include ircmaxell's password_compat library.

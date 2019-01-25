@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
     <title>Persoonlijke pagina</title>
 </head>  
       <?php
@@ -37,7 +38,8 @@
             .(empty($row["user_housenumber"])?"":'huisnummer: ' . $row['user_housenumber']) . (empty($row["user_number_suffix"])?"":' ' . $row['user_number_suffix'] . '<br>')
             .(empty($row["user_zipcode"])?"":'Postcode: ' . $row['user_zipcode'] . '<br>')
             .(empty($row["user_phone"])?"":'telefoonnummer: ' . $row['user_phone'] . '<br>').'
-            <a class="btn btn-dark m-2" href="#">Wijzig persoonlijke gegevens</a>
+            <a class="btn btn-dark m-2" href="user.change.php">Wijzig persoonlijke gegevens</a>
+            </div>
             </div>
             </div>';
             
