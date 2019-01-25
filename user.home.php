@@ -1,5 +1,3 @@
-<?php include 'nav_header.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <title>Persoonlijke Pagina</title>
-    <?php
-    if (empty($_SESSION['user_id'])) {
-        header("Refresh: 0; url=login_form.php");
-    }
 
-    if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){
-        header('location: admin.home.php');
-    }
-    else{
+    <title>Persoonlijke pagina</title>
+</head>  
+      <?php
+        include 'nav_header.php';
         require 'connect.php';
+        
+        // if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){
+        //     header('location: admin.home.php');
+        // }else{  
+           
+        var_dump($_SESSION);
+        echo ($_SESSION["user_id"] . '<br>');
+        echo ($_SESSION['logged_in'] . '<br>');
+        echo ($_SESSION['user_email'] . '<br>');
+        echo ($_SESSION['role'] . '<br>');
         $profile = $_SESSION['user_id'];
         $sql = "SELECT * FROM users WHERE user_id = '$profile'";
         $data = $pdo->query($sql); 
@@ -41,9 +44,9 @@
             </div>';
             
         }
-    }
-    ?>
     
+    ?>
+   
 
 
     <!-- Optional JavaScript -->

@@ -10,16 +10,18 @@
  */
  
 //Our MySQL user account.
-define('MYSQL_USER', 'root'); /* board_user */
+
+define('MYSQL_USER', 'root');
  
 //Our MySQL password.
-define('MYSQL_PASSWORD', ''); /* bgames123*/
+define('MYSQL_PASSWORD', 'PZCgnI2O4lHHDiZE');
+
  
 //The server that MySQL is located on.
 define('MYSQL_HOST', 'localhost');
  
 //The name of our database.
-define('MYSQL_DATABASE', 'boardgame'); /* board_db1 */
+define('MYSQL_DATABASE', 'boardgame');
  
 /**
  * PDO options / configuration details.
