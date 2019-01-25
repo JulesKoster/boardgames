@@ -1,10 +1,15 @@
+<?php
+  if(!isset($_SESSION)) {
+    session_start(); 
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Inloggen</title>
         <link rel="stylesheet" type="text/css" href="css/stylejules.css">
-        <?php 
+        <?php
         include 'nav_header.php';  
         include 'login.php';              
         ?>

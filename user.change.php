@@ -1,4 +1,7 @@
-<?php include 'nav_header.php';
+<?php
+  if(!isset($_SESSION)) {
+    session_start(); 
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +12,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Persoonlijke Pagina</title>
     <?php
+        include "nav_header.php";
         include "connect.php";
         if (empty($_SESSION['user_id'])) {
         }

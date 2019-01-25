@@ -1,3 +1,8 @@
+<?php
+  if(!isset($_SESSION)) {
+    session_start(); 
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +20,7 @@
         // if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){
         //     header('location: admin.home.php');
         // }else{  
-           
-        var_dump($_SESSION);
-        echo ($_SESSION["user_id"] . '<br>');
-        echo ($_SESSION['logged_in'] . '<br>');
-        echo ($_SESSION['user_email'] . '<br>');
-        echo ($_SESSION['role'] . '<br>');
+
         $profile = $_SESSION['user_id'];
         $sql = "SELECT * FROM users WHERE user_id = '$profile'";
         $data = $pdo->query($sql); 

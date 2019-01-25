@@ -1,6 +1,8 @@
 <?php
-include 'connect.php';
-session_start();
+    if(!isset($_SESSION)) {
+        session_start(); 
+    }
+    include 'connect.php';
     $user_first_name = $_POST['first_name'];
     $user_middle_name = $_POST['middle_name'];
     $user_last_name = $_POST['last_name'];
