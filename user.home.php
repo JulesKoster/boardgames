@@ -17,10 +17,7 @@
         include 'nav_header.php';
         require 'connect.php';
         
-        // if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){
-        //     header('location: admin.home.php');
-        // }else{  
-
+        
         $profile = $_SESSION['user_id'];
         $sql = "SELECT * FROM users WHERE user_id = '$profile'";
         $data = $pdo->query($sql); 
@@ -44,6 +41,7 @@
             </div>';
             
         }
+    
     
     ?>
    
