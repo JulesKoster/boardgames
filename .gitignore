@@ -3,3 +3,5 @@ connect_local.php
 connect.php
 block_test.php
 connect.php
+board_db1.sql
+.vscode/launch.json
