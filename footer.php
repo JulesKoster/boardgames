@@ -5,8 +5,8 @@
             <!-- <div class='col-lg-2 mt-5 footerColumn'></div> -->
             <div class='col-lg-2 mt-5 footerColumn'>
                 <h4>Klantenservice</h4>
-                <a href='tel:0643002075'><p><i class="fas fa-phone-square footerIcon"></i>&nbsp;&nbsp;&nbsp;06 12345678</p></a>
-                <a href='mailto:email@email.com'><p><i class="fas fa-envelope-square footerIcon"></i>&nbsp;&nbsp;&nbsp;email@email.com</p></a>
+                <a href='tel:076-1234567'><p><i class="fas fa-phone-square footerIcon"></a></i>&nbsp;&nbsp;&nbsp;<a href='tel:076-1234567'>076-1234567</a></p>
+                <a href='mailto:email@email.com'><p><i class="fas fa-envelope-square footerIcon"></a></i>&nbsp;&nbsp;&nbsp;<a href='mailto:email@email.com'>email@email.com</p></a>
             </div>
             <div class='col-lg-2 mt-5 footerColumn'>
                 <h4>Nieuwsbrief ontvangen</h4>

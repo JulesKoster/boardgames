@@ -5,7 +5,11 @@
 /**
  * Start the session.
  */
-session_start();
+
+
+if(!isset($_SESSION)) {
+    session_start(); 
+}
  
 /**
  * Include ircmaxell's password_compat library.

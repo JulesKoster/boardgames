@@ -2,7 +2,12 @@
   
     <head>
         <link rel="stylesheet" href="css/access_denied.css">
-    <?php include "nav_header.php" ?>
+    <?php
+        if(!isset($_SESSION)) {
+            session_start(); 
+        } 
+        include "nav_header.php"; 
+    ?>
         <div class="wrapper">
         
             <h1>403 Forbidden</h1>

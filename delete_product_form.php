@@ -8,7 +8,10 @@
     <title>Product verwijderen</title>
 
 <?php
-include "nav_header.php";
+    if(!isset($_SESSION)) {
+        session_start(); 
+    }
+    include "nav_header.php";
 ?>
 
 <div class="container registerform">

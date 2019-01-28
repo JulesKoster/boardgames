@@ -1,3 +1,8 @@
+<?php
+  if(!isset($_SESSION)) {
+    session_start(); 
+}
+?>
 <!doctype html>
     <html lang="en">
       <head>
@@ -9,14 +14,14 @@
         <link rel="stylesheet" type="text/css" href="css/stylejules.css">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <?php 
+        <?php
             include 'nav_header.php';
             include 'register.php';
         ?>
    
 
         <!-- Register Form -->
-    <div class="container borderform mt-5">
+    <div class="container borderform my-5">
         <div class="row justify-content-center">
          <!-- <div class="col-xl-1"></div> -->
 
@@ -66,6 +71,7 @@
                     }
                     ?>   
                 </form>
+                <br><br>
                 </div>   
             </div>
         </div>

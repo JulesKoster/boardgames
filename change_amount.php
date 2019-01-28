@@ -1,5 +1,7 @@
 <?php
-session_start();
+    if(!isset($_SESSION)) {
+        session_start(); 
+    }
     $product_id = $_GET['id'];
     $product_amount = $_GET['amount'];
     echo ($product_id . "<br>");

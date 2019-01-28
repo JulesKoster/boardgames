@@ -1,6 +1,8 @@
 <?php
 
-    session_start();
+    if(!isset($_SESSION)) {
+        session_start(); 
+    }
     include "connect.php";
 
     $product_id = $_GET['id'];

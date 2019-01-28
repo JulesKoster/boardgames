@@ -9,8 +9,8 @@
  * This info should be available from within your hosting panel.
  */
  
-//Our MySQL user account.
-define('MYSQL_USER', 'root');
+
+define('MYSQL_USER', 'root'); 
  
 //Our MySQL password.
 define('MYSQL_PASSWORD', '');
@@ -19,7 +19,7 @@ define('MYSQL_PASSWORD', '');
 define('MYSQL_HOST', 'localhost');
  
 //The name of our database.
-define('MYSQL_DATABASE', 'board_db1');
+define('MYSQL_DATABASE', 'boardgame');
  
 /**
  * PDO options / configuration details.

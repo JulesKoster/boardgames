@@ -1,20 +1,26 @@
+<?php
+  if(!isset($_SESSION)) {
+    session_start(); 
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Overzicht spellen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
+</head>
+    <section id="topSection"></section>
     <?php
         include 'select_product_overview.php';
-        header("Content-Type: text/html; charset=ISO-8859-1");
-    ?> 
-
-    <?php include "nav_header.php"?>
+        include "nav_header.php";
+        // header("Content-Type: text/html; charset=ISO-8859-1");
+    ?>
     <div class="container-fluid">
-    <div class="row"> <!-- cardWrapper6 -->
+        <div class="row"> <!-- cardWrapper6 -->
             <div class="col-lg-12 col-md-12  cardWrapper6">
                 <div class="row justify-content-around">
                     <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
@@ -24,7 +30,31 @@
                         <div><?php echo $htmlOutput[2];?></div>
                     </div>
                     <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                        
+                    <div class="card" style="width: 30rem; min-height: 37em;">
+                        <div class="ribbon"><span>Sale</span>
+                        </div>
+                        <img class="card-img-top img-thumbnail" style='min-height: 15em;' src="img/products/monopoly.jpg" alt="Card image cap"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Monopoly</h5>
+                            <p class="card-text">Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="d-none" id="product">2
+                                    </div>
+                                    <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class ='text-center align-middle' id="oval">
+                                        <span class='font-weight-bold'>€ 39,99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                         <div>
+
+                        
                         <!-- <div class="col-lg-12 saleWrapper bg-color1">
                         <a href='single_product.php?product_id=2'>
                          <div class="ribbon"><span>Sale</span></div>
@@ -102,6 +132,21 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
 
     <script src="js/cart.js"></script>
+    <!-- <script>
+        $(function() {
+            var $btn = $('#btnTop');
+            var $home = $('#topSection');
+            var startpoint = $home.scrollTop() + $home.height();
+            
+            $(window).on('scroll', function() {
+                if($(window).scrollTop() > startpoint) {
+                $btn.show();
+                } else {
+                $btn.hide();
+                }
+            });
+        });
+    </script> -->
 </body>
 </html>
 

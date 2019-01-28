@@ -1,5 +1,7 @@
 <?php 
-include 'nav_header.php';
+    if(!isset($_SESSION)) {
+        session_start(); 
+    }
 ?>
 
 <!DOCTYPE html>
@@ -11,9 +13,16 @@ include 'nav_header.php';
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <title>Spelwijzer</title>
+    </head>
+    <?php
+        if(!isset($_SESSION)) {
+            session_start(); 
+        }
+        include 'nav_header.php';
+    ?>
 
     
-    <div class="row justify-content-center align-content-center">
+    <div class="row justify-content-center align-content-center my-5">
 
         <div class="col-xl-6">
         
@@ -127,6 +136,11 @@ include 'nav_header.php';
                     </div>
 
             </form>
+    </div>
+    </div>
+        <?php
+            include 'footer.php';
+        ?>
 
         </div>
 

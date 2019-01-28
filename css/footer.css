@@ -26,9 +26,14 @@ h4{
 footer a {
     color:white;
 }
-footer a:visited, a:hover {
+
+footer a:hover {
+    color: white;
+}
+
+footer a:visited {
     text-decoration: none;
-    color:white;
+
 }
 .btn-secondary{
     color:black !important;

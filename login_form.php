@@ -1,10 +1,15 @@
+<?php
+  if(!isset($_SESSION)) {
+    session_start(); 
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>Inloggen</title>
         <link rel="stylesheet" type="text/css" href="css/stylejules.css">
-        <?php 
+        <?php
         include 'nav_header.php';  
         include 'login.php';              
         ?>
@@ -43,7 +48,7 @@
             </form> -->
 
     <!-- Login Form -->    
-    <div class="container borderform mt-5">
+    <div class="container borderform my-5">
         <div class="row justify-content-center">
             <div class="col-xl-6">
                 <form action="login.php" method="post">
@@ -79,6 +84,7 @@
                         <h5><a href="register_form.php" class="badge badge-danger badge-fill">Maak hier een account aan</a></h5>
                     
                 </form>
+                <br><br>
             </div>                     
             </div>
         </div>
