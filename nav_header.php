@@ -33,11 +33,12 @@
             </div><!-- logo -->
 
             <div class="searchBox flex-fill">
-              <form action ="search_single_product.php" class="form-inline my-2 my-lg-0" #id="search">
+              <form action ="search_single_product.php" class="form-inline" #id="search">
                   <input class="form-control col-lg-10 type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
-                  <button class="btn btn-light" type="submit"><i class="fas fa-search xl-3"></i></button>
+                  <button class="btn btn-light searchIcon" type="submit"><i class="fas fa-search xl-3"></i></button>
                 </form>
             </div>
+            
 
             <div class="menuService flex-fill d-none d-sm-block">
                  <ul class="list-inline">  
@@ -56,7 +57,7 @@
                     </li> -->
                             <li class="list-inline-item">
                                 <a href="game_select.php">spelwijzer
-                                <img src="img/icons/spelwijzer_icon.svg" width="70px" height="70px"/></a>
+                                <img src="img/icons/spelwijzer_icon.svg" width="50px" height="50px"/></a>
                             </li>
                   </ul>   
             </div>
@@ -67,16 +68,16 @@
 
             <div class="personalPage flex-fill">
             <a href="user.home.php">
-            <img src="img/personalPage.svg" width="80px" height="80px"/>
+            <img src="img/icons/personalPage.svg" width="35px" height="35px"/>
             </a>
             </div>
 
             <div class="shoppingCart flex-fill" id="shoppingCart">
 
+              <a href="view_shoppingcart.php">
               <button type="button" class="btn btn-primary btn-lg">
                 <span class="price">&euro; <?php echo number_format($_SESSION['totalPrice'],2,",",".")?></span>
-                  <a href="view_shoppingcart.php">
-                    <i class='fas fa-shopping-cart'></i></a>
+                    <i class='fas fa-shopping-cart fa-xs'></i>
                   <span class="badge badge-light count">
                   <?php 
                     if (empty($_SESSION['cart'])){
@@ -88,6 +89,7 @@
                       ?>
                   </span>
                   </button>
+                  </a>
             </div>
           </div><!--headerMenu-->
         </div> <!--wrapperNavHeader-->   
@@ -107,32 +109,32 @@
                 <a class="nav-link" href="#"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product_overview.php?category=bordspel">bordspel</a>
+                <a class="nav-link" href="product_overview.php?category=bordspel">BORDSPEL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product_overview.php?category=kaartspel">kaartspel</a>
+                <a class="nav-link" href="product_overview.php?category=kaartspel">KAARTSPEL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product_overview.php?category=dobbelspel">dobbelspel</a>
+                <a class="nav-link" href="product_overview.php?category=dobbelspel">DOBBELSPEL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product_overview.php?category=denkspel">denkspel</a>
+                <a class="nav-link" href="product_overview.php?category=denkspel">DENKSPEL</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product_overview.php?category=spelkamer">spelkamer</a>
+                <a class="nav-link" href="product_overview.php?category=spelkamer">SPEELKAMER</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product_overview.php?travelversion=1">reisversie</a>
+                <a class="nav-link" href="product_overview.php?travelversion=1">REISVERSIE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product_overview.php?kickstarter=1">kickstarter</a>
+                <a class="nav-link" href="product_overview.php?kickstarter=1">KICKSTARTER</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product_overview.php?classic=1">klassiekers</a>
+                <a class="nav-link" href="product_overview.php?classic=1">KLASSIEKERS</a>
               </li>
               <li class="nav-item">
 
-                <a class="nav-link" href="product_overview.php?category=overige">overige</a>
+                <a class="nav-link" href="product_overview.php?category=overige">OVERIGE</a>
               </li>
             </ul>
           </div>

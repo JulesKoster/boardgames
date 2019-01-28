@@ -39,7 +39,7 @@
             $htmlOutput[$divCounter] .= '<div class="col-6 buttonBox">';
             $htmlOutput[$divCounter] .= '<a href="#" class="btn btn-primary">toevoegen</a>';
             $htmlOutput[$divCounter] .= '</div>';
-            $htmlOutput[$divCounter] .= '<div class="col-6 priceBox">';
+            $htmlOutput[$divCounter] .= '<div class="col-6 mt-2 priceBox">';
             // $htmlOutput[$divCounter] .= '<div class ="price">';
             $htmlOutput[$divCounter] .= '<span class="font-weight-bold">&euro; ' . number_format($row['product_price'],2,",",".") . '</span>';
             // $htmlOutput[$divCounter] .= '</div>';
