@@ -77,7 +77,7 @@
                             echo ($errorMessage);
                         }
                         if ($showPasswordMessage) {
-                            echo ($passwordMessage);
+                           echo ($passwordMessage);
                         }
                         ?>
                         <p>Nog geen account?</p>
