@@ -21,7 +21,7 @@
     ?>
     <div class="container-fluid">
         <div class="row"> <!-- cardWrapper6 -->
-            <div class="col-lg-12 col-md-12  cardWrapper6">
+            <div class="col-lg-12 col-md-12 mt-5  cardWrapper6">
                 <div class="row justify-content-around">
                     <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
                         <div><?php echo $htmlOutput[1];?></div>
@@ -52,34 +52,12 @@
                             </div>
                         </div>
                     </div>
-                        <div>
-
-                        
-                        <!-- <div class="col-lg-12 saleWrapper bg-color1">
-                        <a href='single_product.php?product_id=2'>
-                         <div class="ribbon"><span>Sale</span></div>
-                            <img class="card-img-top img-thumbnail" style='min-height: 15em;' src="img/products/monopoly.jpg" alt="Card image cap">  </a> 
-                             <div class="card-body">
-                                <h5 class="card-title">Monopoly</h5>
-                                <p class="card-text">Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p>
-                                <div class="row cardDesc py-2">
-                                    <div class="col-5 buttonBox">
-                                        <div class="d-none" id="product">2</div>
-                                            <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
-                                        </div>
-                                    <div class="col-5 priceBox">
-                                        <p class='font-weight-bold'>&euro; 39,99</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  -->
-
-
-                        </div> <!-- hier moet bigWrapper staan -->
-                    </div>
+                <div>
+            </div> 
+        </div>
                
         </div>
-        <div class="row justify-content-around">
+            <div class="row justify-content-around">
                     <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
                         <div><?php echo $htmlOutput[3];?></div>
                     </div>
@@ -87,7 +65,7 @@
                         <div><?php echo $htmlOutput[4];?></div>
                     </div>
                     <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
-                        <div>
+                    <div>
                     </div>
                 </div>
             </div>

@@ -31,8 +31,8 @@
             </div>
             <div class='row mb-5'>
                 <!-- <div class='col-lg-1'></div> -->
-                <div class='col-lg-4'>
-                    <img src='<?php echo 'img/products/' . $row["product_img"] ?>' height='300px'>
+                <div class='col-lg-4 singleImgHolder'>
+                    <img src='<?php echo 'img/products/' . $row["product_img"] ?>'height='300px'>
                 </div>
                 <div class='col-lg-7 text-left singleProduct'>
                     <h1><?php echo $row["product_name"]?></h1><br>
