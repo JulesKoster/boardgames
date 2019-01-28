@@ -42,7 +42,7 @@
                         <br><br>
                     <h3>Prijs: &euro; <?php echo number_format($row['product_price'],2,",",".") ?></h3>
                     <br>
-                    <button type="button" class="btn btn-primary btn-lg " onclick=addToCart()>in winkelwagen</button>
+                    <button type="button" class="btn btn-primary btn-lg " onclick=addToCart(<?php echo($row['product_id']);?>)>in winkelwagen</button>
                     
                 </div>
             </div>

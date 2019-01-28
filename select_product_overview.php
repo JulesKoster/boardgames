@@ -37,7 +37,7 @@
             $htmlOutput[$divCounter] .= '<div class="productDesc"><p class="card-text">' . $product_desc . '</p><p class="textFader">&nbsp;</p></div>';
             $htmlOutput[$divCounter] .= '<div class="row cardDesc d-flex py-2">';
             $htmlOutput[$divCounter] .= '<div class="col-6 buttonBox">';
-            $htmlOutput[$divCounter] .= '<a href="#" class="btn btn-primary">toevoegen</a>';
+            $htmlOutput[$divCounter] .= ' <button type="button" class="btn btn-primary btn-lg " onclick=addToCart(' . $row['product_id'] . ')>toevoegen</button>';
             $htmlOutput[$divCounter] .= '</div>';
             $htmlOutput[$divCounter] .= '<div class="col-6 priceBox">';
             // $htmlOutput[$divCounter] .= '<div class ="price">';
