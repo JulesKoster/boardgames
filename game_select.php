@@ -12,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/game_select.css">
     <title>Spelwijzer</title>
     </head>
     <?php
@@ -22,7 +23,7 @@
     ?>
 
     
-    <div class="row justify-content-center align-content-center my-5">
+    <div class="row justify-content-center align-content-center py-5 backGround">
 
         <div class="col-xl-6">
         
