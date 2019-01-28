@@ -14,6 +14,9 @@
     <?php
         include "nav_header.php";
         include "connect.php";
+        $successMessage;
+        $showsuccessMessage = false;
+
         if (empty($_SESSION['user_id'])) {
         }
         $profile = $_SESSION['user_id'];
@@ -55,14 +58,22 @@
         </div>
         <div class='row my-4'>
             <div class='col-xl-12 text-center'>
-                <button id="formbutton" type="submit" class="btn btn-secondary">Wijzigen</button>
+                <button id="formbutton" type="submit" name="changeInfo" class="btn btn-secondary">Wijzigen</button>                
             </div>
         </div>
     </div>            
-            <?php
-        }
- 
- ?>
+   
+    <?php 
+
+        if (isset($_POST['changeInfo'])){
+            $successMessage = 'Je gegevenswijziging is doorgevoerd.';
+            $showsuccessMessage = true;
+            }
+    ?>         
+             
+             
+             
+          
 
      <!-- Optional JavaScript -->
      <script src="js/passwordverify.js"></script>

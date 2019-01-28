@@ -71,7 +71,7 @@
             </div>
         </div>
     </div>
-
+        
         <div class="row"> <!-- cardWrapper6 -->
             <div class="col-lg-12 col-md-12  cardWrapper6">
                 <div class="row justify-content-around">
@@ -95,11 +95,13 @@
                     </div>
                     <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
                         <div><?php echo $htmlOutput[10];?></div>
+                    <button onclick="topFunction()" id="buttonTop" title="Go to top">Top</button>    
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            </div>
+            </div>
+            
         <?php
         include "footer.php";
         ?>
@@ -110,21 +112,8 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
 
     <script src="js/cart.js"></script>
-    <!-- <script>
-        $(function() {
-            var $btn = $('#btnTop');
-            var $home = $('#topSection');
-            var startpoint = $home.scrollTop() + $home.height();
-            
-            $(window).on('scroll', function() {
-                if($(window).scrollTop() > startpoint) {
-                $btn.show();
-                } else {
-                $btn.hide();
-                }
-            });
-        });
-    </script> -->
+    <script src ="js/backtotop.js"></script>  
+   
 </body>
 </html>
 

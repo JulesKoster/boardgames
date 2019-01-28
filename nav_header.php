@@ -76,6 +76,7 @@
 
               <a href="view_shoppingcart.php">
               <button type="button" class="btn btn-primary btn-lg">
+
                 <span class="price">&euro; <?php echo number_format($_SESSION['totalPrice'],2,",",".")?></span>
                     <i class='fas fa-shopping-cart fa-xs'></i>
                   <span class="badge badge-light count">
