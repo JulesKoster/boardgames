@@ -52,7 +52,7 @@
                     </li> -->
                             <li class="list-inline-item">
                                 <a href="game_select.php">spelwijzer
-                                <img src="img/questionCloud.png" width="70px" height="70px"/></a>
+                                <img src="img/icons/spelwijzer_icon.svg" width="70px" height="70px"/></a>
                             </li>
                   </ul>   
             </div>
@@ -63,7 +63,7 @@
 
             <div class="personalPage flex-fill">
             <a href="user.home.php">
-            <img src="img/personalPage.png" width="80px" height="80px"/>
+            <img src="img/personalPage.svg" width="80px" height="80px"/>
             </a>
             </div>
 

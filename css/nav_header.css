@@ -94,7 +94,7 @@ html p{
 .navbar-dark .navbar-nav .nav-link{
     color: white;
     font-variant: small-caps;
-    font-size: 1.9em;
+    font-size: 1.5em;
 }
 button.navbar-toggler{
     outline:none;
