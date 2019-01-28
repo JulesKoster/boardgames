@@ -22,8 +22,7 @@ include "nav_header.php";?>
         <div class="row my-5">
             <div class="col-lg-12 6cardWrapper">
                 <div class="row justify-content-around my-3">
-<?php   
-
+<?php
 
 $age = $_POST['age'];
 $players = $_POST['players'];
@@ -33,7 +32,6 @@ $classic = $_POST['classic'];
 $travel = $_POST['travel'];
 
 include "connect.php";
-
 
 $sql = "SELECT * FROM products WHERE product_age <= '$age' AND product_min_players <= '$players' 
 AND product_max_players >= '$players' AND product_playtime <= '$time' AND Product_category = '$category'

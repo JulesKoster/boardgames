@@ -1,6 +1,8 @@
-function next(prev, next){
+function next(prev, next, btn){
     document.getElementById(prev).style.display = 'none';
     document.getElementById(next).style.display = 'block';
+    var button = document.getElementById(btn);
+    button.parentNode.removeChild(button);
 }
 
 function gameChoose() {
