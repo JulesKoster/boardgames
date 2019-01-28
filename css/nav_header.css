@@ -26,17 +26,27 @@ html p{
 .shopName > p{
     margin-bottom:0em;
 }
+/* searchbar */
+.searchIcon{
+    margin:-40px;
+    z-index: 100;
+    background-color: none !important;
+    border-color: none !important;
+}
 /* === */
 .menuService a{
     color: #10000C !important;
     text-decoration: none !important;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-variant: small-caps;
 }
 .menuService li{
     color: #10000C !important;
     list-style: none;
     padding: 0em;
+}
+.menuService a:hover{
+    text-decoration: #1c1c1c;
 }
 @media (max-width: 48em){
 .menuService {
@@ -64,27 +74,26 @@ html p{
     text-align: center;
     transform: translateY(-.2rem);
     width: 1.5rem; */
-}
+
 /* === */
 .spelwijzer a, a:hover, a:visited{
     text-decoration: none;
     color: black;
 }
-
-.personalPage a, a:hover, a:visited{
+.personalPage a:hover{
+    text-decoration: blue !important;
+}
+.personalPage a, a:visited{
     text-decoration: none;
     color: black;
 }
 .shoppingCart .btn-primary{
     color:#1c1c1c!important;
     background-color: white !important;
-    border: 1px solid #1c1c1c !important;
+    border: none !important;
 }
 .badge{
     border: 1px solid #1c1c1c !important;
-}
-.fa-shopping-cart{
-    font-size: 2em;
 }
 
 /* === Navbar === */
@@ -93,8 +102,6 @@ html p{
 }
 .navbar-dark .navbar-nav .nav-link{
     color: white;
-    font-variant: small-caps;
-    font-size: 1.5em;
 }
 button.navbar-toggler{
     outline:none;

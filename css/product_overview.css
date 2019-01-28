@@ -15,8 +15,6 @@ body{
 .bg-color1{
     background-color:#ffffff;
 }
-/* .bg-color1:hover{
-    transform: scale(0.5); */
 
 .bg-color2{
     background-color: #d4d4d4;
@@ -134,6 +132,7 @@ body{
     background-color:white !important;
     border: 2px solid #1c1c1c !important;
 }
+/* single product page */
 
 
 /*.borderBottom {
