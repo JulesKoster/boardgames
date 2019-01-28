@@ -51,7 +51,7 @@ html p{
     content: " | ";
     color: #efa747;
 } */
-.wishlist .count {
+/* .wishlist .count {
     background: #0a0610;
     border: .1rem solid #fff;
     border-radius: 50%;
@@ -63,7 +63,7 @@ html p{
     line-height: 1.2rem;
     text-align: center;
     transform: translateY(-.2rem);
-    /* width: 1.5rem; */
+    width: 1.5rem; */
 }
 /* === */
 .spelwijzer a, a:hover, a:visited{
@@ -94,7 +94,7 @@ html p{
 .navbar-dark .navbar-nav .nav-link{
     color: white;
     font-variant: small-caps;
-    font-size: 1.9em;
+    font-size: 1.5em;
 }
 button.navbar-toggler{
     outline:none;

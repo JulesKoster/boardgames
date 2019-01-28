@@ -22,13 +22,13 @@
           <div class="container-fluid headerMenu ">
           <div class="row align-items-center px-5">
             <div class="logo flex-fill">
-                  <ul class="list-inline"> 
+              <ul class="list-inline"> 
+                <li class="list-inline-item pawnIcon"> <!--fa-rotate-180-->
+                  <i class='fas fa-chess-pawn '></i>
+                </li>
                     <li class="list-inline-item shopName ">
                       <p>Game ON</p>
                     </li> 
-                    <li class="list-inline-item pawnIcon">
-                      <i class='fas fa-chess-pawn fa-rotate-180 fa-2x'></i>
-                    </li>
                   </ul>
             </div><!-- logo -->
 
@@ -56,7 +56,7 @@
                     </li> -->
                             <li class="list-inline-item">
                                 <a href="game_select.php">spelwijzer
-                                <img src="img/questionCloud.png" width="70px" height="70px"/></a>
+                                <img src="img/icons/spelwijzer_icon.svg" width="70px" height="70px"/></a>
                             </li>
                   </ul>   
             </div>
@@ -67,7 +67,7 @@
 
             <div class="personalPage flex-fill">
             <a href="user.home.php">
-            <img src="img/personalPage.png" width="80px" height="80px"/>
+            <img src="img/personalPage.svg" width="80px" height="80px"/>
             </a>
             </div>
 

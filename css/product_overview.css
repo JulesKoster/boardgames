@@ -14,7 +14,9 @@ body{
 }
 .bg-color1{
     background-color:#ffffff;
-    
+}
+.bg-color1:hover{
+    transform: scale(0.5);
 }
 .bg-color2{
     background-color: #d4d4d4;
@@ -22,9 +24,6 @@ body{
 }
 
 /* === cards === */
-.card{
-    /* border:0.05em solid #2b2523 !important; */
-}
 
 .card-img-top{
     object-fit: contain; 
