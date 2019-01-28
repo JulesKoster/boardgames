@@ -74,7 +74,7 @@ if(isset($_POST['login'])){
             $_SESSION['role'] = $user['role'];
            
             //Redirect to our protected page, which we called home.php
-            header('Location: user.home.php');
+            header('Location: login_check.php');
            // exit;
             
         } else{

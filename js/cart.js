@@ -1,7 +1,7 @@
-function addToCart() {
+function addToCart(product_id) {
 
    // var category = document.getElementById('category').value;
-    var productid = document.getElementById('product').innerHTML;
+    var productid = product_id;
 
     // console.log(productid);
 
