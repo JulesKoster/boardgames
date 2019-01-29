@@ -27,11 +27,11 @@ html p{
     margin-bottom:0em;
 }
 /* searchbar */
-.searchIcon{
+button.searchIcon{
     margin:-40px;
     z-index: 100;
-    background-color: none !important;
-    border-color: none !important;
+    /* background-color: none;
+    border-color: none; */
 }
 /* === */
 .menuService a{
@@ -98,7 +98,7 @@ html p{
 
 /* === Navbar === */
 .navbar{
-    background-color: #1c1c1c;
+    background-color: #1c1c1c !important;
 }
 .navbar-dark .navbar-nav .nav-link{
     color: white;
