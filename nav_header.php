@@ -50,9 +50,6 @@
                     <li class="list-inline-item">
                         <a href="login_form.php">inloggen</a>
                     </li>
-                    <li class="list-inline-item">
-                        <a href="register_form.php">registreren</a>
-                    </li>
                     <!-- <li class="list-inline-item">
                       <a href="#" class="wishlist">verlanglijst</a>
                       <span class="count">0</span>
@@ -64,8 +61,6 @@
                   </ul>   
             </div>
 
-            <div class="spelwijzer flex-fill">
-            </div>
 
 
             <div class="personalPage flex-fill">
@@ -102,7 +97,7 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"                       aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarTogglerDemo03">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto ml-lg-5 mt-2 mt-lg-0">
               <li class="nav-item mx-2">
                 <a class="nav-link" href="index.php">

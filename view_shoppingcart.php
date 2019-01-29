@@ -22,7 +22,7 @@
         <div class='container'>
             <div class='row mt-5'>
                 <div class='col-xl-12'>
-                    <h1>Winkelmandje</h1>
+                    <h3>WINKELMANDJE</h3>
                     <?php
                     
                     ?>
