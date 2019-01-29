@@ -48,8 +48,23 @@
                         <a href="customer_service.php">klantenservice</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="login_form.php">inloggen</a>
+                        <!-- <a href="login_form.php">inloggen</a> -->
+                        <?php 
+                        if (isset($_SESSION['user_id'])) {
+                        echo  '<a href="logout.php">log uit</a>';
+                        }
+                        else {
+                        echo  '<a href="login_form.php">inloggen</a>';    
+                        }
+                        ?>
                     </li>
+                    <!-- <li class="list-inline-item">
+                        <a href="register_form.php">registreren</a> -->
+                    </li>
+                    <!-- <li class="list-inline-item">
+                        <a href="logout.php">uitloggen</a> -->
+                    </li>
+
                     <!-- <li class="list-inline-item">
                       <a href="#" class="wishlist">verlanglijst</a>
                       <span class="count">0</span>
