@@ -21,8 +21,6 @@
         $successMessage;
         $showsuccessMessage = false;
 
-        if (empty($_SESSION['user_id'])) {
-        }
         $profile = $_SESSION['user_id'];
         $sql = "SELECT * FROM users WHERE user_id = '$profile'";
         $data = $pdo->query($sql); 
@@ -63,7 +61,8 @@
         <div class='row my-4'>
             <div class='col-xl-12 text-center'>
                 <button id="formbutton" type="submit" name="changeInfo" class="btn btn-secondary">Wijzigen</button>   
-                <?php 
+                <?php
+
                 if(isset($_POST['changeInfo']))
                 $successMessage = 'Uw persoonlijke gegevens zijn gewijzigd.';
                 $showsuccessMessage = true;
@@ -72,13 +71,6 @@
             </div>
         </div>
     </div>            
-    </body>
-    </html> 
-   
-             
-              
-             
-          
 
      <!-- Optional JavaScript -->
      <script src="js/passwordverify.js"></script>
@@ -88,6 +80,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   
 <?php   
-    include "footer.php";
         }
+    include "footer.php";
 ?>
