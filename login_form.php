@@ -49,10 +49,10 @@
 
     <!-- Login Form -->    
     <div class="container borderform my-5">
-        <div class="row justify-content-center">
-            <div class="col-xl-6">
+        <div class="row justify-content-center ">
+            <div class="col-xl-6 m-3 px-2 formContainer">
                 <form action="login.php" method="post">
-                <div class="form-group mb-0">
+                <div class="form-group mb-0 ">
                     <label for="InputEmail1"></label>
                     <div class="input-group col">
                         <div class="input-group-prepend"> 
@@ -69,9 +69,10 @@
                             </div>  
                         <input type="password" class="form-control shadow-none" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer je wachtwoord in in" required>
                         </div>
+                        <br>
                         <a href="#" class="btn btn-link btn-fill" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
                     </div>
-                        <button type="submit" name="login" value="Login" class="btn btn-dark">Inloggen</button>
+                        <button type="submit" name="login" value="Login" class="btn btn-outline-secondary shadow-none mb-2">Inloggen</button>
                         <?php
                         if ($showLoginError) {
                             echo ($errorMessage);
@@ -80,11 +81,11 @@
                            echo ($passwordMessage);
                         }
                         ?>
-                        <p>Nog geen account?</p>
-                        <h5><a href="register_form.php" class="badge badge-danger badge-fill">Maak hier een account aan</a></h5>
+                        
+                        <a href="register_form.php"><button type="button" class="btn btn-outline-primary btn-lg btn-block">Nog geen account? Maak hier een account aan!</button>
+                      </a>
                     
                 </form>
-                <br><br>
             </div>                     
             </div>
         </div>

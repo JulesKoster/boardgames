@@ -29,7 +29,7 @@ if(!isset($_SESSION)) {
                         ?>
                     <br>
                     <br>
-                    <button class="btn btn-dark">Klik <a href="index.php">hier</a> om terug te gaan</button>
+                    <a href="index.php"><button class="btn btn-dark">Klik hier om terug te gaan</button></a>
                 </div>
                 <div class="col-6">  
                 <img src="img/logout.jpg" class="img-fluid" alt="logout">

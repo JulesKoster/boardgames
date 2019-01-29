@@ -22,7 +22,7 @@
         <div class="row justify-content-center">
          <!-- <div class="col-xl-1"></div> -->
 
-            <div class="col-xl-6">
+            <div class="col-xl-6 m-3 px-2 formContainer">
                 <form action="register_form.php" method="post">
                 <div class="form-group mb-0">
                     <label for="InputEmail1"></label>
@@ -32,7 +32,7 @@
                         </div> 
                         <input type="email" class="form-control shadow-none" id="email" name="email" aria-describedby="emailInput" placeholder="Voer hier uw e-mail adres in" title="Voer dit veld in" required autofocus>            
                     </div>
-                    <small id="emailHelp" class="form-text text-muted">Wij zullen nooit uw email met anderen delen zonder uw toestemming.</small>
+                    <small id="emailHelp" class="form-text text-muted privacyStatement">                Wij zullen nooit uw email met anderen delen zonder uw toestemming.</small>
                 </div>
                     <div class="form-group">
                         <label for="Inputpassword1"></label> 
@@ -53,13 +53,14 @@
                     <div class="col">
                         <div class="form-check">
                             <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input">
-                            <p>
-                            Ik heb de <a href="#" data-toggle="modal" data-target="#modelId1">algemene voorwaarden</a> gelezen en geaccepteerd.</p>
+                            <br>
+                            <input type="checkbox" class="form-check-input">                                                        
+                            Ik heb de <a href="#" data-toggle="modal" data-target="#modelId1">algemene voorwaarden</a> gelezen en geaccepteerd.
                             </label>
                         </div> 
                     </div>
-                        <button type="submit" name="register" value="Register" class="btn btn-dark">Registreer</button> 
+                    <br>
+                        <button type="submit" name="register" value="Register" class="btn btn-outline-secondary shadow-none">Registreer</button> 
                    <?php 
                         if($showMessage) {
                         echo $message;
@@ -87,33 +88,35 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                 </div>
-                <div class="modal-body">
-                    Algemene Voorwaarden
+                <div class="modal-body m-2">
+                   <p> Algemene Voorwaarden
 
-Inhoudsopgave:
-Artikel   1 - Definities
-Artikel   2 - Identiteit van de ondernemer
-Artikel   3 - Toepasselijkheid
-Artikel   4 - Het aanbod
-Artikel   5 - De overeenkomst
-Artikel   6 - Herroepingsrecht
-Artikel   7 - Kosten in geval van herroeping
-Artikel   8 - Uitsluiting herroepingsrecht
-Artikel   9 - De prijs
-Artikel 10 - Conformiteit en garantie
-Artikel 11 - Levering en uitvoering
-Artikel 12 - Duurtransacties: duur, opzegging en verlenging
-Artikel 13 - Betaling
-Artikel 14 - Klachtenregeling
-Artikel 15 - Geschillen
-Artikel 16 - Aanvullende of afwijkende bepalingen
+Inhoudsopgave:</br>
+Artikel   1 - Definities</br>
+Artikel   2 - Identiteit van de ondernemer</br>
+Artikel   3 - Toepasselijkheid</br>
+Artikel   4 - Het aanbod</br>
+Artikel   5 - De overeenkomst</br>
+Artikel   6 - Herroepingsrecht</br>
+Artikel   7 - Kosten in geval van herroeping</br>
+Artikel   8 - Uitsluiting herroepingsrecht</br>
+Artikel   9 - De prijs</br>
+Artikel 10 - Conformiteit en garantie</br>
+Artikel 11 - Levering en uitvoering</br>
+Artikel 12 - Duurtransacties: duur, opzegging en verlenging</br>
+Artikel 13 - Betaling</br>
+Artikel 14 - Klachtenregeling</br>
+Artikel 15 - Geschillen</br>
+Artikel 16 - Aanvullende of afwijkende bepalingen</br>
+</br>
 
-Artikel 1 - Definities
-In deze voorwaarden wordt verstaan onder:
 
-Bedenktijd: de termijn waarbinnen de consument gebruik kan maken van zijn herroepingsrecht;
+Artikel 1 - Definities</br>
+In deze voorwaarden wordt verstaan onder:</br>
+
+Bedenktijd: de termijn waarbinnen de consument gebruik kan maken van zijn herroepingsrecht;</br>
 Consument: de natuurlijke persoon die niet handelt in de uitoefening van beroep of bedrijf en een overeenkomst op afstand aangaat met de ondernemer;
-Dag: kalenderdag;
+Dag: kalenderdag;</br>
 Duurtransactie: een overeenkomst op afstand met betrekking tot een reeks van producten en/of diensten, waarvan de leverings- en/of afnameverplichting in de tijd is gespreid;
 Duurzame gegevensdrager: elk middel dat de consument of ondernemer in staat stelt om informatie die aan hem persoonlijk is gericht, op te slaan op een manier die toekomstige raadpleging en ongewijzigde reproductie van de opgeslagen informatie mogelijk maakt.
 Herroepingsrecht: de mogelijkheid voor de consument om binnen de bedenktijd af te zien van de overeenkomst op afstand;
@@ -285,7 +288,7 @@ Het Weens Koopverdrag is niet van toepassing.
 
 Artikel 16 - Aanvullende of afwijkende bepalingen
 Aanvullende dan wel van deze algemene voorwaarden afwijkende bepalingen mogen niet ten nadele van de consument zijn en dienen schriftelijk te worden vastgelegd dan wel op zodanige wijze dat deze door de consument op een toegankelijke manier kunnen worden opgeslagen op een duurzame gegevensdrager.
-
+</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
