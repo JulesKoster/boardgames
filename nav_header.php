@@ -78,13 +78,13 @@
 
 
 
-            <div class="personalPage flex-fill">
-            <a href="user.home.php">
-            <img src="img/icons/personalPage.svg" width="35px" height="35px"/>
-            </a>
-            </div>
-
-            <div class="shoppingCart flex-fill" id="shoppingCart">
+            <!-- <div class="personalPage flex-fill">
+              </div> -->
+              
+              <div class="shoppingCart flex-fill mx-sm-auto " id="shoppingCart">
+                <a href="user.home.php">
+                <img src="img/icons/personalPage.svg" width="35px" height="35px"/>
+                </a>
 
               <a href="view_shoppingcart.php">
               <button type="button" class="btn btn-primary btn-lg shadow-none">

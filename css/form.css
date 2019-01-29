@@ -1,7 +1,19 @@
 .borderform {
-border: solid 2px #1c1c1c;
+    border: solid 2px #efa747;
 }
-
+.privacyStatement{
+    white-space: pre;
+    overflow: auto;
+}
+.wijzigButton{
+    color:white;
+}
 .eula {
     text-decoration: none;
+}
+.formContainer{
+    text-align: center;
+}
+.board{
+    border:2px solid red;
 }
