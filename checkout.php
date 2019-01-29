@@ -2,7 +2,6 @@
   if(!isset($_SESSION)) {
     session_start(); 
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,20 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <title>Persoonlijke Pagina</title>
-</head>    
-
-    <?php
-        include "nav_header.php";
-        include "connect.php";
-        $successMessage;
-        $showsuccessMessage = false;
-
+    <title>check out</title>
+  
+<?php
+include "connect.php";
+    include "nav_header.php";
         $profile = $_SESSION['user_id'];
         $sql = "SELECT * FROM users WHERE user_id = '$profile'";
         $data = $pdo->query($sql); 
         foreach ($data as $row){
-            ?>
+        ?>
     <div class='container-fluid'>
         <div class='row mt-3'>
             <div class='col-xl-12 text-center'>
@@ -32,10 +27,10 @@
             </div>
         </div>
         <div class='row my-1'>
-            <div class='col-xl-3'></div>
+        <div class='col-xl-3'></div>
             <div class='col-xl-3'>
                 <label for="first_name">Voornaam: </label>
-                <form class="form-group" action="change_personal_info.php" method="POST" autocomplete=off>
+                <form class="form-group" action="order.php" method="POST" autocomplete=off>
                 <input type="text" class="form-control" name="first_name" id="first_name" value="<?php echo $row['user_first_name'] ?>" autofocus>
                 <label for="middle_name">Tussenvoegsel: </label>
                 <input type="text" class="form-control" name="middle_name" id="middle_name" value="<?php echo $row['user_middle_name'] ?>">
@@ -59,26 +54,11 @@
         </div>
         <div class='row my-4'>
             <div class='col-xl-12 text-center'>
-                <button id="formbutton" type="submit" name="changeInfo" class="btn btn-secondary">Wijzigen</button>   
-                <?php
-
-                if(isset($_POST['changeInfo']))
-                $successMessage = 'Uw persoonlijke gegevens zijn gewijzigd.';
-                $showsuccessMessage = true;
-
-                ?>             
+                <button id="formbutton" type="submit" name="changeInfo" class="btn btn-secondary">Wijzigen</button>
             </div>
         </div>
-    </div>            
-
-     <!-- Optional JavaScript -->
-     <script src="js/passwordverify.js"></script>
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-  
-<?php   
+    </div>   
+<?php
         }
-    include "footer.php";
+ include "footer.php"
 ?>
