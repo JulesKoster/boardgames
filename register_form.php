@@ -7,12 +7,9 @@
     <html lang="en">
       <head>
         <title>Registreren</title>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" type="text/css" href="css/stylejules.css">
-        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/form.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <?php
             include 'nav_header.php';
@@ -33,7 +30,7 @@
                         <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-envelope"></i></span>   
                         </div> 
-                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailInput" placeholder="Voer hier uw e-mail adres in" title="Voer dit veld in" required autofocus>            
+                        <input type="email" class="form-control shadow-none" id="email" name="email" aria-describedby="emailInput" placeholder="Voer hier uw e-mail adres in" title="Voer dit veld in" required autofocus>            
                     </div>
                     <small id="emailHelp" class="form-text text-muted">Wij zullen nooit uw email met anderen delen zonder uw toestemming.</small>
                 </div>
@@ -43,7 +40,7 @@
                             <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span> 
                         </div>  
-                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier je wachtwoord in" required>
+                        <input type="password" class="form-control shadow-none" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer hier je wachtwoord in" required>
                     </div>
                 <div class="form-group">
                     <label for="Inputpassword2"></label>
@@ -51,13 +48,14 @@
                             <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span>   
                         </div>
-                        <input type="password" class="form-control" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>          
+                        <input type="password" class="form-control shadow-none" id="confirmPassword" name="password" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>          
                 </div>
                     <div class="col">
                         <div class="form-check">
                             <label class="form-check-label">
                             <input type="checkbox" class="form-check-input">
-                            Ik heb de <a href="#" data-toggle="modal" data-target="#modelId1">algemene voorwaarden</a> gelezen en geaccepteerd.
+                            <p>
+                            Ik heb de <a href="#" data-toggle="modal" data-target="#modelId1">algemene voorwaarden</a> gelezen en geaccepteerd.</p>
                             </label>
                         </div> 
                     </div>
