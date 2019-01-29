@@ -22,7 +22,7 @@
         <div class='container'>
             <div class='row mt-5'>
                 <div class='col-xl-12'>
-                    <h1>Winkelmandje</h1>
+                    <h3>WINKELMANDJE</h3>
                     <?php
                     
                     ?>
@@ -49,6 +49,13 @@
                         ?>
                         </h3>
                     </div>
+                    <?php
+                    if(!empty($_SESSION['cart'])){
+                    echo'<div class="cola-xl-12 my-5">
+                            <a class="btn btn-outline-dark btn-block shadow-none" href="order.php">bestellen</a>
+                        </div>';
+                    }
+                    ?>
             </div>
         </div>
         <?php

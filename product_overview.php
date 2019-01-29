@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
 </head>
-    <section id="topSection"></section>
     <?php
         include 'select_product_overview.php';
         include "nav_header.php";
@@ -37,18 +36,13 @@
                         <img class="card-img-top img-thumbnail" style='min-height: 15em;' src="img/products/monopoly.jpg" alt="Card image cap"> 
                         <div class="card-body">
                             <h5 class="card-title">Monopoly</h5>
-                            <p class="card-text">Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p>
+                            <div class="productDesc"><p class="card-text"><p class="textFader">&nbsp;</p>Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p></div>
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="d-none" id="product">2
-                                    </div>
-                                    <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class ='text-center align-middle'>
-                                        <span class='font-weight-bold'>€ 39,99</span>
-                                    </div>
-                                </div>
+                            <div class="col-12 buttonBox">
+                                <button type="button" class="btn btn-primary btn-block shadow-none" onclick=addToCart()>toevoegen    <span class='font-weight-bold'>€ 39,99</span>
+                                </button>
+                            </div>
+                            <!-- <div class="d-none" id="product">2</div> -->
                             </div>
                         </div>
                     </div>

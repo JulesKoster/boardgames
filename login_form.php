@@ -8,7 +8,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Inloggen</title>
-        <link rel="stylesheet" type="text/css" href="css/stylejules.css">
+        <link rel="stylesheet" type="text/css" href="css/form.css">
         <?php
         include 'nav_header.php';  
         include 'login.php';              
@@ -58,7 +58,7 @@
                         <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-envelope"></i></span>   
                         </div> 
-                        <input type="text" class="form-control" id="userEmail" name="userEmail" aria-describedby="emailInput" placeholder="Voer hier je e-mail adres in" title="Voer dit veld in" required autofocus>            
+                        <input type="text" class="form-control shadow-none" id="userEmail" name="userEmail" aria-describedby="emailInput" placeholder="Voer hier je e-mail adres in" title="Voer dit veld in" required autofocus>            
                     </div>
                 </div>
                     <div class="form-group">
@@ -67,7 +67,7 @@
                             <div class="input-group-prepend"> 
                             <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-key"></i></span> 
                             </div>  
-                        <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer je wachtwoord in in" required>
+                        <input type="password" class="form-control shadow-none" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer je wachtwoord in in" required>
                         </div>
                         <a href="#" class="btn btn-link btn-fill" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
                     </div>

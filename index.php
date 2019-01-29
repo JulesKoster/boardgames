@@ -14,13 +14,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
     <?php
         include 'select_product_overview.php';
+        include "nav_header.php";
         // header("Content-Type: text/html; charset=ISO-8859-1");
-    ?> 
-    <?php include "nav_header.php"?>
-
+    ?>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active mb-5">
+    <div class="carousel-item active">
       <img class="d-block w-100" src="img/slider/monopolyBord.jpg" alt="Bordspel">
     </div>
     <div class="carousel-item">
@@ -49,8 +48,14 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-    <!-- <div class="container-fluid">
-        <div class="row">  cardWrapper6 -->
+    <div class="container-fluid blackBorder text-right p-4">
+        <!-- <div class="spelwijzer">
+        <a href="game_select.php">
+        <img src="img/icons/spelwijzer_icon.svg" width="100px" height="100px"/></a>
+        </div> -->
+</div>
+    <div class="container-fluid">
+        <div class="row"> <!-- cardWrapper6 -->
             <div class="col-lg-12 col-md-12 mt-5  cardWrapper6">
                 <div class="row justify-content-around">
                     <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
@@ -67,18 +72,13 @@
                         <img class="card-img-top img-thumbnail" style='min-height: 15em;' src="img/products/monopoly.jpg" alt="Card image cap"> 
                         <div class="card-body">
                             <h5 class="card-title">Monopoly</h5>
-                            <p class="card-text">Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p>
+                            <div class="productDesc"><p class="card-text"><p class="textFader">&nbsp;</p>Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p></div>
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="d-none" id="product">2
-                                    </div>
-                                    <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class ='text-center align-middle'>
-                                        <span class='font-weight-bold'>€ 39,99</span>
-                                    </div>
-                                </div>
+                            <div class="col-12 buttonBox">
+                                <button type="button" class="btn btn-primary btn-block shadow-none" onclick=addToCart()>toevoegen    <span class='font-weight-bold'>€ 39,99</span>
+                                </button>
+                            </div>
+                            <!-- <div class="d-none" id="product">2</div> -->
                             </div>
                         </div>
                     </div>
@@ -131,10 +131,9 @@
             </div>
         </div>
     </div>
-        
-<?php
-        include "footer.php";
-        ?>
+    <?php
+            include "footer.php";
+    ?>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZObmdut" crossorigin="anonymous"></script>
