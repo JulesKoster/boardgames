@@ -11,54 +11,33 @@
     <title>index.php</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
     <?php
         include 'select_product_overview.php';
         // header("Content-Type: text/html; charset=ISO-8859-1");
     ?> 
     <?php include "nav_header.php"?>
 
-<!-- <a href="product_overview.php">klik hier</a> -->
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active mb-5">
       <img class="d-block w-100" src="img/slider/monopolyBord.jpg" alt="Bordspel">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/hasbro.jpg alt="Stapel spelletjes">
     </div>
-    <!-- <div class="carousel-item">
+    <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/spelstapel.jpg alt="Stapel spelletjes">
-    </div> -->
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src=img/slider/stapel.jpg alt="Stapel spelletjes">
-    </div> -->
+    </div>
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/reisspellen.jpg alt="Reis spelletjes">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/pionnen.jpg alt="Bordspel">
     </div>
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src=img/slider/bastion.jpg alt="Bordspel">
-    </div> -->
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src=img/slider/biljart.jpg alt="Spelkamer">
-    </div> -->
     <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/schaak_hand.jpg alt="Schaakspel">
     </div>
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src=img/slider/fake_gamers.jpg alt="Fake gamers">
-    </div> -->
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src=img/slider/spaceboard.jpg alt="Bordspel">
-    </div> -->
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src=img/slider/blood_rage.jpg alt="Bordspel">
-    </div> -->
-    <!-- <div class="carousel-item">
-      <img class="d-block w-100" src=img/slider/d20_dobbelstenen.jpg alt="Dobbelstenen">
-    </div> -->
 
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -70,6 +49,89 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+    <!-- <div class="container-fluid">
+        <div class="row">  cardWrapper6 -->
+            <div class="col-lg-12 col-md-12 mt-5  cardWrapper6">
+                <div class="row justify-content-around">
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                        <div><?php echo $htmlOutput[1];?></div>
+                    </div>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                        <div><?php echo $htmlOutput[2];?></div>
+                    </div>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                        
+                    <div class="card" style="width: 30rem; min-height: 37em;">
+                        <div class="ribbon"><span>Sale</span>
+                        </div>
+                        <img class="card-img-top img-thumbnail" style='min-height: 15em;' src="img/products/monopoly.jpg" alt="Card image cap"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Monopoly</h5>
+                            <p class="card-text">Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="d-none" id="product">2
+                                    </div>
+                                    <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class ='text-center align-middle'>
+                                        <span class='font-weight-bold'>€ 39,99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+            </div> 
+        </div>
+               
+        </div>
+            <div class="row justify-content-around">
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                        <div><?php echo $htmlOutput[3];?></div>
+                    </div>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                        <div><?php echo $htmlOutput[4];?></div>
+                    </div>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        <div class="row"> <!-- cardWrapper6 -->
+            <div class="col-lg-12 col-md-12  cardWrapper6">
+                <div class="row justify-content-around">
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                        <div><?php echo $htmlOutput[5];?></div>
+                    </div>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                        <div><?php echo $htmlOutput[6];?></div>
+                    </div>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                        <div><?php echo $htmlOutput[7];?></div>
+                    </div>
+               
+        </div>
+        <div class="row justify-content-around">
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                        <div><?php echo $htmlOutput[8];?></div>
+                    </div>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                        <div><?php echo $htmlOutput[9];?></div>
+                    </div>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                        <div><?php echo $htmlOutput[10];?></div>
+                    <button onclick="topFunction()" id="buttonTop" title="Go to top">Top</button>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
 <?php
         include "footer.php";
         ?>
@@ -80,5 +142,6 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
 
     <script src="js/cart.js"></script>
+    <script src ="js/backtotop.js"></script>  
 </body>
 </html>

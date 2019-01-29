@@ -13,7 +13,7 @@
 define('MYSQL_USER', 'root'); 
  
 //Our MySQL password.
-define('MYSQL_PASSWORD', 'PZCgnI2O4lHHDiZE');
+define('MYSQL_PASSWORD', '');
  
 //The server that MySQL is located on.
 define('MYSQL_HOST', 'localhost');

@@ -45,7 +45,7 @@
                                     <a href="#" class="btn btn-primary" onclick=addToCart()>Toevoegen</a>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class ='text-center align-middle' id="oval">
+                                    <div class ='text-center align-middle'>
                                         <span class='font-weight-bold'>€ 39,99</span>
                                     </div>
                                 </div>
@@ -99,8 +99,8 @@
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
+        </div>
+    </div>
             
         <?php
         include "footer.php";

@@ -36,7 +36,7 @@
                             </div>
                             <div class="col-xl-2 text-right">
                                 <h4> Aantal: </h4>
-                                <select class="custom-select" id="productAmount' . $ARRAY[$i]["p_id"] . '" name="amount" onchange="changeAmount(' . $row["product_id"] . ')">';
+                                <select class="custom-select shadow-none" id="productAmount' . $ARRAY[$i]["p_id"] . '" name="amount" onchange="changeAmount(' . $row["product_id"] . ')">';
                                 if ($ARRAY[$i]["p_amount"] == 1) {
                                 echo '<option value="1" selected>1</option>
                                 <option value="2">2</option>

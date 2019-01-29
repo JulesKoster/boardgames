@@ -1,27 +1,23 @@
 html {
     margin:0em;
 }
-body{
-    /* font-family: 'Roboto', sans-serif !important; */
-    font-family: 'Oxygen', sans-serif !important;
-    /* font-family: 'Ubuntu', sans-serif !important; */
-}
 /* === blocks === */
-.div50 {
-    height: 50%;
-    border: solid red 1px;
-    overflow: hidden;
-}
-.bg-color1{
+/* .bg-color1{
     background-color:#ffffff;
+        border: 1em solid #ffffff;
+
 }
 
 .bg-color2{
     background-color: #d4d4d4;
-    background-clip: padding-box;
-}
+    border: 1em solid #ffffff;
+} */
 
 /* === cards === */
+
+.card{
+    border: none !important;
+}
 
 .card-img-top{
     object-fit: contain; 
@@ -31,14 +27,10 @@ body{
 }
 
 .productDesc {
-    max-height: 8em;
+    max-height: 7em;
     position: relative;
     overflow: hidden;
 }
-.cardDesc{
-    bottom: 0;
-}
-
 .textFader {
     user-select: none;
     position: absolute;
@@ -50,20 +42,34 @@ body{
     background-image: linear-gradient(to bottom, transparent, #ffffff);
 }
 .cardDesc{
-    background-color: #1c1c1c;
-    border-radius: 0.3em;
-    text-align: center;
+    background-color: white;
 }
 .buttonBox .btn-primary{
-    color:black!important;
-    background-color:white !important;
-    border: 2px solid white !important;
+    /* color:white!important;
+    background-color:#1c1c1c !important; */
+    color: #1c1c1c!important;
+    background-color:#ffffff!important;
     font-variant: small-caps;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 9px 25px 11px 25px;
+    margin: 15px auto 0 auto;
+    min-width: 134px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    /* transition: color .1s,background-color .2s; */
+    border-color: #1c1c1c;
+    border-radius: 0em;
+    outline: none !important;
 }
-.priceBox{
-    color: white;
+.buttonBox a:hover, .btn-primary a:hover{
+    text-decoration: none;
+    color: #1c1c1c;
 }
-
 /* === big sale card ===*/
 
 .bigSquare {
@@ -92,7 +98,7 @@ body{
     width: 100px;
     display: block;
     background: #000;
-    background: linear-gradient(#Ec7711 0%, #d4d4d4 100%);
+    background: linear-gradient(#efa747 0%, #d4d4d4 100%);
     box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
     position: absolute;
     top: 19px; left: -21px;
@@ -131,6 +137,8 @@ body{
     color:#1c1c1c!important;
     background-color:white !important;
     border: 2px solid #1c1c1c !important;
+    border-radius: 0em;
+    font-variant: small-caps;
 }
 /* single product page */
 

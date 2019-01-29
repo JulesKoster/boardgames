@@ -23,19 +23,21 @@
           <div class="row align-items-center px-5">
             <div class="logo flex-fill">
               <ul class="list-inline"> 
+                <a href="index.php">
                 <li class="list-inline-item pawnIcon"> <!--fa-rotate-180-->
                   <i class='fas fa-chess-pawn '></i>
                 </li>
                     <li class="list-inline-item shopName ">
                       <p>Game ON</p>
                     </li> 
+                  </a>
                   </ul>
             </div><!-- logo -->
 
             <div class="searchBox flex-fill">
               <form action ="search_single_product.php" class="form-inline" #id="search">
-                  <input class="form-control col-lg-10 type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
-                  <button class="btn btn-light searchIcon" type="submit"><i class="fas fa-search xl-3"></i></button>
+                  <input class="form-control col-lg-10 shadow-none" type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
+                  <button class="btn btn-light searchIcon shadow-none" type="submit"><i class="fas fa-search xl-3"></i></button>
                 </form>
             </div>
             
@@ -75,7 +77,7 @@
             <div class="shoppingCart flex-fill" id="shoppingCart">
 
               <a href="view_shoppingcart.php">
-              <button type="button" class="btn btn-primary btn-lg">
+              <button type="button" class="btn btn-primary btn-lg shadow-none">
 
                 <span class="price">&euro; <?php echo number_format($_SESSION['totalPrice'],2,",",".")?></span>
                     <i class='fas fa-shopping-cart fa-xs'></i>
@@ -100,43 +102,43 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"                       aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto ml-lg-5 mt-2 mt-lg-0">
-              <li class="nav-item">
+              <li class="nav-item mx-2">
                 <a class="nav-link" href="index.php">
                    <i class="fas fa-home" ></i></a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#"></a>
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="product_overview.php?category=bordspel">BORDSPEL</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="product_overview.php?category=kaartspel">KAARTSPEL</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="product_overview.php?category=dobbelspel">DOBBELSPEL</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="product_overview.php?category=denkspel">DENKSPEL</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="product_overview.php?category=spelkamer">SPEELKAMER</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="product_overview.php?travelversion=1">REISVERSIE</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="product_overview.php?kickstarter=1">KICKSTARTER</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="product_overview.php?classic=1">KLASSIEKERS</a>
               </li>
-              <li class="nav-item">
-
+              <li class="nav-item mx-3">
                 <a class="nav-link" href="product_overview.php?category=overige">OVERIGE</a>
               </li>
+              
             </ul>
           </div>
         </nav> 
