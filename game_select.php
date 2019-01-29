@@ -23,7 +23,7 @@
     ?>
 
     
-    <div class="row justify-content-center align-content-center py-5 backGround">
+    <div class="row justify-content-center align-content-center backGround">
 
         <div class="col-xl-6">
         
@@ -33,7 +33,7 @@
                         <div class="card-body">
                             <label for="age">Hoe oud is de jongste deelnemer in het spel?</label>
                                 <input type="text" class="form-control" placeholder="Voer hier een leeftijd in" name="age" required autofocus>
-                            <button id="btn1" class="btn btn-dark" onclick="javascript:next('1', '2', 'btn1')">Volgende</button>
+                            <button id="btn1" class="btn btn-dark mt-3" onclick="javascript:next('1', '2', 'btn1')">Volgende</button>
                         </div>
                     </div> 
 

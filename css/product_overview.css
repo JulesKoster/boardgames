@@ -86,7 +86,7 @@ html {
     text-align: right;
   }
 
-  .ribbon span {
+.ribbon span {
     font-size: 15px;
     letter-spacing: 1px;
     font-weight: bold;
@@ -104,7 +104,7 @@ html {
     top: 19px; left: -21px;
   }
 
-  .ribbon span::before {
+.ribbon span::before {
     content: "";
     position: absolute; left: 0px; top: 100%;
     z-index: -1;

@@ -49,6 +49,13 @@
                         ?>
                         </h3>
                     </div>
+                    <?php
+                    if(!empty($_SESSION['cart'])){
+                    echo'<div class="cola-xl-12 my-5">
+                            <a class="btn btn-outline-dark btn-block shadow-none" href="order.php">bestellen</a>
+                        </div>';
+                    }
+                    ?>
             </div>
         </div>
         <?php
