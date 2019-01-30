@@ -26,10 +26,13 @@ session_start();
             $sql = "INSERT INTO orders(user_id, product_id, product_amount, order_number)
             VALUES ('$userID', '$productID', '$amount', '$order_number')";
             $pdo->exec($sql); 
+            
+            header('location: view_shoppingcart.php');
         }
         catch(PDOException $e){
             echo $sql . "<br>" . $e->getMessage();
         }
-        echo 'bedankt voor uw bestelling';
+        
     }
-    
+    unset($_SESSION['cart']);
+?>

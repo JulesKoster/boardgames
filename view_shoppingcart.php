@@ -52,7 +52,7 @@
                     <?php
                     if(!empty($_SESSION['cart'])){
                     echo'<div class="col-xl-12 my-5">
-                            <a class="btn btn-outline-dark shadow-none" href="order.php">bestellen</a>
+                            <a class="btn btn-outline-dark shadow-none" href="checkout.php">bestellen</a>
                         </div>';
                     }
                     ?>
