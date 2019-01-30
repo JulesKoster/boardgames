@@ -1,3 +1,18 @@
+function pawnMover(pos, posEnd, prevQuestion, nextQuestion, btnId) {
+    console.log (prevQuestion + ', ' + nextQuestion + ', ' + btnId);
+    next(prevQuestion, nextQuestion, btnId);
+    var elem = document.getElementById("pawnSelecter");   
+    var id = setInterval(frame, 15);
+    function frame() {
+      if (pos == posEnd) {
+        clearInterval(id);
+      } else {
+        pos++; 
+        elem.style.left = pos + "%"; 
+      }
+    }
+  }
+
 function next(prev, next, btn){
     document.getElementById(prev).style.display = 'none';
     document.getElementById(next).style.display = 'block';

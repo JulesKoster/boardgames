@@ -18,6 +18,7 @@
     <?php
         include "nav_header.php";
         include "connect.php";
+        
         $successMessage;
         $showsuccessMessage = false;
 

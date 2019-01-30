@@ -24,7 +24,7 @@ if(!isset($_SESSION)) {
             <div class="row justify-content-center m-5">
                 <div class="col-6 borderform">                    
                            <!-- <i class="fas fa-sign-out-alt"></i>                           -->
-                        <?php 
+                        <?php                         
                         echo '<h1>Je bent nu uitgelogd</h1>';
                         ?>
                     <br>

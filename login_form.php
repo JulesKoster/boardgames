@@ -74,12 +74,12 @@
                     </div>
                         <button type="submit" name="login" value="Login" class="btn btn-outline-secondary shadow-none mb-2">Inloggen</button>
                         <?php
-                        if ($showLoginError) {
-                            echo ($errorMessage);
-                        }
-                        if ($showPasswordMessage) {
-                           echo ($passwordMessage);
-                        }
+                        // if ($showLoginError) {
+                        //     echo ($errorMessage);
+                        // }
+                        // if ($showPasswordMessage) {
+                        //    echo ($passwordMessage);
+                        // }
                         ?>
                         
                         <div><a href="register_form.php">Nog geen account? Maak hier een account aan!</a>
