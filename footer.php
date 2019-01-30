@@ -10,8 +10,12 @@
             </div>
             <div class='col-lg-2 mt-5 footerColumn'>
                 <H5>NIEUWSBRIEF</H5>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="Vul email-adres in">
-                <input class="btn btn-secondary mt-1" type="button" value="Inschrijven">
+                <div class="input-group mb-3 newsLetter">
+                  <input type="text" class="form-control shadow-none" placeholder="Vul email-adres in">
+                  <div class="input-group-append">
+                  <button class="btn btn-outline-secondary shadow-none" data-target="#newsModal" data-toggle="modal" type="submit"><i class="fas fa-edit"></i></button>
+              </div>
+             </div>
             </div>
             <div class='col-lg-2 mt-5 footerColumn'>
                 <H5>CONTACTGEGEVENS</H5>
@@ -26,9 +30,50 @@
                 <H5>DIRECT NAAR </H5>
                 <p>Spelwijzer</p>
                 <p>Mijn persoonlijke pagina</p>
-                <p>Chatbox</p>
                 <p>Winkelwagen</p>
             </div>
         </div>
     </div>
+        <!-- Modal newsLetter -->
+<div id="newsModal" class="modal fade newsLetter" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header text-center">
+      <div class="logo flex-fill">
+              <ul class="list-inline"> 
+                <a href="index.php">
+                <li class="list-inline-item pawnIcon"> <!--fa-rotate-180-->
+                  <i class='fas fa-chess-pawn '></i>
+                </li>
+                    <li class="list-inline-item shopName ">
+                      <p>Game ON</p>
+                    </li> 
+                  </a>
+                  </ul>
+            </div><!-- logo -->
+      </div>
+      <div class="modal-body">
+          <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="text-center">
+                          <p>Je bent nu ingeschreven voor de nieuwsbrief.</p>
+                            <div class="panel-body">
+                                    <input class="btn btn-outline-secondary shadow-none mt-3"  id="unsubscribe" name="ubsubscribe" value="Unsubscribe" type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+          <div class="col-md-12">
+          <button class="btn shadow-none" data-dismiss="modal" aria-hidden="true">Sluit</button>
+		  </div>	
+      </div>
+  </div>
+  </div>
+</div>
+<!-- Modal newsLetter -->
+
 </footer>
