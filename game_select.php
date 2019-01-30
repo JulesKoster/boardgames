@@ -21,10 +21,7 @@
         }
         include 'nav_header.php';
     ?>
-
-    
     <div class="row justify-content-center align-content-center backGround">
-
         <div class="col-xl-6">
         
             <form action="game_select_script.php" method="post">
@@ -33,7 +30,8 @@
                         <div class="card-body">
                             <label for="age">Hoe oud is de jongste deelnemer in het spel?</label>
                                 <input type="text" class="form-control" placeholder="Voer hier een leeftijd in" name="age" required autofocus>
-                            <button id="btn1" class="btn btn-dark mt-3" onclick="javascript:next('1', '2', 'btn1')">Volgende</button>
+                            <button id="btn1" class="btn btn-dark mt-3" onclick="pawnMover(0,20,1,2,'btn1')">Volgende</button>
+                            <!-- <button id="btn1" class="btn btn-dark mt-3" onclick="javascript:next('1', '2', 'btn1')">Volgende</button> -->
                         </div>
                     </div> 
 
@@ -56,8 +54,8 @@
                                     <input  type="radio" value="9" name="players"> 8+
                                 </div>
                                 <div>
-                                <button id="btn2" class="btn btn-dark" onclick="javascript:next('2', '3', 'btn2')">Volgende</button>
-                                </div>
+                                <button id="btn2" class="btn btn-dark" onclick="pawnMover(20,40,2,3,'btn2')">Volgende</button>
+                                </div> 
                         </div>
                     </div>
 
@@ -87,7 +85,7 @@
                                 <div class="radio">
                                     <input  type="radio" value="120" name="time"> 2 uur of langer
                                 </div>
-                            <button id="btn3" class="btn btn-dark" onclick="javascript:next('3', '4', 'btn3')">Volgende</button>
+                            <button id="btn3" class="btn btn-dark" onclick="pawnMover(40,60,3,4,'btn3')">Volgende</button>
                         </div>
                     </div>
 
@@ -100,7 +98,7 @@
                                     <option value="dobbelspel">Dobbelspellen</option>
                                     <option value="denkspel">Denkspellen</option>
                                 </select>
-                            <button id="btn4" class="btn btn-dark" onclick="javascript:next('4', '5', 'btn4')">Volgende</button>
+                            <button id="btn4" class="btn btn-dark" onclick="pawnMover(60,80,4,5,'btn4')">Volgende</button>
                         </div>
                     </div>
 
@@ -119,7 +117,7 @@
                                 <div class="radio">
                                     <input  type="radio" value="0 OR 1" name="classic"> Maakt me niet uit
                                 </div>
-                            <button id="btn5" class="btn btn-dark" onclick="javascript:next('5', '6', 'btn5')">Volgende</button>
+                            <button id="btn5" class="btn btn-dark" onclick="pawnMover(80,100,5,6,'btn5')">Volgende</button>
                         </div>
                     </div>
 
@@ -140,6 +138,11 @@
 
             </form>
     </div>
+    </div>
+    <div class='row'>
+        <div class='col-xl-12'>
+            <i class='fas fa-chess-pawn' id='pawnSelecter'></i>
+        </div>
     </div>
         <?php
             include 'footer.php';
