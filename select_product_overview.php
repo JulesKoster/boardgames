@@ -37,7 +37,7 @@
             $htmlOutput[$divCounter] .= '<div class="productDesc"><p class="card-text">' . $product_desc . '</p><p class="textFader">&nbsp;</p></div>';
             $htmlOutput[$divCounter] .= '<div class="row cardDesc d-flex p-2">';
             $htmlOutput[$divCounter] .= '<div class="col-12 buttonBox">';
-            $htmlOutput[$divCounter] .= '<button type="button" class="btn btn-primary btn-block shadow-none" onclick=addToCart(' . $row['product_id'] . ')>toevoegen      ';
+            $htmlOutput[$divCounter] .= '<button type="button" class="btn btn-primary btn-block shadow-none cartChecker" data-toggle="popover" data-content="Dit product zit in uw winkelwagen" data-placement="bottom" onclick=addToCart(' . $row['product_id'] . ')>toevoegen      ';
             //$htmlOutput[$divCounter] .= '</div>';
             //$htmlOutput[$divCounter] .= '<div class="col-6 mt-2 priceBox">';
             // $htmlOutput[$divCounter] .= '<div class ="price">'; 
