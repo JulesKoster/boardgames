@@ -16,9 +16,7 @@
 </head>
 
 <body>
-    <!-- <div class="container-fluid wrapperNavHeader ">
      
-          <div class="row headerMenu  align-items-center "> -->
           <div class="container-fluid headerMenu ">
           <div class="row align-items-center px-5">
             <div class="logo flex-fill">
@@ -34,14 +32,16 @@
                   </ul>
             </div><!-- logo -->
 
-            <div class="searchBox flex-fill">
-              <form action ="search_single_product.php" class="form-inline" #id="search">
-                  <input class="form-control col-lg-10 shadow-none" type="search" placeholder="Wat zoek je?" aria-label="Search" name="product_name">
-                  <button class="btn btn-light searchIcon shadow-none" type="submit"><i class="fas fa-search xl-3"></i></button>
-                </form>
+            <div class="searchBox mt-4 flex-fill">
+                <form action ="search_single_product.php" class="form-inline" #id="search">
+                <div class="input-group">
+                  <input type="search" class="form-control col-lg-10 shadow-none" placeholder="Wat zoek je?" aria-label="Search" aria-describedby="Search" name="product_name">
+                  <div class="input-group-append">
+                  <button class="btn btn-outline-secondary shadow-none" type="submit"><i class="fas fa-search xl-3"></i></button>
+              </div>
+              </form>
+              </div>
             </div>
-            
-
             <div class="menuService flex-fill d-none d-sm-block">
                  <ul class="list-inline">  
                     <li class="list-inline-item">
@@ -89,6 +89,7 @@
               <a href="view_shoppingcart.php">
               <button type="button" class="btn btn-primary btn-lg shadow-none">
 
+                <!-- <span class="price">&euro; <?php// echo number_format($_SESSION['totalPrice'],2,",",".")?></span> -->
                     <i class='fas fa-shopping-cart fa-xs'></i>
                   <span class="badge badge-light count" id="count">
                   <?php 
@@ -152,6 +153,12 @@
           </div>
         </nav> 
     <!-- </div> wrapperNavHeader-->   
+
+    <!--betweenBar -->
+
+    <div class="container-fluid betweenBar my-3 ">
+    </div>
+
     
     <!-- Optional JavaScript -->
         <script src="js/passwordverify.js"></script>
