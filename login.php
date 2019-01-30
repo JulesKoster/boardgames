@@ -53,6 +53,8 @@ if(isset($_POST['login'])){
     if($user === false){
         //Could not find a user with that user email!
         //PS: You might want to handle this error in a more user-friendly manner!
+        echo ('Onjuiste email/wachtwoord combinatie!');
+        header ('Refresh: 1 ; url=login_form.php'); 
         $errorMessage = 'Onjuiste email/wachtwoord combinatie!';
         $showLoginError = true;   
         // header ('Refresh: 1 ; url=login_form.php');
@@ -79,9 +81,9 @@ if(isset($_POST['login'])){
             
         } else{
             //$validPassword was FALSE. Passwords do not match.
-            // die('Incorrect username / password combination!, Please try Again');
-            $passwordMessage = 'Onjuiste email/wachtwoord combinatie!';
-            $showPasswordMessage = true; 
+            echo ('Onjuiste email/wachtwoord combinatie!');
+            // $passwordMessage = 'Onjuiste email/wachtwoord combinatie!';
+            // $showPasswordMessage = true; 
             header ('Refresh: 1 ; url=login_form.php'); 
         }
     }
