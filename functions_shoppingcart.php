@@ -10,7 +10,7 @@
         }
         // bestaat het wel:
         else {
-            echo " bestaat ";
+            // echo " bestaat ";
             $_SESSION['cart'] = addToShopCart($PRODUCT_ID, $PRODUCT_AMOUNT, $_SESSION['cart']);
         }
     }
@@ -90,7 +90,7 @@
         $foundID = "NOTFOUND";
         for($i = 0; $i < count($ARRAY); $i++){
             if($ARRAY[$i]['p_id'] == $ID){    
-                echo " match ";           
+                echo "match ";           
                 $foundID = $i;
                 break;
             }
@@ -105,16 +105,15 @@
 function addToShopCart($P_ID, $P_AMOUNT, $ARRAY){   //Netter als je functie maakt voor niet alleen SHOPCART
     $hallo = searchForId($P_ID, $ARRAY);
     if($hallo === "NOTFOUND"){
-        echo "ID bestaat niet, push nieuwe ID en amount naar shopping cart<br>";
+        // echo "ID bestaat niet, push nieuwe ID en amount naar shopping cart<br>";
         $newEntry = array("p_id" => $P_ID,"p_amount" => $P_AMOUNT);               
         array_push($ARRAY, $newEntry); 
-        // echo "ID: " . $P_ID . "toegevoegd met amount: " . $P_AMOUNT . "<br>"; 
         return $ARRAY;       
     }else{
-        echo "ID bestaat, SET amount  <br>";
+        // echo "ID bestaat, SET amount  <br>";
         $index = searchForId($P_ID, $ARRAY);
         $ARRAY[$index]["p_amount"] = $P_AMOUNT;
-        echo "ID: " . $P_ID . " SET amount: " . $P_AMOUNT . " @ index " . $index . "<br>"; 
+        // echo "ID: " . $P_ID . " SET amount: " . $P_AMOUNT . " @ index " . $index . "<br>"; 
         return $ARRAY;
     }
     echo "<br>";
