@@ -22,17 +22,19 @@
             <div class="logo flex-fill">
               <ul class="list-inline"> 
                 <a href="index.php">
-                <li class="list-inline-item pawnIcon"> <!--fa-rotate-180-->
-                  <i class='fas fa-chess-pawn '></i>
-                </li>
-                    <li class="list-inline-item shopName ">
-                      <p>Game ON</p>
-                    </li> 
-                  </a>
-                  </ul>
+                  <!-- <li class="list-inline-item shopName ">
+                    <p>Game ON</p>
+                  </li>
+                  <li class="list-inline-item pawnIcon"> 
+                    <img src="img/icons/pawn_upsidedown_line3050.svg" width="30px" height="50px"/>
+                  </li> -->
+                  <img src="img/icons/logo!.svg" width="150px" height="50px"/>
+
+                </a>
+              </ul>
             </div><!-- logo -->
 
-            <div class="searchBox mt-4 flex-fill">
+            <div class="searchBox mt-3 flex-fill">
                 <form action ="search_single_product.php" class="form-inline" #id="search">
                 <div class="input-group">
                   <input type="search" class="form-control col-lg-10 shadow-none" placeholder="Wat zoek je?" aria-label="Search" aria-describedby="Search" name="product_name">
@@ -83,7 +85,7 @@
               
               <div class="shoppingCart flex-fill mx-sm-auto " id="shoppingCart">
                 <a href="user.home.php">
-                <img src="img/icons/personalPage.svg" width="35px" height="35px"/>
+                <img src="img/icons/personal-smal-5050.svg" width="25px" height="25px"/>
                 </a>
 
               <a href="view_shoppingcart.php">
@@ -91,7 +93,7 @@
 
                 <!-- <span class="price">&euro; <?php// echo number_format($_SESSION['totalPrice'],2,",",".")?></span> -->
                     <i class='fas fa-shopping-cart fa-xs'></i>
-                  <span class="badge badge-light count" id="count">
+                  <span class="badge badge-light count">
                   <?php 
                     if (empty($_SESSION['cart'])){
                       echo'0';
@@ -154,10 +156,6 @@
         </nav> 
     <!-- </div> wrapperNavHeader-->   
 
-    <!--betweenBar -->
-
-    <div class="container-fluid betweenBar my-3 ">
-    </div>
 
     
     <!-- Optional JavaScript -->
@@ -166,6 +164,5 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-        
 </body>
 </html>

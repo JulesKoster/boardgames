@@ -1,31 +1,34 @@
 html {
     margin:0em;
 }
-/* === blocks === */
-/* .bg-color1{
-    background-color:#ffffff;
-        border: 1em solid #ffffff;
 
-}
-
-.bg-color2{
-    background-color: #d4d4d4;
-    border: 1em solid #ffffff;
-} */
 .carousel-inner{
     background-color: #1c1c1c !important;
 }
+
 .carousel-control-next-icon{
     color: #efa747 !important;
 }
+
 .blackBorder{
     height: 10em !important;
     background-color: #1c1c1c;
     margin-top: 0em;
 }
 
-/* === cards === */
+.betweenBar{
+    background-color: #efa747;
+    /* background-repeat: repeat;
+    background-image: url("../img/icons/pawn-100100.svg" ); */
+    height: 6em;
+}
 
+.indexBetweenBar{
+    background-color: #efa747;
+    height: 6em;
+}
+
+/* === cards === */
 .card{
     border: none !important;
 }

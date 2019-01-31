@@ -12,15 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
     <?php
         include 'select_product_overview.php';
         include "nav_header.php";
         // header("Content-Type: text/html; charset=ISO-8859-1");
     ?>
+        <div class="container-fluid betweenBar">
+    </div>
+
     <div class="container-fluid">
         <div class="row"> <!-- cardWrapper6 -->
             <div class="col-lg-12 col-md-12 mt-5  cardWrapper6">
@@ -42,12 +42,12 @@
                             <div class="productDesc"><p class="card-text"><p class="textFader">&nbsp;</p>Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p></div>
                             <div class="row">
                             <div class="col-12 buttonBox">
-                                <button type="button" class="btn btn-primary btn-block shadow-none" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover" onclick=addToCart()>toevoegen    <span class='font-weight-bold'>€ 39,99</span>
+                                <button type="button" class="btn btn-primary btn-block shadow-none" onclick=addToCart()>toevoegen    <span class='font-weight-bold'>€ 39,99</span>
                                 </button>
                             </div>
                             <!-- <div class="d-none" id="product">2</div> -->
                             </div>
-                        </div>
+                        </div><!--sale-->
                     </div>
                 <div>
             </div> 
@@ -110,10 +110,6 @@
 
     <script src="js/cart.js"></script>
     <script src ="js/backtotop.js"></script>  
-    <script>
-
-// </script>
-
    
 </body>
 </html>

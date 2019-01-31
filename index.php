@@ -23,9 +23,6 @@
       <img class="d-block w-100" src="img/slider/monopolyBord.jpg" alt="Bordspel">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src=img/slider/hasbro.jpg alt="Stapel spelletjes">
-    </div>
-    <div class="carousel-item">
       <img class="d-block w-100" src=img/slider/spelstapel.jpg alt="Stapel spelletjes">
     </div>
     <div class="carousel-item">
@@ -48,12 +45,11 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-    <div class="container-fluid blackBorder text-right p-4">
-        <!-- <div class="spelwijzer">
-        <a href="game_select.php">
-        <img src="img/icons/spelwijzer_icon.svg" width="100px" height="100px"/></a>
-        </div> -->
+    <div class="container-fluid blackBorder">
 </div>
+<div class="container-fluid indexBetweenBar mb-3 ">
+    </div>
+
     <div class="container-fluid">
         <div class="row"> <!-- cardWrapper6 -->
             <div class="col-lg-12 col-md-12 mt-5  cardWrapper6">
@@ -65,7 +61,24 @@
                         <div><?php echo $htmlOutput[2];?></div>
                     </div>
                     <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
-                        
+                              <div class="spelwijzerIndex">
+        <a href="game_select.php">
+        <img src="img/icons/spelwijzer_icon.svg" width="250px" height="250px"/></a>
+        </div>
+  
+                <div>
+            </div> 
+        </div>
+               
+        </div>
+            <div class="row justify-content-around">
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                        <div><?php echo $htmlOutput[3];?></div>
+                    </div>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                        <div><?php echo $htmlOutput[4];?></div>
+                    </div>
+                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
                     <div class="card" style="width: 30rem; min-height: 37em;">
                         <div class="ribbon"><span>Sale</span>
                         </div>
@@ -81,20 +94,8 @@
                             <!-- <div class="d-none" id="product">2</div> -->
                             </div>
                         </div>
-                    </div>
-                <div>
-            </div> 
-        </div>
-               
-        </div>
-            <div class="row justify-content-around">
-                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
-                        <div><?php echo $htmlOutput[3];?></div>
-                    </div>
-                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
-                        <div><?php echo $htmlOutput[4];?></div>
-                    </div>
-                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                    </div><!--/sale-->
+
                     <div>
                     </div>
                 </div>
