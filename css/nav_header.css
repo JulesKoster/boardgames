@@ -12,18 +12,15 @@ html p{
     margin-top: 1em;
 }
  /* === logo === */
-.pawnIcon{
-    margin-left: -1em;
-    border: 1px solid red;
-}
-.shopName{
-    margin: 0em;
-    font-size: 2em;
-    color: #10000C !important;
-}
-.shopName > p{
-    margin-bottom:0em;
-}
+ .logoText{
+     font-variant: small-caps;
+     font-size: 2em;
+ }
+
+ .logoImg{
+    margin-bottom: 0.4em;
+ }
+
 /* searchbar */
 .headerMenu .input-group>.input-group-append>.btn{
     border-radius: 0em;
@@ -58,15 +55,11 @@ html p{
     z-index: 3;
 }
 }
-/* .menuService li + li::before {
-    white-space: pre;
-    content: " | ";
-    color: #efa747;
-} */
 .spelwijzer a, a:hover, a:visited{
     text-decoration: none;
     color: black;
 }
+/* === personal page === */
 .personalPage a:hover{
     text-decoration: blue !important;
 }
@@ -79,26 +72,27 @@ html p{
     background-color: white !important;
     border: none !important;
 }
+
 .badge{
     border: 1px solid #1c1c1c !important;
     border-radius: 0em;
-
 }
 
 /* === Navbar === */
 .navbar{
     background-color: #1c1c1c !important;
 }
+
 .navbar-dark .navbar-nav .nav-link{
     color: white;
 }
+
 button.navbar-toggler{
     outline:none;
 }
+
 /* betweenBar */
 .betweenBar{
     background-color: #efa747;
-    /* background-repeat: repeat;
-    background-image: url("../img/icons/pawn-100100.svg" ); */
     height: 3em;
 }

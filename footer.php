@@ -42,12 +42,7 @@
       <div class="logo flex-fill">
               <ul class="list-inline"> 
                 <a href="index.php">
-                <li class="list-inline-item pawnIcon"> <!--fa-rotate-180-->
-                  <i class='fas fa-chess-pawn '></i>
-                </li>
-                    <li class="list-inline-item shopName ">
-                      <p>Game ON</p>
-                    </li> 
+                <img src="img/icons/logo.svg" width="150px" height="50px"/>
                   </a>
                   </ul>
             </div><!-- logo -->
