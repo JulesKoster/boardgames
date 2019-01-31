@@ -1,6 +1,5 @@
 .backGround{
     background: url('../img/background/chess-background-10.jpg');
-    /* background-size: cover; */
     height: 500px;
 }
 
@@ -8,8 +7,6 @@
     position: absolute;
     color: #efa747;
     top: 10px;
-    /* margin-left: -10%; */
-    /* font-size: 100px; */
 }
 
 #pawnDiv {
