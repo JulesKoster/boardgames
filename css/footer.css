@@ -43,3 +43,13 @@ footer {
     background-color: #1c1c1c !important;
     columns: white;
 }
+.newsLetter.input-group>.input-group-append>.btn{
+    border-radius: 0em;
+    border: none;
+}
+.newsLetter .btn-outline-secondary:hover{
+    background-color:#efa747;
+}
+.newsLetter .form-control{
+    border: 1px solid #495057;
+    border-radius: 0em;

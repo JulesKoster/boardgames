@@ -13,13 +13,13 @@
 define('MYSQL_USER', 'root'); 
  
 //Our MySQL password.
-define('MYSQL_PASSWORD', '');
+define('MYSQL_PASSWORD', 'PZCgnI2O4lHHDiZE');
  
 //The server that MySQL is located on.
 define('MYSQL_HOST', 'localhost');
  
 //The name of our database.
-define('MYSQL_DATABASE', 'boardgame');
+define('MYSQL_DATABASE', 'board_db1');
  
 /**
  * PDO options / configuration details.

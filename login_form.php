@@ -70,21 +70,20 @@
                         <input type="password" class="form-control shadow-none" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer je wachtwoord in in" required>
                         </div>
                         <br>
-                        <a href="#" class="btn btn-link btn-fill" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
+                        <a href="#" class="btn btn-outline-secondary shadow-none" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
                     </div>
                         <button type="submit" name="login" value="Login" class="btn btn-outline-secondary shadow-none mb-2">Inloggen</button>
                         <?php
-                        if ($showLoginError) {
-                            echo ($errorMessage);
-                        }
-                        if ($showPasswordMessage) {
-                           echo ($passwordMessage);
-                        }
+                        // if ($showLoginError) {
+                        //     echo ($errorMessage);
+                        // }
+                        // if ($showPasswordMessage) {
+                        //    echo ($passwordMessage);
+                        // }
                         ?>
                         
-                        <a href="register_form.php"><button type="button" class="btn btn-outline-primary btn-lg btn-block">Nog geen account? Maak hier een account aan!</button>
-                      </a>
-                    
+                        <div><a href="register_form.php">Nog geen account? Maak hier een account aan!</a>
+                                       
                 </form>
             </div>                     
             </div>
@@ -94,8 +93,9 @@
     <!-- Login Form -->
 
     <!-- Modal Password Reset -->
+
 <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog ">
   <div class="modal-content">
       <div class="modal-header">
           <h1 class="text-center">Wachtwoord herstellen</h1>
@@ -109,15 +109,15 @@
                             <div class="panel-body">
                                 <form action="forgot_password_control.php" method="post">
                                     <div class="form-group">
-                                        <input class="form-control input-lg" placeholder="E-mailadres" name="userEmail" type="text">
+                                        <input class="form-control shadow-none input-lg" placeholder="E-mailadres" name="userEmail" type="text">
                                     </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control input-lg" id="password" name="userPassword" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" required>
+                                            <input type="password" class="form-control shadow-none input-lg" id="password" name="userPassword" aria-describedby="passwordInput" placeholder="Voer hier uw wachtwoord in" required>
                                         </div>  
                                     <div class="form-group">
-                                    <input type="password" class="form-control input-lg" id="confirmPassword" name="userConfirmPassword" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>
+                                    <input type="password" class="form-control shadow-none input-lg" id="confirmPassword" name="userConfirmPassword" aria-describedby="passwordInput" placeholder="Herhaal uw wachtwoord" required>
                                     </div>
-                                    <input class="btn btn-lg btn-dark btn-block"  id="newPassword" name="newPassword" value="Verander Wachtwoord" type="submit">
+                                    <input class="btn btn-outline-secondary btn-lg btn-block shadow-none"  id="newPassword" name="newPassword" value="Verander Wachtwoord" type="submit">
                                 </form>
                             </div>
                         </div>
@@ -133,6 +133,7 @@
   </div>
   </div>
 </div>
+                    </div>
 <!-- Modal Password Reset -->
 
 <?php
