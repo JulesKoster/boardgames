@@ -11,9 +11,7 @@
         session_start(); 
     }
     include "nav_header.php"; 
-    
-    // if(isset($_SESSION['role'])&& $_SESSION['role']=='admin'){
-        
+           
 ?> 
     <div class="container ">
         <div class=" row justify-content-center mt-3">
@@ -38,9 +36,3 @@
     <?php include "footer.php" ?>
 </body>
 </html>
-<?php
-    // }else {
-    //     header('location: access_denied.php');
-    // }
-
-?>
