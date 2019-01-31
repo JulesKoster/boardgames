@@ -48,53 +48,55 @@
         <div class="container-fluid blackBorder"></div>
         <div class="container-fluid indexBetweenBar mb-3 "></div>
         <div class="container-fluid">
-            <div class="row"> <!-- cardWrapper6 -->
-                <div class="col-lg-12 col-md-12 mt-5  cardWrapper6">
-                    <div class="row justify-content-around">
-                        <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
-                            <div><?php echo $htmlOutput[1];?></div>
-                        </div>
-                        <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
-                            <div><?php echo $htmlOutput[2];?></div>
-                        </div>
-                        <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
-                            <div class="spelwijzerIndex">
-                                <a href="game_select.php">
-                                    <img src="img/icons/spelwijzer_icon.svg" width="250px" height="250px"/>
-                                    <p>SPELWIJZER</p>
-                                </a>
+                    <div class="row"> <!-- cardWrapper6 -->
+                        <div class="col-lg-12 col-md-12 mt-5  cardWrapper6">
+                            <div class="row justify-content-around">
+                                <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                                    <div><?php echo $htmlOutput[1];?></div>
+                                </div>
+                                <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                                    <div><?php echo $htmlOutput[2];?></div>
+                                </div>
+                                <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                                    <div class="spelwijzerIndex">
+                                        <a href="game_select.php">
+                                            <img src="img/icons/spelwijzer_icon.svg" width="250px" height="250px"/>
+                                            <p>SPELWIJZER</p>
+                                        </a>
+                                    <h5>Als je nog niet welk spel je wilt kopen</h5>
+                                </div>
+                              </div>
                             </div>
-                        <div>
-                    </div> 
-                </div>
-            </div>
-            <div class="row justify-content-around">
-                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
-                        <div><?php echo $htmlOutput[3];?></div>
-                    </div>
-                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
-                        <div><?php echo $htmlOutput[4];?></div>
-                    </div>
-                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
-                        <div class="card" style="width: 30rem; min-height: 37em;">
-                            <div class="ribbon"><span>Sale</span></div>
-                                <img class="card-img-top img-thumbnail" style='min-height: 15em;' src="img/products/monopoly.jpg" alt="Card image cap"> 
-                                    <div class="card-body">
-                                         <h5 class="card-title">Monopoly</h5>
-                                            <div class="productDesc"><p class="card-text"><p class="textFader">&nbsp;</p>Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p></div>
-                                                <div class="row">
-                                                    <div class="col-12 buttonBox">
-                                                        <button type="button" class="btn btn-primary btn-block shadow-none" onclick=addToCart()>toevoegen    <span class='font-weight-bold'>€ 39,99</span></button>
+                            <div class="row justify-content-around">
+                                <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                                    <div><?php echo $htmlOutput[3];?></div>
+                                </div>
+                                <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
+                                    <div><?php echo $htmlOutput[4];?></div>
+                                </div>
+                                    <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
+                                        <div class="card" style="width: 30rem; min-height: 37em;">
+                                            <div class="ribbon"><span>Sale</span></div>
+                                                <img class="card-img-top img-thumbnail" style='min-height: 15em;' src="img/products/monopoly.jpg" alt="Card image cap"> 
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Monopoly</h5>
+                                                            <div class="productDesc"><p class="card-text"><p class="textFader">&nbsp;</p>Monopoly Classic is het beroemde vastgoedspel voor snelle onderhandelaars waarin spelers kopen, verkopen, onderhandelen en ruilen om de ultieme rijkdom te behalen. </p></div>
+                                                                <div class="row">
+                                                                    <div class="col-12 buttonBox">
+                                                                        <button type="button" class="btn btn-primary btn-block shadow-none" onclick=addToCart()>toevoegen    <span class='font-weight-bold'>€ 39,99</span></button>
+                                                                    </div>
+                                                                </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div><!--/sale-->
-                                    </div>
-                                </div>
+                                            <div>
+                                    </div><!--sale--> 
+                                <div>
                             </div>
                         </div>
-                   </div>
-                   <div class="row"> <!-- cardWrapper6 -->
+                    </div>
+                </div>
+            </div>
+                    <div class="row"> <!-- cardWrapper6 -->
                         <div class="col-lg-12 col-md-12  cardWrapper6">
                             <div class="row justify-content-around">
                                 <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
@@ -106,8 +108,9 @@
                                 <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color1'>
                                     <div><?php echo $htmlOutput[7];?></div>
                                 </div>
-                            </div>
-                            <div class="row justify-content-around">
+                        
+                    </div>
+                    <div class="row justify-content-around">
                                 <div class='col-lg-4 col-md-6 d-flex justify-content-center bg-color2'>
                                     <div><?php echo $htmlOutput[8];?></div>
                                 </div>
@@ -122,6 +125,8 @@
                         </div>
                     </div>
                 </div>
+            
+
         <?php
                 include "footer.php";
         ?>

@@ -23,8 +23,7 @@
             <img src="img/icons/logo!.svg" width="150px" height="50px"/>
           </a>
         </div><!-- logo -->
-
-        <div class="searchBox mt-2 flex-fill">
+        <div class="searchBox flex-fill">
             <form action ="search_single_product.php" class="form-inline" #id="search">
               <div class="input-group">
                 <input type="search" class="form-control col-lg-10 shadow-none" placeholder="Wat zoek je?" aria-label="Search" aria-describedby="Search" name="product_name">
@@ -55,26 +54,26 @@
             </li>
           </ul>   
         </div>
-          <div class="shoppingCart flex-fill mx-sm-auto " id="shoppingCart">
-            <a href="user.home.php">
-              <img src="img/icons/personal-smal-5050.svg" width="25px" height="25px"/>
-            </a>
+          <div class="shoppingCart flex-fill mx-sm-auto ">
             <a href="view_shoppingcart.php">
               <button type="button" class="btn btn-primary btn-lg shadow-none">
-                  <!-- <span class="price">&euro; <?php// echo number_format($_SESSION['totalPrice'],2,",",".")?></span> -->
-                    <i class='fas fa-shopping-cart fa-xs'></i>
-                      <span class="badge badge-light count">
-                        <?php 
+                <!-- <span class="price">&euro; <?php// echo number_format($_SESSION['totalPrice'],2,",",".")?></span> -->
+                <i class='fas fa-shopping-cart fa-lg'></i>
+                <span class="badge badge-light count">
+                  <?php 
                           if (empty($_SESSION['cart'])){
                             echo'0';
-                            }
-                            else{
-                              echo count($_SESSION['cart']);
-                            }; 
-                        ?>
+                          }
+                          else{
+                            echo count($_SESSION['cart']);
+                          }; 
+                          ?>
                       </span>
-              </button>
-            </a>
+                    </button>
+                  </a>
+                  <a href="user.home.php">
+                    <img src="img/icons/personal-smal-5050.svg" width="25px" height="25px"/>
+                  </a>
           </div>
         </div><!--headerMenu-->
       </div> <!--wrapperNavHeader-->   
