@@ -58,11 +58,6 @@ html p{
     z-index: 3;
 }
 }
-/* .menuService li + li::before {
-    white-space: pre;
-    content: " | ";
-    color: #efa747;
-} */
 .spelwijzer a, a:hover, a:visited{
     text-decoration: none;
     color: black;
@@ -82,7 +77,6 @@ html p{
 .badge{
     border: 1px solid #1c1c1c !important;
     border-radius: 0em;
-
 }
 
 /* === Navbar === */
@@ -98,7 +92,5 @@ button.navbar-toggler{
 /* betweenBar */
 .betweenBar{
     background-color: #efa747;
-    /* background-repeat: repeat;
-    background-image: url("../img/icons/pawn-100100.svg" ); */
     height: 3em;
 }
