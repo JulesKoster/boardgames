@@ -43,3 +43,5 @@ foreach($data as $row){
                 </div>
             </div>'; 
 }
+include "footer.php";
+?>

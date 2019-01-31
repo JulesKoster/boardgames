@@ -2,13 +2,14 @@
   
     <head>
         <link rel="stylesheet" href="css/access_denied.css">
+    </head>
     <?php
         if(!isset($_SESSION)) {
             session_start(); 
         } 
-        include "nav_header.php"; 
-    ?>
-        <div class="wrapper">
+    ?>  
+
+        <div class="wrapper my-5">
         
             <h1>403 Forbidden</h1>
           
@@ -245,5 +246,4 @@
             </svg>
           
         </div>
-    </body>
-</html>
+        
