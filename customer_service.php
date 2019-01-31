@@ -45,7 +45,7 @@
     <div class="row">
         <div class="col-lg-6 col-sm-12">
         <ul class="list-group list-group-flush">
-        <li class="list-group-item list-group-item-warning "><a href="#">VEEL GESTELDE VRAGEN </a>
+        <li class="list-group-item list-group-item-warning "><p>VEEL GESTELDE VRAGEN </p>
             <li class="list-group-item"><a href="#">Wat zijn de levertijden? </a>
             <li class="list-group-item"><a href="#">Heb ik garantie? </a>
             <li class="list-group-item"><a href="#">Rekenen jullie verzendkosten? </a>
