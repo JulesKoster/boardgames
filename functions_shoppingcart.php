@@ -101,18 +101,15 @@
 
     //check if not null. if null push to array. if !null ++ amount.
 
-    function addToShopCart($P_ID, $P_AMOUNT, $ARRAY){   //Netter als je functie maakt voor niet alleen SHOPCART
+    function addToShopCart($P_ID, $P_AMOUNT, $ARRAY){
         $hallo = searchForId($P_ID, $ARRAY);
         if($hallo === "NOTFOUND"){
-            // echo "ID bestaat niet, push nieuwe ID en amount naar shopping cart<br>";
             $newEntry = array("p_id" => $P_ID,"p_amount" => $P_AMOUNT);               
             array_push($ARRAY, $newEntry); 
             return $ARRAY;       
         }else{
-            // echo "ID bestaat, SET amount  <br>";
             $index = searchForId($P_ID, $ARRAY);
             $ARRAY[$index]["p_amount"] = $P_AMOUNT;
-            // echo "ID: " . $P_ID . " SET amount: " . $P_AMOUNT . " @ index " . $index . "<br>"; 
             return $ARRAY;
         }
         echo "<br>";
@@ -122,6 +119,5 @@
         unset($ARRAY[$INDEX]);
         $ARRAY = array_values($ARRAY);
         return $ARRAY;
-        // printShopCart($ARRAY);
     }
 ?>
