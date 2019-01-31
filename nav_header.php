@@ -16,11 +16,11 @@
 </head>
 
 <body>
-  <div class="container-fluid headerMenu ">
+  <div class="container-fluid headerMenu">
     <div class="row align-items-center px-5">
         <div class="logo flex-fill">
           <a href="index.php">
-            <img src="img/icons/logo!.svg" width="150px" height="50px"/>
+            <p class="logoText">GameON<img class="logoImg" src="img/icons/pawn_upsidedown_line3050.svg" width="20px" height="30px"/>
           </a>
         </div><!-- logo -->
         <div class="searchBox flex-fill">

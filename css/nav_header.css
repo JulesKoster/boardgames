@@ -12,10 +12,15 @@ html p{
     margin-top: 1em;
 }
  /* === logo === */
-.pawnIcon{
-    margin-left: -1em;
-    border: 1px solid red;
-}
+ .logoText{
+     font-variant: small-caps;
+     font-size: 2em;
+ }
+
+ .logoImg{
+    margin-bottom: 0.4em;
+ }
+
 /* searchbar */
 .headerMenu .input-group>.input-group-append>.btn{
     border-radius: 0em;
