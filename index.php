@@ -14,8 +14,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/product_overview.css" />
     <?php
         include 'select_product_overview.php';
-        include "nav_header.php";
-        // header("Content-Type: text/html; charset=ISO-8859-1");
+        include "nav_header.php";        
     ?>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">

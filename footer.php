@@ -1,10 +1,9 @@
-<link rel="stylesheet" type="text/css" media="screen" href="css/footer.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/footer.css">
 <footer>
     <div class='container-fluid pt-5 pb-5'>
-        <div class='row d-flex justify-content-around'>
-            <!-- <div class='col-lg-2 mt-5 footerColumn'></div> -->
+        <div class='row d-flex justify-content-around'>         
             <div class='col-lg-2 mt-5 footerColumn'>
-                <H5>KLANTENSERVICE</H5>
+                <a href="customer_service.php"><H5>KLANTENSERVICE</H5></a>
                 <a href='tel:076-1234567'><p><i class="fas fa-phone-square footerIcon"></a></i>&nbsp;&nbsp;&nbsp;<a href='tel:076-1234567'>076-1234567</a></p>
                 <a href='mailto:email@email.com'><p><i class="fas fa-envelope-square footerIcon"></a></i>&nbsp;&nbsp;&nbsp;<a href='mailto:email@email.com'>email@email.com</p></a>
             </div>
@@ -34,7 +33,7 @@
             </div>
         </div>
     </div>
-        <!-- Modal newsLetter -->
+        <!-- Modal NewsLetter -->
 <div id="newsModal" class="modal fade newsLetter" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog">
   <div class="modal-content">
@@ -42,15 +41,12 @@
       <div class="logo flex-fill">
               <ul class="list-inline"> 
                 <a href="index.php">
-                <li class="list-inline-item pawnIcon"> <!--fa-rotate-180-->
-                  <i class='fas fa-chess-pawn '></i>
-                </li>
-                    <li class="list-inline-item shopName ">
-                      <p>Game ON</p>
-                    </li> 
+                <li class="list-inline-item pawnIcon"> 
+                  <img src="img/icons/logo.svg" width="150px" height="50px">
+                </li>                   
                   </a>
                   </ul>
-            </div><!-- logo -->
+            </div>
       </div>
       <div class="modal-body">
           <div class="col-md-12">
@@ -74,6 +70,5 @@
   </div>
   </div>
 </div>
-<!-- Modal newsLetter -->
-
+<!-- Modal NewsLetter -->
 </footer>

@@ -27,10 +27,9 @@
         include 'nav_header.php';
     ?>
 
-
+<!-- Customer Service -->
 <div class="container borderform my-5"> 
     <div class="row justify-content-center m-lg-4 m-sm-1">
-
         <div class="col-md-6 col-sm-12">            
           <h5 ><p class="mt-5" style="color:#70CB63; font-weight:800;">Neem gerust contact op, wij helpen je graag</p></h5>
           <h2><a href="076-1234567"></a><span>076-1234567</span></h2>
@@ -68,7 +67,7 @@
 
 </div>
 </div>
-
+<!-- Customer Service -->
 </body>
 </html>
 

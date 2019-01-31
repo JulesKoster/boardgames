@@ -22,12 +22,7 @@
             <div class="logo flex-fill">
               <ul class="list-inline"> 
                 <a href="index.php">
-                  <!-- <li class="list-inline-item shopName ">
-                    <p>Game ON</p>
-                  </li>
-                  <li class="list-inline-item pawnIcon"> 
-                    <img src="img/icons/pawn_upsidedown_line3050.svg" width="30px" height="50px"/>
-                  </li> -->
+                  
                   <img src="img/icons/logo!.svg" width="150px" height="50px"/>
 
                 </a>
