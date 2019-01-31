@@ -1,4 +1,25 @@
 .backGround{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/background/board-game-background-4.jpg');
-    background-size: cover
+    background: url('../img/background/chess-background-10.jpg');
+    height: 500px;
+}
+
+#pawnSelecter {
+    position: absolute;
+    color: #efa747;
+    top: 10px;
+}
+
+#pawnDiv {
+    position: relative;
+    height: 100px;
+    margin-top: 5px;
+}
+
+#pawnDivDivider {
+    user-select: none;
+    position: absolute;
+    left: 5%;
+    height: 49px;
+    width: 90%;
+    border-bottom: solid #00000052 1px;
 }

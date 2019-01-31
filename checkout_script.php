@@ -21,7 +21,7 @@
         // use exec() because no results are returned
         $pdo->exec($sql);
         echo "Gegevens gewijzigd!";
-        header('Refresh: 1 ; url=login_form.php');
+        header('location: order.php');
     }
 catch(PDOException $e)
     {

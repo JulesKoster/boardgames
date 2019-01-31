@@ -1,9 +1,10 @@
 <?php
+    include 'functions_shoppingcart.php';
+
     if(!isset($_SESSION)) {
     session_start(); 
     }
-    $item = $_GET['item'];
-    include 'functions_shoppingcart.php';
+    $item = $_GET['item'];    
     $_SESSION['cart'] = removeByIndex($item, $_SESSION['cart']);
 
     // $shoppingCartArray = $_SESSION['cart'];

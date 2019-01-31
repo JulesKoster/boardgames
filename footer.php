@@ -1,17 +1,20 @@
-<link rel="stylesheet" type="text/css" media="screen" href="css/footer.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/footer.css">
 <footer>
     <div class='container-fluid pt-5 pb-5'>
-        <div class='row d-flex justify-content-around'>
-            <!-- <div class='col-lg-2 mt-5 footerColumn'></div> -->
+        <div class='row d-flex justify-content-around'>         
             <div class='col-lg-2 mt-5 footerColumn'>
-                <H5>KLANTENSERVICE</H5>
+                <a href="customer_service.php"><H5>KLANTENSERVICE</H5></a>
                 <a href='tel:076-1234567'><p><i class="fas fa-phone-square footerIcon"></a></i>&nbsp;&nbsp;&nbsp;<a href='tel:076-1234567'>076-1234567</a></p>
                 <a href='mailto:email@email.com'><p><i class="fas fa-envelope-square footerIcon"></a></i>&nbsp;&nbsp;&nbsp;<a href='mailto:email@email.com'>email@email.com</p></a>
             </div>
             <div class='col-lg-2 mt-5 footerColumn'>
                 <H5>NIEUWSBRIEF</H5>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="Vul email-adres in">
-                <input class="btn btn-secondary mt-1" type="button" value="Inschrijven">
+                <div class="input-group mb-3 newsLetter">
+                  <input type="text" class="form-control shadow-none" placeholder="Vul email-adres in">
+                  <div class="input-group-append">
+                  <button class="btn btn-outline-secondary shadow-none" data-target="#newsModal" data-toggle="modal" type="submit"><i class="fas fa-edit"></i></button>
+              </div>
+             </div>
             </div>
             <div class='col-lg-2 mt-5 footerColumn'>
                 <H5>CONTACTGEGEVENS</H5>
@@ -26,9 +29,46 @@
                 <H5>DIRECT NAAR </H5>
                 <p>Spelwijzer</p>
                 <p>Mijn persoonlijke pagina</p>
-                <p>Chatbox</p>
                 <p>Winkelwagen</p>
             </div>
         </div>
     </div>
+        <!-- Modal NewsLetter -->
+<div id="newsModal" class="modal fade newsLetter" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header text-center">
+      <div class="logo flex-fill">
+              <ul class="list-inline"> 
+                <a href="index.php">
+
+                <img src="img/icons/logo.svg" width="150px" height="50px"/>
+
+                  </a>
+                  </ul>
+            </div>
+      </div>
+      <div class="modal-body">
+          <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="text-center">
+                          <p>Je bent nu ingeschreven voor de nieuwsbrief.</p>
+                            <div class="panel-body">
+                                    <input class="btn btn-outline-secondary shadow-none mt-3"  id="unsubscribe" name="ubsubscribe" value="Unsubscribe" type="submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+          <div class="col-md-12">
+          <button class="btn shadow-none" data-dismiss="modal" aria-hidden="true">Sluit</button>
+		  </div>	
+      </div>
+  </div>
+  </div>
+</div>
+<!-- Modal NewsLetter -->
 </footer>
