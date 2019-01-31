@@ -28,7 +28,7 @@
                   <li class="list-inline-item pawnIcon"> 
                     <img src="img/icons/pawn_upsidedown_line3050.svg" width="30px" height="50px"/>
                   </li> -->
-                  <img src="img/icons/logo!.svg" width="150px" height="50px"/>
+                  <img src="img/icons/logo.svg" width="150px" height="50px"/>
 
                 </a>
               </ul>
@@ -37,7 +37,7 @@
             <div class="searchBox mt-3 flex-fill">
                 <form action ="search_single_product.php" class="form-inline" #id="search">
                 <div class="input-group">
-                  <input type="search" class="form-control col-lg-10 shadow-none" placeholder="Wat zoek je?" aria-label="Search" aria-describedby="Search" name="product_name">
+                  <input type="search" class="form-control col-lg-10 shadow-none" placeholder="Wat zoek je?" aria-label="Search" aria-describedby="Search" name="product_name" required title="Typ hier uw zoekopdracht">
                   <div class="input-group-append">
                   <button class="btn btn-outline-secondary shadow-none" type="submit"><i class="fas fa-search xl-3"></i></button>
               </div>
