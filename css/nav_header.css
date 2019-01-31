@@ -13,9 +13,8 @@ html p{
 }
  /* === logo === */
 .pawnIcon{
-    font-size: 2em;
-    color: #efa747;
-    margin: 0.07em;
+    margin-left: -1em;
+    border: 1px solid red;
 }
 .shopName{
     margin: 0em;
