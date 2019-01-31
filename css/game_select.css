@@ -1,12 +1,28 @@
 .backGround{
     background: url('../img/background/chess-background-10.jpg');
-    background-size: cover;
+    /* background-size: cover; */
     height: 500px;
 }
 
 #pawnSelecter {
     position: absolute;
-    color: red;
-    left: 0;
-    font-size: 100px;
+    color: #efa747;
+    top: 10px;
+    /* margin-left: -10%; */
+    /* font-size: 100px; */
+}
+
+#pawnDiv {
+    position: relative;
+    height: 100px;
+    margin-top: 5px;
+}
+
+#pawnDivDivider {
+    user-select: none;
+    position: absolute;
+    left: 5%;
+    height: 49px;
+    width: 90%;
+    border-bottom: solid #00000052 1px;
 }
