@@ -27,10 +27,9 @@
         include 'nav_header.php';
     ?>
 
-
+<!-- Customer Service -->
 <div class="container borderform my-5"> 
     <div class="row justify-content-center m-lg-4 m-sm-1">
-
         <div class="col-md-6 col-sm-12">            
           <h5 ><p class="mt-5" style="color:#70CB63; font-weight:800;">Neem gerust contact op, wij helpen je graag</p></h5>
           <h2><a href="076-1234567"></a><span>076-1234567</span></h2>
@@ -46,7 +45,7 @@
     <div class="row">
         <div class="col-lg-6 col-sm-12">
         <ul class="list-group list-group-flush">
-        <li class="list-group-item list-group-item-warning "><a href="#">VEEL GESTELDE VRAGEN </a>
+        <li class="list-group-item list-group-item-warning "><p>VEEL GESTELDE VRAGEN </p>
             <li class="list-group-item"><a href="#">Wat zijn de levertijden? </a>
             <li class="list-group-item"><a href="#">Heb ik garantie? </a>
             <li class="list-group-item"><a href="#">Rekenen jullie verzendkosten? </a>
@@ -68,7 +67,7 @@
 
 </div>
 </div>
-
+<!-- Customer Service -->
 </body>
 </html>
 

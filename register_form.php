@@ -11,17 +11,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="css/form.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      </head>
+
         <?php
             include 'nav_header.php';
             include 'register.php';
         ?>
-   
 
         <!-- Register Form -->
     <div class="container borderform my-5">
         <div class="row justify-content-center">
-         <!-- <div class="col-xl-1"></div> -->
-
             <div class="col-xl-6 m-3 px-2 formContainer">
                 <form action="register_form.php" method="post">
                 <div class="form-group mb-0">
@@ -87,7 +86,7 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
-                </div>
+                </div>                
                 <div class="modal-body m-2">
                    <p> Algemene Voorwaarden
 

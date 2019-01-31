@@ -38,7 +38,7 @@
                         <input type="password" class="form-control shadow-none" id="password" name="password" aria-describedby="passwordInput" placeholder="Voer je wachtwoord in in" required>
                         </div>
                         <br>
-                        <a href="#" class="btn btn-outline-secondary shadow-none" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
+                        <a href="#" data-target="#pwdModal" data-toggle="modal">Wachtwoord vergeten?</a>
                     </div>
                         <button type="submit" name="login" value="Login" class="btn btn-outline-secondary shadow-none mb-2">Inloggen</button>
                         <?php
@@ -59,7 +59,6 @@
     <!-- Login Form -->
 
     <!-- Modal Password Reset -->
-
 <div id="pwdModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog ">
   <div class="modal-content">
@@ -100,8 +99,8 @@
   </div>
 </div>
                     </div>
+                    <br>
 <!-- Modal Password Reset -->
-
 <?php
 include 'footer.php';
 ?>

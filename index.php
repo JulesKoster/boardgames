@@ -17,6 +17,7 @@
     <?php
         include 'select_product_overview.php';
         include "nav_header.php";
+
     ?>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">

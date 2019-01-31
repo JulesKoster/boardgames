@@ -27,6 +27,7 @@
 
         }else{
                 
+
             $profile = $_SESSION['user_id'];
             $sql = "SELECT * FROM users WHERE user_id = '$profile'";
             $data = $pdo->query($sql); 
@@ -54,9 +55,12 @@
             }
         }
     
+
     ?>
-   
-   
+   <br>
+   <br>
+   <br>
+   <br>
 
 
     <!-- Optional JavaScript -->
