@@ -60,23 +60,12 @@ include "nav_header.php";
     <div class="modal-content">
       Uw betaling is succesvol verwerkt. Bedankt voor uw bestelling!
 
-      <a href="index.php">Klik hier om terug te gaan</a>
+      <a href="order_script.php">Klik hier om terug te gaan</a>
     </div>
   </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
 <!-- Modal Payment Success -->
-
 
 <?php include "footer.php" ?>
 
