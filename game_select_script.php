@@ -35,7 +35,7 @@ include "nav_header.php";?>
 
     $sql = "SELECT * FROM products WHERE product_age <= '$age' AND product_min_players <= '$players' 
     AND product_max_players >= '$players' AND product_playtime <= '$time' AND Product_category = '$category'
-    AND product_classic = $classic AND product_travelversion = '$travel' ";
+    AND product_classic = $classic AND product_travelversion = '$travel' LIMIT 5";
     $data = $pdo->query($sql);
 
     if($data->rowCount() == 0){
@@ -44,8 +44,6 @@ include "nav_header.php";?>
         </div>';
     }else if($data->rowcount() >0){
         foreach($data as $row){
-            
-            
                 echo '<a href="single_product.php?product_id=' . $row['product_id'] . '">
                 <div class="card my-5 p-1" style="width: 22em; height: 31em;">
                 <img class="card-img-top img-thumbnail mt-1" style="height: 15em;" src="img/products/' . $row['product_img'] . '" alt="Card image cap"></a>
@@ -63,7 +61,6 @@ include "nav_header.php";?>
                 </div>
                 </div>
                 </div>';     
-            
         }
     }
     echo '</div></div></div></div>';
