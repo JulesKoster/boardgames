@@ -27,9 +27,9 @@
             </div>
             <div class='col-lg-2 mt-5 footerColumn'>
                 <H5>DIRECT NAAR </H5>
-                <p>Spelwijzer</p>
-                <p>Mijn persoonlijke pagina</p>
-                <p>Winkelwagen</p>
+                <a href="game_select.php"><p>Spelwijzer</p></a>
+                <a href="user.home.php"><p>Mijn persoonlijke pagina</p></a>
+                <a href="view_shoppingcart.php"><p>Winkelwagen</p></a>
             </div>
         </div>
     </div>

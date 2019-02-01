@@ -1,20 +1,27 @@
-.footerColumn{
+.footerColumn {
     color: white;
-    border:1px solid white;
+    border: 1px solid white;
     /* border-radius: 0.3em; */
     padding: 1.5em;
 }
+
+.footerColumn a {
+    color: white;
+}
+
 .footerIcon {
-    color:white;
+    color: white;
     font-size: 40px;
 }
 
 #fbFont:hover {
-    color:#2f487c;
+    color: #2f487c;
 }
-footer h5{
+
+footer h5 {
     margin-bottom: 1em;
 }
+
 #twFont:hover {
     color: #0084b4;
 }
@@ -24,7 +31,7 @@ footer h5{
 }
 
 footer a {
-    color:white;
+    color: white;
 }
 
 footer a:hover {
@@ -35,22 +42,27 @@ footer a:visited {
     text-decoration: none;
 
 }
-.btn-secondary{
-    color:black !important;
+
+.btn-secondary {
+    color: black !important;
     background-color: white !important;
 }
+
 footer {
     background-color: #1c1c1c !important;
     columns: white;
 }
-.newsLetter.input-group>.input-group-append>.btn{
+
+.newsLetter.input-group>.input-group-append>.btn {
     border-radius: 0em;
     border: none;
 }
-.newsLetter .btn-outline-secondary:hover{
-    background-color:#efa747;
+
+.newsLetter .btn-outline-secondary:hover {
+    background-color: #efa747;
 }
-.newsLetter .form-control{
+
+.newsLetter .form-control {
     border: 1px solid #495057;
     border-radius: 0em;
 }

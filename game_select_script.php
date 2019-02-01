@@ -55,7 +55,7 @@ include "nav_header.php";?>
                 <div class="productDesc"><p class="card-text">' . $row['product_desc'] . '</p><p class="textFader">&nbsp;</p></div>
                 <div class="row cardDesc d-flex py-2">
                 <div class="col-6 buttonBox">
-                <button type="button" class="btn btn-primary btn-lg " onclick=addToCart(' . $row['product_id'] . ')>toevoegen</button>
+                <button type="button" class="btn btn-primary btn-lg shadow-none" onclick=addToCart(' . $row['product_id'] . ')>toevoegen</button>
                 </div>
                 <div class="col-6 priceBox">
                 <span class="font-weight-bold">&euro; ' . number_format($row['product_price'],2,",",".") . '</span>

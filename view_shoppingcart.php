@@ -56,7 +56,7 @@
                     if(!empty($_SESSION['cart'])){
                         //check if there are items in shopping cart
                         echo'<div class="col-xl-12 my-5">
-                            <a class="btn btn-outline-dark shadow-none" href="checkout.php">bestellen</a>
+                            <a class="btn btn-outline-secondary shadow-none" href="checkout.php">bestellen</a>
                         </div>';
                 }
                 ?>

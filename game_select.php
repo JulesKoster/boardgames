@@ -34,8 +34,8 @@
             <div class="card mt-5" id='1'>
                 <div class="card-body">
                     <label for="age">Hoe oud is de jongste deelnemer in het spel?</label>
-                    <input type="text" class="form-control" placeholder="Voer hier een leeftijd in" name="age" required autofocus>
-                    <button id="btn1" class="btn btn-dark mt-3" onclick="pawnMover(0,18,1,2,'btn1')">Volgende</button>
+                    <input type="text" class="form-control shadow-none" placeholder="Voer hier een leeftijd in" name="age" required autofocus>
+                    <button id="btn1" class="btn btn-outline-secondary shadow-none mt-2" onclick="pawnMover(0,18,1,2,'btn1')">Volgende</button>
                 </div>
             </div> 
 
@@ -58,7 +58,7 @@
                         <input  type="radio" value="9" name="players"> 8+
                     </div>
                     <div>
-                        <button id="btn2" class="btn btn-dark" onclick="pawnMover(18,36,2,3,'btn2')">Volgende</button>
+                        <button id="btn2" class="btn btn-outline-secondary mt-2" onclick="pawnMover(18,36,2,3,'btn2')">Volgende</button>
                     </div> 
                 </div>
             </div>
@@ -89,20 +89,20 @@
                     <div class="radio">
                         <input  type="radio" value="120" name="time"> 2 uur of langer
                     </div>
-                    <button id="btn3" class="btn btn-dark" onclick="pawnMover(36,54,3,4,'btn3')">Volgende</button>
+                    <button id="btn3" class="btn btn-outline-secondary shadow-none mt-2" onclick="pawnMover(36,54,3,4,'btn3')">Volgende</button>
                 </div>
             </div>
 
             <div class="card mt-5" id='4' style='display:none'>
                 <div class="card-body">
                     <label for="category">Van welk soort spellen hou je?</label>
-                        <select class="form-control" name="category">
+                        <select class="form-control shadow-none" name="category">
                             <option value="bordspel">Bordspellen</option>
                             <option value="kaartspel">Kaartspellen</option>
                             <option value="dobbelspel">Dobbelspellen</option>
                             <option value="denkspel">Denkspellen</option>
                         </select>
-                    <button id="btn4" class="btn btn-dark" onclick="pawnMover(54,72,4,5,'btn4')">Volgende</button>
+                    <button id="btn4" class="btn btn-outline-secondary shadow-none mt-2" onclick="pawnMover(54,72,4,5,'btn4')">Volgende</button>
                 </div>
             </div>
 
@@ -121,7 +121,7 @@
                     <div class="radio">
                         <input  type="radio" value="0 OR 1" name="classic"> Maakt me niet uit
                     </div>
-                    <button id="btn5" class="btn btn-dark" onclick="pawnMover(72,90,5,6,'btn5')">Volgende</button>
+                    <button id="btn5" class="btn btn-outline-secondary shadow-none mt-2" onclick="pawnMover(72,90,5,6,'btn5')">Volgende</button>
                 </div>
             </div>
 
@@ -135,7 +135,7 @@
                         <input  type="radio" value="0" name="travel"> Nee
                     </div>
 
-                    <button type="submit" class="btn btn-dark">Finish</button>
+                    <button type="submit" class="btn btn-outline-secondary shadow-none mt-2">Finish</button>
 
                 </div>
             </div>
