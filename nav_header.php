@@ -59,7 +59,7 @@
             <a href="view_shoppingcart.php">
               <button type="button" class="btn btn-primary btn-lg shadow-none">
                 <!-- <span class="price">&euro; <?php// echo number_format($_SESSION['totalPrice'],2,",",".")?></span> -->
-                <i class='fas fa-shopping-cart fa-lg'></i>
+                <i class='fas fa-shopping-cart fa-lg mr-1'></i>
                 <span class="badge badge-light count">
                   <?php 
                           if (empty($_SESSION['cart'])){
