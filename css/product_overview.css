@@ -1,6 +1,7 @@
 html {
   margin: 0em;
 }
+
 /* === index ===*/
 .carousel-inner {
   background-color: #1c1c1c !important;
@@ -21,21 +22,26 @@ html {
   height: 6em;
 }
 
-.spelwijzerIndex{
-    text-align: center;
-    margin-top: 2em;
+.spelwijzerIndex {
+  text-align: center;
+  margin-top: 2em;
 }
 
-.spelwijzerIndex p{
-    margin: 1em;
-    font-size: 2em;
+.spelwijzerIndex p {
+  margin: 1em;
+  font-size: 2em;
 }
+
+.spelwijzerIndex a {
+  color: black;
+}
+
 /* === product overview === */
 .betweenBar {
-    background-color: #efa747;
-    height: 6em;
+  background-color: #efa747;
+  height: 6em;
 }
-  
+
 /* === cards === */
 .card {
   border: none !important;
@@ -44,6 +50,7 @@ html {
 .card-img-top {
   object-fit: contain;
 }
+
 .img-thumbnail {
   border: none !important;
 }
@@ -53,6 +60,7 @@ html {
   position: relative;
   overflow: hidden;
 }
+
 .textFader {
   user-select: none;
   position: absolute;
@@ -64,9 +72,11 @@ html {
   padding: 30px 0;
   background-image: linear-gradient(to bottom, transparent, #ffffff);
 }
+
 .cardDesc {
   background-color: white;
 }
+
 .buttonBox .btn-primary {
   font-variant: small-caps;
   display: inline-block;
@@ -80,7 +90,6 @@ html {
   cursor: pointer;
   text-transform: uppercase;
   box-sizing: border-box;
-  /* transition: color .1s,background-color .2s; */
   color: #1c1c1c !important;
   background-color: #ffffff !important;
   border-color: #1c1c1c;
@@ -88,11 +97,13 @@ html {
   outline: none !important;
   white-space: pre;
 }
+
 .buttonBox a:hover,
 .btn-primary a:hover {
   text-decoration: none;
   color: #1c1c1c;
 }
+
 /* === big sale card ===*/
 
 .bigSquare {
@@ -153,15 +164,18 @@ html {
   border-bottom: 3px solid transparent;
   border-top: 3px solid #8c7547;
 }
+
 .kickstarter {
   position: absolute;
   top: 160px;
   right: 10px;
   z-index: 100000;
 }
+
 .board {
   border: solid red 1px;
 }
+
 /* === Single Product === */
 .singleProduct .btn-primary {
   color: #1c1c1c !important;
@@ -170,8 +184,13 @@ html {
   border-radius: 0em;
   font-variant: small-caps;
 }
-/* single product page */
 
+/* shopping cart */
+.productTitel a {
+  color: black;
+}
+
+/* Back to top button */
 #buttonTop {
   display: none;
   position: fixed;
@@ -191,6 +210,7 @@ html {
   border-radius: 50%;
   font-size: 18px;
 }
+
 #buttonTop:hover {
   background-color: #555;
 }
