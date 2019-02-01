@@ -54,6 +54,30 @@ include "nav_header.php";
       </div>
     </div>
   </div>
+<!-- Modal Payment Success -->
+<div class="modal fade bd-example-modal-sm" id="successModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      Uw betaling is succesvol verwerkt. Bedankt voor uw bestelling!
+
+      <a href="index.php">Klik hier om terug te gaan</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal Payment Success -->
+
+
 <?php include "footer.php" ?>
 
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
@@ -90,8 +114,8 @@ paypal.Button.render({
     // Execute the payment
     onAuthorize: function(data, actions) {
       return actions.payment.execute().then(function() {
-        window.alert('Bedankt voor uw aankoop');
-        window.location.href = "order_script.php";
+       $('#successModal').modal('show')
+        // window.location.href = "order_script.php";
       });
     }
   }, '#paypal-button');

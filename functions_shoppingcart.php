@@ -30,7 +30,7 @@
                     <div class="col-xl-3">
                         <img src="img/products/' . $row['product_img'] . '" height="200px" width="200px">
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 productTitel">
                         <h3><a href="single_product.php?product_id=' . $ARRAY[$i]["p_id"] . '">' . $row['product_name'] . '</a></h3>                                
                     </div>
                     <div class="col-xl-2 text-right">

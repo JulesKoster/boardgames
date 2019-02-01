@@ -1,98 +1,118 @@
-html p{
-    margin:0em;
+html p {
+    margin: 0em;
 }
-.wrapperNavHeader{
+
+.wrapperNavHeader {
     padding: 0em;
 }
+
 /* === Headermenu === */
-.headerMenu a{
+.headerMenu a {
     text-decoration: none;
 }
-.headerMenu ul{
+
+.headerMenu ul {
     margin-top: 1em;
 }
- /* === logo === */
- .logoText{
-     font-variant: small-caps;
-     font-size: 2em;
- }
 
- .logoImg{
+/* === Logo === */
+.logo a{
+    color: black;
+}
+.logoText {
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+.logoImg {
     margin-bottom: 0.4em;
- }
+}
 
 /* searchbar */
-.headerMenu .input-group>.input-group-append>.btn{
+.headerMenu .input-group>.input-group-append>.btn {
     border-radius: 0em;
 }
-.searchBox .btn-outline-secondary:hover{
-    background-color:#efa747;
+
+.searchBox .btn-outline-secondary:hover {
+    background-color: #efa747;
 }
-.searchBox .form-control{
+
+.searchBox .form-control {
     border: 1px solid #495057;
     border-radius: 0em;
 }
-/* === */
-.menuService a{
+
+/* Service menu*/
+.menuService a {
     color: #10000C !important;
     text-decoration: none !important;
     font-size: 1.2em;
     font-variant: small-caps;
 }
-.menuService li{
+
+.menuService li {
     color: #10000C !important;
     list-style: none;
     padding: 0em;
 }
-.menuService a:hover{
+
+.menuService a:hover {
     text-decoration: #1c1c1c;
 }
-@media (max-width: 48em){
-.menuService {
-    display: block;
-    margin: 0;
-    padding: 2rem 1.5rem;
-    z-index: 3;
+
+@media (max-width: 48em) {
+    .menuService {
+        display: block;
+        margin: 0;
+        padding: 2rem 1.5rem;
+        z-index: 3;
+    }
 }
-}
-.spelwijzer a, a:hover, a:visited{
+
+.spelwijzer a,
+a:hover,
+a:visited {
     text-decoration: none;
     color: black;
 }
+
 /* === personal page === */
-.personalPage a:hover{
+.personalPage a:hover {
     text-decoration: blue !important;
 }
-.personalPage a, a:visited{
+
+.personalPage a,
+a:visited {
     text-decoration: none;
     color: black;
 }
-.shoppingCart .btn-primary{
-    color:#1c1c1c!important;
+
+.shoppingCart .btn-primary {
+    color: #1c1c1c !important;
     background-color: white !important;
     border: none !important;
 }
 
-.badge{
+.badge {
     border: 1px solid #1c1c1c !important;
     border-radius: 0em;
 }
 
 /* === Navbar === */
-.navbar{
+.navbar {
     background-color: #1c1c1c !important;
 }
 
-.navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link {
     color: white;
 }
 
-button.navbar-toggler{
-    outline:none;
+button.navbar-toggler {
+    outline: none;
 }
 
 /* betweenBar */
-.betweenBar{
+.betweenBar {
     background-color: #efa747;
     height: 3em;
 }
