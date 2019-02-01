@@ -5,7 +5,7 @@
             <div class='col-lg-2 mt-5 footerColumn'>
                 <a href="customer_service.php"><H5>KLANTENSERVICE</H5></a>
                 <a href='tel:076-1234567'><p><i class="fas fa-phone-square footerIcon"></a></i>&nbsp;&nbsp;&nbsp;<a href='tel:076-1234567'>076-1234567</a></p>
-                <a href='mailto:email@email.com'><p><i class="fas fa-envelope-square footerIcon"></a></i>&nbsp;&nbsp;&nbsp;<a href='mailto:email@email.com'>email@email.com</p></a>
+                <a href='mailto:email@email.com'><p><i class="fas fa-envelope-square footerIcon"></a></i>&nbsp;&nbsp;&nbsp;<a href='mailto:email@email.com'>Klantenservice@board.kopp.es</p></a>
             </div>
             <div class='col-lg-2 mt-5 footerColumn'>
                 <H5>NIEUWSBRIEF</H5>

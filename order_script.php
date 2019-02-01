@@ -27,7 +27,7 @@ session_start();
             VALUES ('$userID', '$productID', '$amount', '$order_number')";
             $pdo->exec($sql); 
             
-            header('location: view_shoppingcart.php');
+            header('location: index.php');
         }
         catch(PDOException $e){
             echo $sql . "<br>" . $e->getMessage();
