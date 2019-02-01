@@ -44,8 +44,8 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-6 col-sm-12">
-        <ul class="list-group list-group-flush">
-        <li class="list-group-item list-group-item-warning "><p>VEEL GESTELDE VRAGEN </p>
+        <ul class="list-group list-group-flush customerQuestions">
+        <li class="list-group-item list-group-item-warning  "><p>VEEL GESTELDE VRAGEN </p>
             <li class="list-group-item"><a href="#">Wat zijn de levertijden? </a>
             <li class="list-group-item"><a href="#">Heb ik garantie? </a>
             <li class="list-group-item"><a href="#">Rekenen jullie verzendkosten? </a>
@@ -58,7 +58,7 @@
         <ul class="list-group list-group-flush text-right mt-sm-2">
                 <li class="list-group-item"><a href="https://www.facebook.com">Stel een vraag via Facebook <img src="img/icons/if_2018_social_media_popular_app_logo_facebook_3225194.png" width="32" height="32"></a></li>
                 <li class="list-group-item"><a href="https://www.twitter.com">Stel een vraag via Twitter <img src="img/icons/if_2018_social_media_popular_app_logo_twitter_3225183.png" width="32" height="32"></a></li>
-                <li class="list-group-item"><a href="mailto:klantenservice@board.kopp.es">Klantenservice@board.kopp.es <img src="img/icons/iconfinder_Rounded-29_2024646.png" width="32" height="32"></a></li></li>
+                <li class="list-group-item"><a href="mailto:board@board.kopp.es">board@board.kopp.es <img src="img/icons/iconfinder_Rounded-29_2024646.png" width="32" height="32"></a></li></li>
             </ul>    
         </div>
  
